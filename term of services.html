@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smart farming</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.css"
+rel="stylesheet"
+/>
+
+<!-- MDB -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.js"
+></script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+</head>
+<body class="container-fluid">
+    <div class="latest_note bg-dark text-light ">
+        <marquee width="100%;" scrollAmount="5">Smart Farming website  are live for farmers. You can visit and read the instructions for upcoming farming generations. Contact number 9525952621
+        </marquee></i><strong id="disable_notification"> </strong>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light  mx-auto" style="background-color: rgb(48, 58, 63);">
+      <a class="navbar-brand text-light" href="#">Kisan_Informer</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        
+      </button>
+    
+      <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+        
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="margin-left: 300px;">
+           <!-- <li class="nav-item active">
+            <a  class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">News</a>
+            <div class="dropdown-menu text-light">
+             <a class="dropdown-item" href="#">Business News</a>
+             <div class="dropdown-divider"></div>
+             <a class="dropdown-item" href="#">Crop News</a>
+             <div class="dropdown-divider"></div>
+             <a class="dropdown-item" href="#">Livestock News</a>
+           </div>
+           </li> --> 
+           <li class="text-light mt-2 mr-2">Home</li>
+           
+           <li class="nav-item dropdown">
+             <a  class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Crops</a>
+             <div class="dropdown-menu bg-dark">
+              <a class="dropdown-item text-light" href="./kharif crops.html">Kharif Crops</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="./rabi crops.html">Rabi Crops</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="#">vegetable</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="#">HerBal</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="#">Phal-Phool-Tree</a>
+            </div>
+           </li>
+           <li class="nav-item dropdown">
+            <a  class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Service</a>
+            <div class="dropdown-menu bg-dark">
+            <a class="dropdown-item text-light" href="#">Mandi Bhav</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-light" href="#">Agriculture Spot</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-light" href="#">Government Scheme</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-light" href="#">Agriculture Event</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-light" href="#">Agriculture Training</a>
+          </div>
+          </li>
+            <li class="nav-item dropdown ">
+              <p class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="falseServices">About Us </p>
+              <div class="dropdown-menu bg-dark">
+                <a class="dropdown-item text-light" href="#">Mission and Vision</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Help</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Events participation</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Internship</a>
+              </div>  
+           <li class="nav-item dropdown ">
+              <a  class="nav-link dropdown-toggle text-light " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Gallery</a>
+              <div class="dropdown-menu bg-dark">
+                <a class="dropdown-item text-light" href="#">Magazine</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light " href="#">Photo Gallery</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Video Gallery</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Achievements</a>
+                
+           </li>
+              
+             <li class="nav-item dropdown">
+              <a  class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Help</a>
+              <div class="dropdown-menu bg-dark">
+              <a class="dropdown-item text-light" href="#">Agriculture Experts</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="#">Agriculture Advisers</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="#">Agriculture Engineers</a>
+              <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Agriculture Friends</a>
+
+            </div>
+            </li>
+        </ul>
+      </div>
+      <div class="d-flex">
+
+        <button class="btn btn-warning" type="submit">Join/login</button>
+       </div>
+    </nav>
+    <section>
+      <div class="modal fade" id="appModal" tabindex="-1" role="dialog" aria-labelledby="NotificationLabel" aria-hidden="true" data-backdrop="false">
+        <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 750px;">
+          <div class="modal-content">
+            <div class="modal-header" style="background: #5cb85c; color: #fff;">
+              <h5 class="modal-title" id="Notification" style="margin-top: 8px;margin-bottom: -1pc; font-size: larger;">
+                 Soil Testing Booking
+              </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top: -26px; width: 35px; font-size: 50px;">
+              <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <br/>
+            <div class="card-body p-0">
+              <!-- <div id="notify-MSG"></div> -->
+              
+                  <form action="#" id="soil_testing_booking_form">
+                      <div class="card-body">
+                        
+                        <div class="col-md-12" style="font-style: oblique; color: #249d24; font-size: 28px; ">
+                          Soil Testing Booking Charge  : <del><i class="fa fa-inr"></i> 800</del> &nbsp; <b style="    font-size: 18px;"><i class="fa fa-inr"></i> 700</b>
+                        <br>
+                        <br>
+                        </div>
+                        <div class="col-md-12">
+                        <div class="form-group">
+                          <label>Select City</label><br>
+                          <input type="radio" name="city" checked value="Mandsaur"> &nbsp; Mandsaur &nbsp;
+                          <input type="radio" name="city" value="Neemuch"> &nbsp; Neemuch &nbsp;
+                          <input type="radio" name="city" value="Ratlam"> &nbsp; Ratlam &nbsp;
+                          <input type="radio" name="city" value="Ujjain"> &nbsp; Ujjain &nbsp;
+                           <input type="radio" name="city" value="Other"> &nbsp; Other City
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label>Farmar Name</label>
+                          <input type="text" class="form-control" placeholder="Farmar Name" name="farmar_name" required="" autocomplete="off">
+                        </div>
+                      </div>
+                       <div class="col-md-6">
+                        <div class="form-group">
+                          <label>Father's Name</label>
+                          <input type="text" class="form-control" placeholder="Father's name" name="father_name" required="" autocomplete="off">
+                        </div>
+                      </div>
+                       <div class="col-md-6">
+                        <div class="form-group">
+                          <label>Village</label>
+                          <input type="text" class="form-control" placeholder="Village" name="village" required="" autocomplete="off">
+                        </div>
+                      </div>
+                       <div class="col-md-6">
+                        <div class="form-group">
+                          <label>District / Tahseel</label>
+                          <input type="text" class="form-control" placeholder="Tahseel" name="tahseel" required="" autocomplete="off">
+                        </div>
+                      </div>
+                       <div class="col-md-6">
+                        <div class="form-group">
+                          <label>Pin code</label>
+                          <input type="text" class="form-control" placeholder="Pincode" name="pin_code" required="" autocomplete="off">
+                        </div>
+                      </div>
+                       <div class="col-md-6">
+                        <div class="form-group">
+                          <label>Mobile no</label>
+                          <input type="number" class="form-control" placeholder="Mobile no." name="mobile_no" required="" autocomplete="off">
+                        </div>
+                      </div>
+                       <div class="col-md-6">
+                        <div class="form-group">
+                          <label>Email (Optional)</label>
+                          <input type="email" class="form-control" placeholder="Email" name="email" autocomplete="off">
+                        </div>
+                      </div>
+                       <div class="col-md-6">
+                        <div class="form-group">
+                          <label>Khasra No (Optional)</label>
+                          <input type="text" class="form-control" placeholder="Khasra No." name="khasra_no" autocomplete="off">
+                        </div>
+                      </div>
+                       <div class="col-md-6">
+                        <div class="form-group">
+                          <label>Area (in Acre) (Optional)</label>
+                          <input type="area" class="form-control" placeholder="Area (in Acre)" name="area" autocomplete="off">
+                        </div>
+                      </div>
+
+                       <div class="col-md-12">
+
+                        <div class="form-group" id="coupon_code_section">
+                          <a href="javascript:;" id="have_coupon_code">Have any coupon code?</a>
+                        </div>
+                      </div>
+
+                      </div>
+              <p class="col-md-12 alert" style="display:none;" id="message_div"></p>
+              <br>
+
+
+              <div class="modal-footer" style="border-top: none;">
+                 <div class="col-md-6 col-xs-6">
+                <br>
+                <button type="button" id="close_modal" class="btn btn-secondary" data-dismiss="modal" style="color: #202020; width:100%;">Close</button>
+              </div>
+               <div class="col-md-6 col-xs-6">
+                <br>
+                <button type="submit" name="submit_form" id="send_message" class="btn btn-success" style="width:100%;color:#ffffff;">Pay Now</button>
+              </div>
+              </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+<script type="text/javascript">
+      $('#open_model').on('click', function(){
+        $('#appModal').modal({
+                  backdrop: false,
+                  show: true
+          });
+      })
+  </script>
+
+    </section>
+
+      <section>
+        <div class="container text-center" style="margin-top:100px; font-weight: 700; font-size: 40px;">
+<p >Terms of Services</p>
+<br>
+<br><br>
+ 
+        </div>
+        <div class="container" style="margin-top: -50px; margin-left: 40px;">
+        <p >Please read these Terms of Service (‘Terms’, ‘Terms of Service’) carefully before using the farmingindia.in website (the ‘Service’) operated by Farming India Solutions (‘us’, ‘we’, or ‘our’). Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the Service.
+
+            Our visitors may use this site free. And, the users using this site agree to comply and bound by the below mentioned terms of use. If you do not agree to the given terms and conditions after reviewing it thoroughly, you are requested not to use the site:
+            
+            Acceptance of Agreement: The terms and conditions featured in this Terms and Conditions of use Agreement (Agreement) related to our site (the site) are agreed by you. This Agreement represents the complete and only agreement between you and us, and supersedes all prior or contemporaneous agreements, representations, warranties and understandings related to the Site, free product samples, the content, or freebie offers or services provided by or listed on the Site, and the subject matter of this Agreement. We can amend the Agreement any time and at any frequency without informing or specific notice to you. The latest Agreement will be posted on the site that can be reviewed by you prior to using the site. This Agreement may be amended by us at any time and at any frequency without specific notice to you. The latest Agreement will be posted on the Site, and you should review this Agreement prior to using the Site.
+            Copyright. The organization, content, design, graphics, and other materials related to this Site are protected under applicable copyrights and other proprietary laws, including but not limited to intellectual property laws. Without our prior written permission, the copying, reproduction, use, modification or publication of full or part of any such matters or any part of the Site by you is strictly prohibited.
+            Deleting and Modification. We reserve the right in our sole discretion, to edit or delete any documents, information or other content appearing on the Site, including this Agreement without any notice requirement or obligation to you.
+            Indentification. You agree to indemnify, defend and hold us, our officers, our share holders, our partners, attorneys and employees harmless from any and all liability, loss, damages, claim and expense, including reasonable attorney’s fees, related to your violation of this Agreement or use of the Site.
+            Disclaimer. THE CONTENT, SERVICES, FREE PRODUCT SAMPLES AND FREEBIE OFFERS FROM OR LISTED THROUGH THE SITE ARE PROVIDED “AS-IS,” “AS AVAILABLE,” AND ALL WARRANTIES, EXPRESS OR IMPLIED, ARE DISCLAIMED, INCLUDING BUT NOT LIMITED TO THE DISCLAIMER OF ANY IMPLIED WARRANTIES OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY, QUALITY AND FITNESS FOR A PARTICULAR PURPOSE, WITH RESPECT TO THIS SITE AND ANY WEBSITE WITH WHICH IT IS LINKED. THE INFORMATION AND SERVICES MAY CONTAIN BUGS, ERRORS, PROBLEMS OR OTHER LIMITATIONS. WE HAVE NO LIABILITY WHATSOEVER FOR YOUR USE OF ANY INFORMATION OR SERVICE. IN PARTICULAR, BUT NOT AS A LIMITATION, WE ARE NOT LIABLE FOR ANY INDIRECT, INCIDENTAL OR CONSEQUENTIAL DAMAGES (INCLUDING DAMAGES FOR LOSS OF BUSINESS, LOSS OF PROFITS, LOSS OF MONEY, LITIGATION, OR THE LIKE), WHETHER BASED ON BREACH OF CONTRACT, BREACH OF WARRANTY, NEGLIGENCE, PRODUCT LIABILITY OR OTHERWISE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. THE NEGATION OF DAMAGES SET FORTH ABOVE ARE FUNDAMENTAL ELEMENTS OF THE BASIS OF THE BARGAIN BETWEEN US AND YOU THE USER. THIS SITE AND THE INFORMATION WOULD NOT BE PROVIDED WITHOUT SUCH LIMITATIONS. NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM US THROUGH THE SITE SHALL CREATE ANY WARRANTY, REPRESENTATION OR GUARANTEE NOT EXPRESSLY STATED IN THIS AGREEMENT. THE INFORMATION AND ALL OTHER MATERIALS ON THE SITE ARE PROVIDED FOR GENERAL INFORMATION PURPOSES ONLY AND DO NOT CONSTITUTE PROFESSIONAL ADVICE. IT IS YOUR RESPONSIBILITY TO EVALUATE THE ACCURACY AND COMPLETENESS OF ALL INFORMATION AVAILABLE ON THIS SITE OR ANY WEBSITE WITH WHICH IT IS LINKED.
+            Limits. We disclaim all responsibility or liability for any damages caused by viruses contained within the electronic file containing the form or document. We disclaim any form of the liability to you for any incidental, special or consequential damages of any kind that may result from use of or inability to use the site.
+            Third-Party Website. All rules, terms and conditions, other policies (including privacy policies) and operating procedures of third-party linked websites will apply to you while on such websites. For the content, accuracy or opinions expressed in such Websites, we are not responsible, and we have also not investigated, monitored or checked for accuracy or completeness of such websites. Any linked Website inclusion on our Site does not imply endorsement or approval of the linked Website by us. This Site and the third-party linked websites are independent entities and neither party has authority to make any representations or commitments on behalf of the other. You are acting at your own risk if you decide to leave our Site and access these third-party linked sites.
+            Third-Party Products and Services. Our site advertise third-party linked websites from which you may purchase or otherwise obtain certain freebie offerings, sample goods, or free trial services. It must be fully understood that we do not operate or control the free offerings, products, or services offered by third-party linked websites. The responsibility solely lies with the third-party linked websites for all aspects of order processing, billing fulfillment, and customer services. For any transactions entered into between you and third-party linked websites we are not a party to it. You agree that use of such third-party linked websites is at your sole risk and is without warranties of any kind by us, expressed, implied or otherwise. Under no circumstances are we liable for any damages arising from the transactions between you and third-party linked websites or for any information appearing on third-party linked websites or any other site linked to or from our site.
+            Submissions. All ideas, notes, suggestions, concepts and other information send by you to us (collectively, “Submissions”) shall be deemed and shall remain our sole property and shall not be subject to any obligation of confidence on our part. Without limiting the foregoing, we shall be deemed to own all known and hereafter existing rights of every kind and nature regarding the Submissions and shall be entitled to unrestricted use of the Submissions for any purpose, without compensation to the provider of the Submissions.
+            General. You agree that all actions or proceedings arising directly or indirectly out of this agreement, or your use of the site or any sample products, freebie offers or services obtained by you through such use, shall be litigated in Kolkata High Court or any court in West Bengal preferred by us. You are expressly submitting and consenting in advance to such jurisdiction in any action or proceeding in any of such courts, and are waiving any claim that a court located in West Bengal, India is an inconvenient forum or an improper forum based on lack of venue. This site is controlled by an Indian person or an Indian company. As such, the laws of India will govern the terms and conditions contained in this Agreement and elsewhere throughout the Site, without giving effect to any principles of conflicts of laws.
+            </p></div><br>
+      </section>
+      <section class="container-fluid " style="background-color:rgb(40, 51, 61)">
+        <footer class="footer ">
+              
+          <!-- Footer Top -->
+          <div class="footer-top">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-3 col-md-6">
+                  <br><br>
+                
+                  <!-- Footer Widget -->
+                  <div class="footer-widget footer-about">
+                    
+                    <div class="footer-about-content" style="font-weight:300">
+                      <p class="mb-4 text-center text-light " style="font-size: 20px; font-weight: 300;" ><b> BEFORE USE</b> </p>
+                      <p class="text-light" style="margin-left: 80px; font-size:medium;" ><b> information and services may contain bugs, errors, problems or other limitations. We have no liability whatsoever for your use of any information or service. Use any service or information given here at your own risk. Read our full Terms of Service. </b></p>
+                      <div class="social-icon">
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /Footer Widget -->
+                  
+                </div>
+                
+                <div class="col-lg-3 col-md-6" style="margin-left: 160px; margin-top: 50px;">
+                
+                  <!-- Footer Widget -->
+                  <div class="footer-widget footer-menu">
+                    <h2 class="footer-title text-light">Company</h2><br>
+                    <ul>
+                      <li><a class="text-light" href="">About Us</a></li>
+                      <li><a class="text-light" href="">Contact</a></li>
+                
+                      <li><a class="text-light" href="">Term Of Services</a></li>
+                      <li><a class="text-light" href="">Privacy policy</a></li>
+                      <li><a class="text-light" href="">FAQ'S</a></li>
+                    </ul>
+                  </div>
+                  <!-- /Footer Widget -->
+                  
+                </div>
+                <div class="col-lg-3 col-md-6" style="margin-left: 130px; margin-top: 50px;">
+                
+                  <!-- Footer Widget -->
+                  <div class="footer-widget footer-menu">
+                    <h2 class="footer-title text-light">Resource</h2><br>
+                    <p style="text-decoration: none;">
+                      <li><a class="text-light" href="">Return and Refund policy</a></li>
+                      
+                    </p>
+                  </div>
+                  <!-- /Footer Widget -->
+                  
+                </div>
+                
+                </div>
+                
+                
+          
+          <!-- Footer Bottom -->
+          <div class="footer-bottom">
+            <div class="container-fluid">
+            
+              <!-- Copyright -->
+              <div class="copyright">
+                <div class="row">
+                  <div class="col-md-2 col-lg-6">
+                    <div class="copyright-text">
+                      <p class="mb-0 mt-lg-4 text-light text-center" style="text-size-adjust: 50px; margin-left: 400px;">&copy; 2022 . All rights reserved.</p>
+                    </div>
+                  </div>
+                  <div class="footer-bottom">
+                    <div class="container-fluid">
+                    
+                      <!-- Copyright -->
+                      <div class="copyright">
+                        <div class="row">
+                          <div class="col-md-2 col-lg-8">
+                            
+                          </div>
+                  <div class="col-md-6 col-lg-6">
+                  
+                    <!-- Copyright Menu -->
+                    <div class="copyright-menu"><br><br><br>
+                      
+                    </div>
+                    <!-- /Copyright Menu -->
+                    
+                  </div>
+                </div>
+              </div>
+              <!-- /Copyright -->
+              
+            </div>
+          </div>
+          <!-- /Footer Bottom -->
+        <a href="" class="whatsapp_btn" target="_blank">
+          
+        </a>	
+          
+        </footer>
+        <!-- /Footer -->
+               
+        </div>
+        <!-- Back-To-Top -->
+      </section>
+    </section><br>
+    <section>
+      <form action="#" id="soil_testing_booking_form">
+        <div class="card-body">
+          
+          <div class="col-md-12" style="font-style: oblique; color: #249d24; font-size: 28px; ">
+            Soil Testing Booking Charge  : <del><i class="fa fa-inr"></i> 800</del> &nbsp; <b style="    font-size: 18px;"><i class="fa fa-inr"></i> 700</b>
+          <br>
+          <br>
+          </div>
+          <div class="col-md-6">
+          <div class="form-group">
+            <label>Select City</label><br>
+            <input type="radio" name="city" checked value="Mandsaur"> &nbsp; Mandsaur &nbsp;
+            <input type="radio" name="city" value="Neemuch"> &nbsp; Neemuch &nbsp;
+            <input type="radio" name="city" value="Ratlam"> &nbsp; Ratlam &nbsp;
+            <input type="radio" name="city" value="Ujjain"> &nbsp; Ujjain &nbsp;
+             <input type="radio" name="city" value="Other"> &nbsp; Other City
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label>Farmar Name</label>
+            <input type="text" class="form-control" placeholder="Farmar Name" name="farmar_name" required="" autocomplete="off">
+          </div>
+        </div>
+         <div class="col-md-6">
+          <div class="form-group">
+            <label>Father's Name</label>
+            <input type="text" class="form-control" placeholder="Father's name" name="father_name" required="" autocomplete="off">
+          </div>
+        </div>
+         <div class="col-md-6">
+          <div class="form-group">
+            <label>Village</label>
+            <input type="text" class="form-control" placeholder="Village" name="village" required="" autocomplete="off">
+          </div>
+        </div>
+         <div class="col-md-6">
+          <div class="form-group">
+            <label>District / Tahseel</label>
+            <input type="text" class="form-control" placeholder="Tahseel" name="tahseel" required="" autocomplete="off">
+          </div>
+        </div>
+         <div class="col-md-6">
+          <div class="form-group">
+            <label>Pin code</label>
+            <input type="text" class="form-control" placeholder="Pincode" name="pin_code" required="" autocomplete="off">
+          </div>
+        </div>
+         <div class="col-md-6">
+          <div class="form-group">
+            <label>Mobile no</label>
+            <input type="number" class="form-control" placeholder="Mobile no." name="mobile_no" required="" autocomplete="off">
+          </div>
+        </div>
+         <div class="col-md-6">
+          <div class="form-group">
+            <label>Email (Optional)</label>
+            <input type="email" class="form-control" placeholder="Email" name="email" autocomplete="off">
+          </div>
+        </div>
+         <div class="col-md-6">
+          <div class="form-group">
+            <label>Khasra No (Optional)</label>
+            <input type="text" class="form-control" placeholder="Khasra No." name="khasra_no" autocomplete="off">
+          </div>
+        </div>
+         <div class="col-md-6">
+          <div class="form-group">
+            <label>Area (in Acre) (Optional)</label>
+            <input type="area" class="form-control" placeholder="Area (in Acre)" name="area" autocomplete="off">
+          </div>
+        </div>
+
+         <div class="col-md-12">
+
+          <div class="form-group" id="coupon_code_section">
+            <a href="javascript:;" id="have_coupon_code">Have any coupon code?</a>
+          </div>
+        </div>
+
+        </div>
+<p class="col-md-12 alert" style="display:none;" id="message_div"></p>
+<br>
+
+
+<div class="modal-footer" style="border-top: none;">
+   <div class="col-md-6 col-xs-6">
+  <br>
+  <button type="button" id="close_modal" class="btn btn-secondary" data-dismiss="modal" style="color: #202020; width:100%;">Close</button>
+</div>
+ <div class="col-md-6 col-xs-6">
+  <br>
+  <button type="submit" name="submit_form" id="send_message" class="btn btn-success" style="width:100%;color:#ffffff;">Pay Now</button>
+</div>
+</div>
+</form>
+    </section>
+    <section class="about-us padding-bottom-100" id="about-us" style="padding-top: 50px;">
+      <div class="container">
+          <div class="main-titles">
+              <h1 class="title">What We Are</h1>
+              <h2>A dedicated/devoted digital platform to improve the farming life of the farmer and empower sustainable agriculture.</h2>
+              <h3><span>Transforming Agriculture in India</span></h3>
+               <h4><span>Among India's leading agricultural service provider portals, <strong>Kisaan Helpline</strong> assists rural communities to increase the efficiency and sustainability of their agricultural operations. We help farmers to be more connected, integrated, and knowledgable than ever before. We give you expertized knowledge from land preparation, seeding/sowing to plant nutrition, protection, and continuing till post harvesting. We are the best Agricultural Service Provider in India, helping you to make decisions on the farm and improve performance, predict what is going to happen in the future and act more effectively as predicted.</h4>
+              
+               <h3 style="color: #eabf1e;">किसानों के हितकारी देश भर में तकनीक हमारी</h3>
+               <br>                                                  
+          </div>
+          <div class="main-content text-center">
+              <div class="row" style="display: flex;justify-content: center;"><div class="vegitable-list" style="background:url(https://www.kisaanhelpline.com/cat_images/Kharif-crop-1.jpg);background-size: cover;">
+                      <div class="block-icon-3">
+                          <div class="table-cell">
+                              <a href="https://www.kisaanhelpline.com/crop/kharif"><h4 class="title"> Kharif </h4></a>
+                          </div>
+                      </div>
+                  </div><div class="vegitable-list" style="background:url(https://www.kisaanhelpline.com/cat_images/rabi-crop-1.jpg);background-size: cover;">
+                      <div class="block-icon-3">
+                          <div class="table-cell">
+                              <a href="https://www.kisaanhelpline.com/crop/rabi"><h4 class="title"> Rabi </h4></a>
+                          </div>
+                      </div>
+                  </div><div class="vegitable-list" style="background:url(https://www.kisaanhelpline.com/cat_images/Organic-Vegetable-Farming.jpg);background-size: cover;">
+                      <div class="block-icon-3">
+                          <div class="table-cell">
+                              <a href="https://www.kisaanhelpline.com/crop/vegetable"><h4 class="title"> Vegetable </h4></a>
+                          </div>
+                      </div>
+                  </div><div class="vegitable-list" style="background:url(https://www.kisaanhelpline.com/cat_images/Herbal-crops-plants-seeds-1.jpg);background-size: cover;">
+                      <div class="block-icon-3">
+                          <div class="table-cell">
+                              <a href="https://www.kisaanhelpline.com/crop/herbal"><h4 class="title"> Herbal </h4></a>
+                          </div>
+                      </div>
+                  </div><div class="vegitable-list" style="background:url(https://www.kisaanhelpline.com/cat_images/Phal-Phool-agriculture-farming.jpg);background-size: cover;">
+                      <div class="block-icon-3">
+                          <div class="table-cell">
+                              <a href="https://www.kisaanhelpline.com/crop/phal-phool-tree"><h4 class="title"> Phal-Phool-Tree </h4></a>
+                          </div>
+                      </div>
+                  </div></div>
+              </div>                        
+      </div>
+  </section>
+
+  <!-- why choose us-->
+  <section class="banner banner-5">
+      <div class="container">
+          <div data-parallax="{&quot;y&quot;: 150}" class="wrapper-banner">
+              <div class="main-titles">
+                  <h2 class="title">why choose us</h2>
+              </div>
+              <div class="main-content text-center">
+                  <div class="row">
+                      <div class="col-sm-4 col-xs-6">
+                          <div class="block-icon-3">
+                              <div class="table-cell"><i class="icons fa fa-database"></i></div>
+                              <div class="table-cell">
+                                  <h3 class="title">RESEARCH DATA</h3>
+                                  <p class="description">We have a strong research team for the latest update. KH stores back years’ data to help the farmer to find solutions and resolve issues related to crop management.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-4 col-xs-6">
+                          <div class="block-icon-3">
+                              <div class="table-cell"><i class="icons fa fa-cog"></i></div>
+                              <div class="table-cell">
+                                  <h3 class="title">INNOVATION</h3>
+                                  <p class="description">Our upcoming AI will be available 24*7 to serve farmers. Innovation become the need for farming and we are enthusiast innovators.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-4 col-xs-6 position-center">
+                          <div class="block-icon-3">
+                              <div class="table-cell"><i class="icons fa fa-comments"></i></div>
+                              <div class="table-cell">
+                                  <h3 class="title">LIVE SUPPORT & SOLUTIONS</h3>
+                                  <p class="description">Salah and Samadhan is a unique tool to resolve farmers’ queries.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+      </body>
+</html>

@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smart farming</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.css"
+rel="stylesheet"
+/>
+
+<!-- MDB -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.js"
+></script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+</head>
+<body class="container-fluid">
+    <div class="latest_note bg-dark text-light ">
+        <marquee width="100%;" scrollAmount="5">Smart Farming website  are live for farmers. You can visit and read the instructions for upcoming farming generations. Contact number 9525952621
+        </marquee></i><strong id="disable_notification"> </strong>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light  mx-auto" style="background-color: rgb(48, 58, 63);">
+      <a class="navbar-brand text-light" href="#">Kisan_Informer</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        
+      </button>
+    
+      <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+        
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="margin-left: 300px;">
+           <!-- <li class="nav-item active">
+            <a  class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">News</a>
+            <div class="dropdown-menu text-light">
+             <a class="dropdown-item" href="#">Business News</a>
+             <div class="dropdown-divider"></div>
+             <a class="dropdown-item" href="#">Crop News</a>
+             <div class="dropdown-divider"></div>
+             <a class="dropdown-item" href="#">Livestock News</a>
+           </div>
+           </li> --> 
+           <li class="text-light mt-2 mr-2">Home</li>
+           
+           <li class="nav-item dropdown">
+             <a  class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Crops</a>
+             <div class="dropdown-menu bg-dark">
+              <a class="dropdown-item text-light" href="./kharif crops.html">Kharif Crops</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="./rabi crops.html">Rabi Crops</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="#">vegetable</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="#">HerBal</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="#">Phal-Phool-Tree</a>
+            </div>
+           </li>
+           <li class="nav-item dropdown">
+            <a  class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Service</a>
+            <div class="dropdown-menu bg-dark">
+            <a class="dropdown-item text-light" href="#">Mandi Bhav</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-light" href="#">Agriculture Spot</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-light" href="#">Government Scheme</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-light" href="#">Agriculture Event</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-light" href="#">Agriculture Training</a>
+          </div>
+          </li>
+            <li class="nav-item dropdown ">
+              <p class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="falseServices">About Us </p>
+              <div class="dropdown-menu bg-dark">
+                <a class="dropdown-item text-light" href="#">Mission and Vision</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Help</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Events participation</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Internship</a>
+              </div>  
+           <li class="nav-item dropdown ">
+              <a  class="nav-link dropdown-toggle text-light " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Gallery</a>
+              <div class="dropdown-menu bg-dark">
+                <a class="dropdown-item text-light" href="#">Magazine</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light " href="#">Photo Gallery</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Video Gallery</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Achievements</a>
+                
+           </li>
+              
+             <li class="nav-item dropdown">
+              <a  class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Help</a>
+              <div class="dropdown-menu bg-dark">
+              <a class="dropdown-item text-light" href="#">Agriculture Experts</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="#">Agriculture Advisers</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="#">Agriculture Engineers</a>
+              <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Agriculture Friends</a>
+
+            </div>
+            </li>
+        </ul>
+      </div>
+      <div class="d-flex">
+
+        <button class="btn btn-warning" type="submit">Join/login</button>
+       </div>
+    </nav>
+<section>
+    <div class="main-contents">
+        <!-- Breadcrumb-->
+          <section class="banner" style="background-image: url(https://www.kisaanhelpline.com/uploads/header-banner/INdian-crop-1.jpg);">
+            <div class="container">
+                <div class="morepage-banner" style="padding: 150px 0 50px 0;">
+                    <h2 class="title text-light">Millet (बाजरा)</h2>
+                                                    <div class="table-responsive">
+                          <table class="table table-bordered">
+                              <thead>
+                                  <tr class="text-light">
+                                      <th><img src="https://www.kisaanhelpline.com/kisaanpicture/crop_list_icon/Watering.png" width="25px" height="25px"/>&nbsp;Watering</th>
+                                      <th><img src="https://www.kisaanhelpline.com/kisaanpicture/crop_list_icon/Cultivation.png" width="25px" height="25px"/>&nbsp;Cultivation</th>
+                                      <th><img src="https://www.kisaanhelpline.com/kisaanpicture/crop_list_icon/Harvesting.png" width="25px" height="25px"/>&nbsp;Harvesting</th>
+                                      <th><img src="https://www.kisaanhelpline.com/kisaanpicture/crop_list_icon/Labour.png" width="25px" height="25px"/>&nbsp;Labour</th>
+                                      <th><img src="https://www.kisaanhelpline.com/kisaanpicture/crop_list_icon/Sunlight.png" width="25px" height="25px"/>&nbsp;Sunlight</th>
+                                      <th><img src="https://www.kisaanhelpline.com/kisaanpicture/crop_list_icon/pH_Value.png" width="25px" height="25px"/>&nbsp;pH Value</th>
+                                      <th><img src="https://www.kisaanhelpline.com/kisaanpicture/crop_list_icon/Temperature.png" width="25px" height="25px"/>&nbsp;Temperature</th>
+                                      <th><img src="https://www.kisaanhelpline.com/kisaanpicture/crop_list_icon/Fertilization.png" width="25px" height="25px"/>&nbsp;Fertilization</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr class="text-light">
+                                      <td>High</td>
+                                      <td>Manual</td>
+                                      <td>Machine & Manual</td>
+                                      <td>Low</td>
+                                      <td>Medium</td>
+                                      <td>5.6 - 6.2</td>
+                                      <td>14 - 16 °C</td>
+                                      <td>90 - 110 kg/acre nitrogen</td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                    </div>
+                                                          
+                </div>
+            </div>
+        </section>
+        <br>
+        <style type="text/css">
+          .btn{
+            width: 100%;
+                font-size: 17px;
+          }
+        </style>
+        <div class="page-shop-detail padding-bottom-100">
+            <div class="container">
+              <div class="page-sub-title">
+              <h2>  </h2>
+              </div>
+
+            
+              <center>
+                <div class="row">
+                  <div class="col-md-4">
+                    <a href="javascript:void(0);" class="btn btn-primary open_login_model" data-redirectTo="https://www.kisaanhelpline.com/crops/plant_nutrition">Plant Nutrition</a>
+                  </div>
+                  <div class="col-md-4">
+                    <a href="javascript:void(0);" class="btn btn-primary open_login_model" data-redirectTo="https://www.kisaanhelpline.com/crops/plant_friendly_insect">Plant Friendly Insect</a>
+                  </div>
+                  <div class="col-md-4">
+                    <a href="javascript:void(0);" class="btn btn-primary open_login_model" data-redirectTo="https://www.kisaanhelpline.com/crops/insect_list">Insects List</a>
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-md-4">
+                    <a href="javascript:void(0);" class="btn btn-primary open_login_model" data-redirectTo="https://www.kisaanhelpline.com/crops/crop_disease/9">Crop Related Disease </a>
+                  </div>
+                  <div class="col-md-8">
+                    <a href="javascript:void(0);" id="open_model" class="btn btn-primary">क्या आप Millet (बाजरा) का बीज खरीदना  चाहते है? </a>
+                  </div>
+                </div>
+              </center>
+
+              
+              <br>
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <div class="shop-img-wrapper">
+                            <div class="slider-for">
+                                <div class="item">
+                                    <div class="image-wrapper">                                                    
+                                                                                              <img src="https://www.kisaanhelpline.com/cat_subcat_image/Bajra-Millet-Farming.png" alt="kisan" class="left">
+                                                                                        </div>
+                                       <!-- <div class="sharethis-inline-share-buttons"></div><br/> -->
+                                      <div class="text-center"> <div id="shareRoundIcons"></div> </div>
+                                </div>
+                             
+                            </div>
+                         
+                        </div>
+                    </div>
+             
+                        <div class="info-detail">
+                            <div class="title"><h1>Millet (बाजरा)</h1></div>
+                             <div class="title">
+                                <!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                            
+                                <ins class="adsbygoogle"
+                                     style="display:inline-block;width:468px;height:15px"
+                                     data-ad-client="ca-pub-2017409244002055"
+                                     data-ad-slot="4368166924"></ins>
+                                <script>
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>-->
+                            </h1></div>
+                                                             
+                            <div class="discription" style="padding:10px;">
+                                <p>
+                                                                                       <h4 class="info-heading"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Basic Info</h4>
+                                        <p><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>बाजरा</b> अत्यधिक चर छोटे बीज वाली घासों का एक समूह है, जो व्यापक रूप से चारा और मानव भोजन के लिए अनाज फसलों या अनाज के रूप में दुनिया भर में उगाया जाता है। बाजरा विभिन्न प्रकार की मिट्टी में उगाई जाने वाली एक महत्वपूर्ण फसल है। यह स्वादिष्ट और पौष्टिक चारा प्रदान करता है।</span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">यह दक्षिण पूर्वी एशिया, चीन, भारत, पाकिस्तान, अरब, सूडान, रूस और नाइजीरिया की महत्वपूर्ण फसलों में से एक है। भारत में, यह हरियाणा, गुजरात, महाराष्ट्र, राजस्थान, मध्यप्रदेश और उत्तर प्रदेश में उगाया जाता है। मनुष्यों द्वारा लगभग 7,000 वर्षों से बाजरा का सेवन किया जा सकता है और संभावित रूप से बहु-फसल कृषि और बसे हुए कृषि समाजों की वृद्धि में एक महत्वपूर्ण भूमिका थी।</span></font></div></p>
+                                                                                       <h4 class="info-heading"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Seed Specification</h4>
+                                        <p><div style=""><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>उन्नत किस्में :-</b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">बाजरे की कई उन्नत किस्में प्रचलन में हैं। जिन्हें संकरण के माध्यम से बनाया गया है। लेकिन कुछ किस्में ऐसी हैं जिन्हें लोग पशुओं के चारे के लिए उगाते हैं-</span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">एक कटानः राज बाजरा चरी-2, पीसीबी-141 और नरेंद्र चारा बाजरा-3</span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">बहुकटानः जाइंट बाजरा, पूसा-322, 323, प्रो एग्रो-1, जीएफबी-1, एपीएफबी-2 और एएफबी-3</span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">द्विउद्देशीयः एवीकेबी-19 और नरेन्द्र बाजरा-2</span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><br></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>बुवाई की विधि :-</b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">बाजरा की फसल की बुआई 25 सें.मी. की दूरी में पंक्तियों में तथा सीडड्रिल से 1.5-2 सें.मी. दूरी पर करनी चाहिए। इसके लिए 8-10 कि.ग्रा. प्रति हेक्टेयर बीज पर्याप्त है। बीज को बुवाई से पहले एग्रोसान जीएन अथवा थीरम (3 ग्राम / किग्रा बीज) से उपचारित करना चाहिए।</span></font></div></div></p>
+                                                                                        <h4 class="info-heading"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Land Preparation & Soil Health</h4>
+                                        <p><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>भूमि की तैयारी :-</b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">बाजरा के लिए हल्की या दोमट बलुई मिट्टी उपयुक्त होती है। भूमि का जल निकास उत्तम होना आवश्यक हैं।</span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">पहली जुताई मिट्टी पलटने वाले हल से तथा अन्य 2-3 जुताइयां देशी हल अथवा कल्टीवेटर से करके खेत तैयार कर लेना चाहिए।</span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><br></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>बुवाई का समय :-</b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">सिंचिंत क्षेत्रों में गर्मियों में बुवाई के लिए मार्च से मध्य अप्रैल उपयुक्त समय है। जुलाई का पहला पखवाड़ा खरीफ की फसल के लिए उपयुक्त है। दक्षिण भारत में, रबी मौसम के दौरान अक्टूबर से नवंबर तक बुवाई की जाती है।</span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><br></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>तापमान :-</b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">बाजरे के पौधे को अंकुरित होने के लिए 25 डिग्री सेल्सियस तापमान की जरूरत होती है। जबकि बड़ा होने के लिए 30 से 35 डिग्री सेल्सियस तापमान की जरूरत होती है. लेकिन 40 डिग्री सेल्सियस तापमान में भी इसका पौधा अच्छी पैदावार दे सकता है।</span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><br></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>फसल चक्र :-</b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">बाजरे की फसल से अधिक पैदावार प्राप्त करने के लिए उचित फसल चक्र आवश्यक है। असिंचित क्षेत्रों में बाजरे के बाद अगले वर्ष दलहन फसल जैसे ग्वार, मुंग, मोठ लेनी चाहिए। सिंचित क्षेत्रों में बाजरा - सरसों, बाजरा - जीरा, बाजरा - गेहूँ फसल चक्र प्रयोग में लेना चाहिए।</span></font></div></p>
+                                                                                        <h4 class="info-heading"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Crop Spray & fertilizer Specification</h4>
+                                        <p><div style=""><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>खाद एवं रासायनिक उर्वरक :-</b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">फसल के पौधों की उचित बढ़वार के पोषक तत्वों की आवश्यकता होती है। अत: भूमि को तैयार करते समय बाजरे की फसल के लिए 5 टन अच्छी सड़ी हुई गोबर की खाद या कम्पोस्ट का प्रयोग करना चाहिए। इसके पश्चात बाजरे की वर्षा पर आधारित फसल में 40 </span></font><span style="font-family: Arial, Verdana; font-size: 13.3333px;">कि.ग्रा.</span><font face="Arial, Verdana"><span style="font-size: 13.3333px;"> नाइट्रोजन और 40 </span></font><span style="font-family: Arial, Verdana; font-size: 13.3333px;">कि.ग्रा.</span><font face="Arial, Verdana"><span style="font-size: 13.3333px;"> फास्फोरस प्रति हेक्टेयर की आवश्यकता होती है। ध्यान रहे उर्वरकों का उपयोग मिट्टी की जांच के आधार पर ही करना चाहिए।</span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b><span style="white-space:pre">		</span>   </b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b><br></b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>हानिकारक कीट एवं रोग और उनके रोकथाम :-</b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>दीमक - </b>दीमक बाजरे के पौधे की जड़े खाकर नुकसान पहुँचाती है, इसकी रोकथाम के लिए खेत तैयार करते समय क्यूनालफास या क्लोरपायरीफास 1.5  प्रतिशत पॉउडर 25-30 किलो/हेक्टेयर की दर से जमीन में मिला देनी चाहिए। इसके अतिरिक्त बीज को क्लोरपायरीफास 4 मि.ली. /किलो बीज की दर से बीज उपचार करना चाहिए।</span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>कातरा - </b>बाजरे की फसल को कातरा की लट प्रारम्भिक अवस्था में काटकर नुकसान पहुंचाता है इसकी रोकथाम के लिए क्यूनालफास 1.5 प्रतिशत पाउडर की 20-25 किलो/हेक्टेयर की दर से भुरकाव करना चाहिए।</span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>सफ़ेद लट -</b> बाजरे में सफेद लट के नियंत्रण के लिए एक किलो बीज में 3 किलो कारबोफ्यूरान 3 प्रतिशत या क्यूनॉलफास 5 प्रतिशत कण 15 किलो डीएपी मिलाकर बोआई करें।</span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>रूट बग - </b>बाजरे में रूट बग के नियंत्रण के लिए क्यूनॉलफॉस डेढ़ प्रतिशत या मिथाइल पैराथियॉन 2 प्रतिशत चूर्ण का 25 किलो प्रति हैक्टेयर की दर से भुरकाव करें।</span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>जोगिया - </b>जोगिया के नियंत्रण के लिए बुवाई के 21 बाद मैंकोजेब 1 किलो/एकड़  का छिड़काव करे।</span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>अरगट या चेपा - </b>इसकी रोकथाम के लिए बीज को थिरम 75 प्रतिशत डब्लूएस 2.5 ग्राम और कार्बेण्डाजिम 50 प्रतिशत डब्लूपीकी 2.0 ग्राम प्रति किग्रा बीज की दर से उपचारित करके बोना चाहिए। रोग के लक्षण दिखने पर कार्बेन्डाजिम+मैंकोजेब 40 ग्रा/15 लीटर पानी के साथ मिलकर छिड़काव करना चाहिए।</span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>स्मट - </b>स्मट की रोकथाम के लिए बीज को थिरम 75 प्रतिशत डब्लूएस 2.5 ग्राम और कार्बेण्डाजिम 50 प्रतिशत डब्लूपीकी 2.0 ग्राम प्रति किग्रा बीज की दर से उपचारित करके बोना चाहिए।तथा रोग के लक्षण दिखने पर मेटलैक्सिल+मैंकोजेब के मिश्रित रसायन को 40 ग्रा/15 लीटर पानी में मिलाकर छिड़काव करे।</span></font></div></div></p>
+                                                                                         <h4 class="info-heading"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Weeding & Irrigation</h4>
+                                        <p><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>खरपतवार नियंत्रण :-</b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">25-30 दिनों की अवस्था पर वीडर कम कल्चर से निराई-गुड़ाई करनी चाहिए। एट्रोजीन (0.5-0.75 कि.ग्रा./हैक्टर 600 लीटर पानी) का जमाव से पूर्व छिड़काव फसल के लिए प्रभावी होता है, लेकिन बाजरे के लोबिया, 1 कि.ग्रा. बुवाई से पहले एलाक्लोर का उपयोग करना चाहिए।</span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><br></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>सिंचाई :-</b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">बाजरा सामान्य तौर पर वर्षा पर आधारित फसल हैं। बाजरे के पौधों की उचित बढ़वार के लिए नमी का सबसे महत्वपूर्ण स्थान है। सिंचित क्षेत्रो के लिए जब वर्षा द्वारा पर्याप्त नमी न प्राप्त हो तो समय समय पर सिंचाई करनी चाहिए। बाजरे की फसल के लिए 3 - 4 सिंचाई पर्याप्त होती है। ध्यान रहे दाना बनते समय खेत में नमी रहनी चाहिए। इससे दाने का विकास अच्छा होते है एवं दाने व चारे की उपज में बढ़ोतरी होती हैं।</span></font></div><div style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal;"><br></div></p>
+                                                                                         <h4 class="info-heading"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Harvesting & Storage</h4>
+                                        <p><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>कटाई :-</b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">कटाई वाली प्रजातियों में, बुवाई के 69-75 दिन बाद (50% पूर्ण अवस्था) के बाद कटाई करें। बहुकटाई वाली प्रजातियों में पहली कटाई 40-45 दिन और फिर 30 दिनों के अंतराल पर काटते हैं। इस प्रकार, वैज्ञानिक रूप से उगाई जाने वाली फसलों से 450-950 क्विंटल चारा प्राप्त होता है।</span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><br></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>भण्डारण :-</b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">बाजरे की खेती से बाजरे का उत्पादन लगभग 25 से 30 क्विंटल प्रति हेक्टेयर हो जाता है। जबकि 70 क्विंटल तक सुखा चारा मिल जाता है। अनाज के भण्डारण के लिए नमी रहित स्थान पर बोरे भरकर रखना चाहिए।</span></font></div></p>
+                                   
+
+                                     <p><div style=""><br></div></p>
+
+                                    
+                                </p>
+                            </div>
+                        </div>
+
+                                                                <h3 class="info-heading-2">Crop Related Disease</h3>
+                            <div class="panel-group accordion" id="accordion" role="tablist" aria-multiselectable="true">
+                                                                        <div class="panel panel-default">
+                                                  <div class="panel-heading" role="tab" id="heading0">
+                                                    <h4 class="panel-title">
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse0" aria-expanded="false" aria-controls="collapse0">
+                                                      <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;Cercospora leaf spot (सर्कोस्पोरा पत्ती स्थान)                										        </a>
+                                                  </h4>
+                                                  </div>
+                                                  <div id="collapse0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading0">
+                                                    <div class="panel-body" style="font-size: 13px;">
+                                                      <h5>Description:</h5>
+                                                      उच्च तापमान और उच्च आर्द्रता रोग का पक्ष लेते हैं। फंगस हवा और बारिश से फैलता है। यह फसल के अवशेषों और खरपतवार जैसे वैकल्पिक मेजबान पर जीवित रहता है। यील्ड के नुकसान ज्यादातर छोटे होते हैं।                										          <h5>Organic Solution:</h5>
+                                                      इस बीमारी का कोई वैकल्पिक उपचार नहीं है। बाद के बढ़ते मौसमों में संक्रमण के जोखिम को कम करने के लिए निवारक उपायों को लागू करें।                										          <h5>Chemical Solution:</h5>
+                                                      इस बीमारी के लिए किसी रासायनिक उपचार की आवश्यकता नहीं है। बाद के बढ़ते मौसमों में संक्रमण के जोखिम को कम करने के लिए निवारक उपायों को लागू करें।                                                                                                <div class="row">
+                                                                                          <div class="col-md-3">
+                                          <img src="https://www.kisaanhelpline.com/uploads/disease/Fungus/Bajra-Millet-Cercospora-leaf-spot1.jpg" class="img-thumbnail img-responsive">
+                                        </div>
+                                                                                            <div class="col-md-3">
+                                          <img src="https://www.kisaanhelpline.com/uploads/disease/Fungus/Bajra-Millet-Cercospora-leaf-spot.jpg" class="img-thumbnail img-responsive">
+                                        </div>
+                                                                                          </div>
+                                                                                                      </div>
+                                                  </div>
+                                                </div>
+                                                                            <div class="panel panel-default">
+                                                  <div class="panel-heading" role="tab" id="heading1">
+                                                    <h4 class="panel-title">
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                                      <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;Ergot (अरगट)                										        </a>
+                                                  </h4>
+                                                  </div>
+                                                  <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+                                                    <div class="panel-body" style="font-size: 13px;">
+                                                      <h5>Description:</h5>
+                                                      लक्षण कवक Claviceps fusiformis के कारण होते हैं। संक्रमण के 5-7 दिन बाद, सुहागा स्रावित होता है। सुहागरात एक माध्यमिक संक्रमण को बढ़ावा देती है। बीजाणु बारिश, हवा और कीड़ों के माध्यम से फैल सकता है। अनुकूल परिस्थितियां 20-39 डिग्री सेल्सियस के बीच अपेक्षाकृत आर्द्र जलवायु और तापमान हैं।                										          <h5>Organic Solution:</h5>
+                                                      विरोधी जीव एर्गोट की घटनाओं को कम करने में आशाजनक परिणाम दिखाते हैं। ट्राइकोडर्मा हर्जिएनम, टी। विराइड, एस्परगिलस नाइगर, इपिकोकुम एंड्रोपोगोनिस और बैसिलस सबटिलिस को फूल वाले सिर पर स्प्रे किया जा सकता है। वैकल्पिक रूप से, कच्चे नीम उत्पादों का भी उपयोग किया जा सकता है।                										          <h5>Chemical Solution:</h5>
+                                                      हमेशा जैविक नियंत्रण के साथ निवारक उपायों के साथ एक एकीकृत दृष्टिकोण पर विचार करें। जिरम या कार्बेन्डाजिम युक्त कवक प्रभावी थे और इसका उपयोग नियंत्रण और भूलने को रोकने के लिए किया जा सकता है।                                                                                                <div class="row">
+                                                                                          <div class="col-md-3">
+                                          <img src="https://www.kisaanhelpline.com/uploads/disease/Fungus/Bajra-Millet-Ergot.jpg" class="img-thumbnail img-responsive">
+                                        </div>
+                                                                                            <div class="col-md-3">
+                                          <img src="https://www.kisaanhelpline.com/uploads/disease/Fungus/Bajra-Millet-Ergot.png" class="img-thumbnail img-responsive">
+                                        </div>
+                                                                                          </div>
+                                                                                                      </div>
+                                                  </div>
+                                                </div>
+                                                                            <div class="panel panel-default">
+                                                  <div class="panel-heading" role="tab" id="heading2">
+                                                    <h4 class="panel-title">
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                                      <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;Downy Mildew (कोमल फफूंदी)                										        </a>
+                                                  </h4>
+                                                  </div>
+                                                  <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                                                    <div class="panel-body" style="font-size: 13px;">
+                                                      <h5>Description:</h5>
+                                                      इस बीमारी को ग्रीन ईयर डिजीज के नाम से भी जाना जाता है क्योंकि पौधे के पुष्प भाग पत्ती जैसी संरचनाओं में बदल जाते हैं। डाउनी मिल्ड्यू के बीजाणु संक्रमित फसल अवशेषों और बीजों में मिट्टी में जीवित रहते हैं। फफूंद बीजाणु को हवा और पानी के द्वारा मिट्टी में पानी के माध्यम से और भूमिगत रूप से ले जाया जाता है।                										          <h5>Organic Solution:</h5>
+                                                      स्यूडोमोनास फ्लोरेसेंस के साथ अपने बीजों का इलाज करें और बाद में इसे अंकुरों पर स्प्रे करें। ट्राइकोडर्मा हर्ज़ियानम (20 ग्राम / किग्रा बीज), स्यूडोमोनास फ्लोरेसेंस, और बैसिलस प्रजाति (10 ग्राम / किग्रा बीज) जैसे जैव तत्व भी बीज उपचार के रूप में रोग का प्रबंधन करने में मदद करते हैं।                										          <h5>Chemical Solution:</h5>
+                                                      यदि उपलब्ध हो तो जैविक उपचार के साथ निवारक उपायों के साथ एकीकृत दृष्टिकोण। बीज जनित संदूषण को रोकने के लिए, बीज को फफूंदनाशक जैसे कैप्टान, फ्लैडियोक्सोनिल, मेटलैक्सिल या थीरम से उपचारित करें। मेटलैक्सिल का उपयोग सीधे डाउनी फफूंदी को नियंत्रित करने के लिए भी किया जा सकता है।                                                                                                <div class="row">
+                                                                                          <div class="col-md-3">
+                                          <img src="https://www.kisaanhelpline.com/uploads/disease/Fungus/Bajra-Millet-Downy-Mildew.png" class="img-thumbnail img-responsive">
+                                        </div>
+                                                                                          </div>
+                                                                                                      </div>
+                                                  </div>
+                                                </div>
+                                                                            <div class="panel panel-default">
+                                                  <div class="panel-heading" role="tab" id="heading3">
+                                                    <h4 class="panel-title">
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                                      <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;Smut (स्मूद)                										        </a>
+                                                  </h4>
+                                                  </div>
+                                                  <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+                                                    <div class="panel-body" style="font-size: 13px;">
+                                                      <h5>Description:</h5>
+                                                      रोग Moesziomyces bullatus नामक रोगज़नक़ के कारण होता है। यह बीजों के माध्यम से फैलता है। रोगज़नक़ तापमान की एक विस्तृत श्रृंखला (5-40 डिग्री सेल्सियस) पर बढ़ सकता है, इसकी अधिकतम वृद्धि 30 डिग्री सेल्सियस के साथ होगी। फंगल बीजाणु मिट्टी में जीवित रह सकते हैं।                										          <h5>Organic Solution:</h5>
+                                                      स्मट को प्रतिरोधी किस्मों का उपयोग करके सबसे अच्छा प्रबंधित किया जाता है।                										          <h5>Chemical Solution:</h5>
+                                                      यदि उपलब्ध हो तो निवारक उपायों और जैविक उपचार के साथ एक एकीकृत दृष्टिकोण। इसके बीज, मिट्टी और वायु जनित प्रकृति के कारण इस रोग का प्रबंधन करना बहुत मुश्किल है। सीओसी और कार्बेन्डाजिम का छिड़काव उपयोगी हो सकता है।                                                                                                <div class="row">
+                                                                                          <div class="col-md-3">
+                                          <img src="https://www.kisaanhelpline.com/uploads/disease/Fungus/Bajra-Millet-Smut1.png" class="img-thumbnail img-responsive">
+                                        </div>
+                                                                                            <div class="col-md-3">
+                                          <img src="https://www.kisaanhelpline.com/uploads/disease/Fungus/Bajra-Millet-Smut.png" class="img-thumbnail img-responsive">
+                                        </div>
+                                                                                          </div>
+                                                                                                      </div>
+                                                  </div>
+                                                </div>
+                                                                            <div class="panel panel-default">
+                                                  <div class="panel-heading" role="tab" id="heading4">
+                                                    <h4 class="panel-title">
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                                      <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;दीमक (Termite)                										        </a>
+                                                  </h4>
+                                                  </div>
+                                                  <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
+                                                    <div class="panel-body" style="font-size: 13px;">
+                                                      <h5>Description:</h5>
+                                                      <div style=""><span style="font-size: 13.3333px; font-family: Arial, Verdana;">बाजरा की खेती में दीमक का प्रभाव पौधों पर किसी भी अवस्था में दिखाई दे सकता हैं। इस रोग के कीट पौधों की जड़ों को काटकर उन्हें नुक्सान पहुँचाते हैं. जिससे पौधे अंकुरित होने से पहले ही नष्ट हो जाते हैं। इस रोग का सीधा असर पौधों की पैदावार पर देखने को मिलता हैं।</span></div>                										          <h5>Organic Solution:</h5>
+                                                      दीमक की रोकथाम के लिए खेत की तैयारी के वक्त खेत में नीम की खली का छिडकाव करना चाहिए।
+जिस खेत में रोग का प्रभाव अधिक हो उसमें गोबर की खाद नही डालनी चाहिए।                										          <h5>Chemical Solution:</h5>
+                                                      इसकी रोकथाम के लिए खेत तैयार करते समय क्यूनालफास या क्लोरपायरीफास 1.5  प्रतिशत पॉउडर 25-30 किलो/हेक्टेयर की दर से जमीन में मिला देनी चाहिए। इसके अतिरिक्त बीज को क्लोरपायरीफास 4 मि.ली. /किलो बीज की दर से बीज उपचार करना चाहिए।
+इसके अलावा खड़ी फसल में रोग दिखाई देने पर क्लोरोपाइरीफास 20 प्रतिशत ई.सी. की ढाई किलो मात्रा का छिडकाव प्रति हेक्टेयर की दर से खेत में करना चाहिए।                                                                                                <div class="row">
+                                                                                          <div class="col-md-3">
+                                          <img src="https://www.kisaanhelpline.com/uploads/disease/Insect/Bajra-Millet-Termite.jpg" class="img-thumbnail img-responsive">
+                                        </div>
+                                                                                          </div>
+                                                                                                      </div>
+                                                  </div>
+                                                </div>
+                                                                            <div class="panel panel-default">
+                                                  <div class="panel-heading" role="tab" id="heading5">
+                                                    <h4 class="panel-title">
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                                      <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;टिड्डियों का आक्रमण                										        </a>
+                                                  </h4>
+                                                  </div>
+                                                  <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
+                                                    <div class="panel-body" style="font-size: 13px;">
+                                                      <h5>Description:</h5>
+                                                      <div style=""><span style="font-family: Arial, Verdana; font-size: 13.3333px;">बाजरे के पौधों पर टिड्डियों का आक्रमण अगस्त माह में देखने को मिलता है, टिड्डि पौधे की पत्तियों पर आक्रमण कर उन्हें खा जाती है। जिससे पौधे पत्ती रहित हो जाते हैं, और पौधे प्रकाश संश्लेषण की क्रिया नहीं कर पाते, जिससे उनका विकास रुक जाता है। जिसका सीधा असर पौधों की पैदावार पर देखने को मिलता है।</span></div>                										          <h5>Organic Solution:</h5>
+                                                                                                                        <h5>Chemical Solution:</h5>
+                                                      बाजरे के पौधों में लगने वाले इस कीट रोग की रोकथाम के लिए खेत में फॉरेट का छिडकाव हल्के रूप में करना चाहिए।                                                                                                <div class="row">
+                                                                                          <div class="col-md-3">
+                                          <img src="https://www.kisaanhelpline.com/uploads/disease/Insect/Bajra-Millet-.jpg" class="img-thumbnail img-responsive">
+                                        </div>
+                                                                                          </div>
+                                                                                                      </div>
+                                                  </div>
+                                                </div>
+                                                                            <div class="panel panel-default">
+                                                  <div class="panel-heading" role="tab" id="heading6">
+                                                    <h4 class="panel-title">
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                                      <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;अरगट रोग (गूंदिया या चेपा रोग)                										        </a>
+                                                  </h4>
+                                                  </div>
+                                                  <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
+                                                    <div class="panel-body" style="font-size: 13px;">
+                                                      <h5>Description:</h5>
+                                                      <div style=""><span style="font-size: 13.3333px; font-family: Arial, Verdana;">बाजरे की खेती में अर्गट रोग प्रमुखता से पाया जाने वाला एक खतरनाक रोग हैं, जो मनुष्य और पशुओं के लिए हानिकारक होता है। इस रोग से ग्रसित दानो में जहरीलापन पाया जाता है। बाजरे की खेती में इस रोग का प्रभाव पौधों पर सिट्टे बनने के दौरान दिखाई देता है। इस रोग के लगने की वजह से पौधों के सिट्टों पर चिपचिपा पदार्थ दिखाई देने लगता है। जो धीरे धीरे सुखकर गाढा हो जाता है।</span></div>                										          <h5>Organic Solution:</h5>
+                                                      इस रोग से बचने के लिए रोग रहित एवं प्रमाणित बीज का ही चयन करें। बुवाई से पहले बीज को 20 प्रतिशत नमक मिले पानी में भिगोकर स्वस्थ बीजों का चयन करें। जिस क्षेत्र में इस रोग का प्रकोप होता है वहां बाजरे की खेती करने से बचें। रोग से प्रभावित बालियों को पौधों से अलग करके नष्ट कर दें। खेत की तैयारी के समय गहरी जुताई करें। रोग से बचने के लिए उपयुक्त फसल चक्र अपनाएं। खेत में खेत के आसपास खरपतवारों को नियंत्रित रखें। फसल की बुवाई समय पर करें इससे अरगट रोग होने की संभावना कम हो जाती है। फसल की कटाई के बाद खेत में गहरी जुताई करें। इससे मिट्टी में मौजूद रोग के जीवाणु नष्ट हो जाएंगे।                										          <h5>Chemical Solution:</h5>
+                                                      बुवाई से पहले प्रति किलोग्राम बीज को थिरम 75 प्रतिशत डबल्यूएस 2.5 ग्राम या फिर 2 ग्राम कार्बेन्डाजिम 50 प्रतिशत डबल्यूपी से उपचारित करें।
+रोग के लक्षण दिखने पर प्रति एकड़ जमीन में 250 लीटर पानी में 0.2 प्रतिशत मैंकोज़ेब मिलाकर छिड़काव करें।                                                                                                <div class="row">
+                                                                                          <div class="col-md-3">
+                                          <img src="https://www.kisaanhelpline.com/uploads/disease/Fungus/Bajra-Millet-1.jpg" class="img-thumbnail img-responsive">
+                                        </div>
+                                                                                            <div class="col-md-3">
+                                          <img src="https://www.kisaanhelpline.com/uploads/disease/Fungus/Bajra-Millet-.png" class="img-thumbnail img-responsive">
+                                        </div>
+                                                                                            <div class="col-md-3">
+                                          <img src="https://www.kisaanhelpline.com/uploads/disease/Fungus/Bajra-Millet-.jpg" class="img-thumbnail img-responsive">
+                                        </div>
+                                                                                          </div>
+                                                                                                      </div>
+                                                  </div>
+                                                </div>
+                                                                        </div>
+                                                        
+                </div>
+
+                 <div class="main-content list-block column-3">
+                  <div>
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                   
+                        <ins class="adsbygoogle"
+                             style="display:inline-block;width:728px;height:90px"
+                             data-ad-client="ca-pub-2017409244002055"
+                             data-ad-slot="6581989952"></ins>
+                        <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script> 
+                        </div>
+                <div> <h3 class="title">  
+                    <div class="main-content">
+                        <div> <h3 class="title bnf-con" style="font-size: 30px;text-align: center;">Frequently Asked Questions</h3></div>
+<div class="grid-block-1"> 
+<div class="col-md-12 col-xs-12"> 
+<div class="row" style="box-shadow: 0px 2px 2px 4px lightgrey;padding-top: 2%;padding-bottom: 2%;">
+
+<div class="col-md-6">
+                                                  <div class="col-md-12">
+
+<h4 class="bnf-con"><strong>Q1: बाजरा एक अच्छी आवरण फसल है?</strong></h4>
+<div style="display:flex;"><h4><strong>Ans:  </strong></h4><span style="margin-top: 1.5%; margin-left: 2%;" ><font face="Arial, Verdana"><span style="font-size: 13.3333px;">बाजरा कम नमी, कम उर्वरता और उच्च तापमान वाले क्षेत्रों में मिट्टी के लिए एक आदर्श आवरण फसल है। यह गर्म, शुष्क स्थितियों के लिए बहुत सहनीय है। यह रेतीले दोमट मिट्टी में सबसे अच्छा प्रदर्शन करता है लेकिन पोषक तत्वों को रेतीली मिट्टी में जोड़ने के लिए महान हो सकता है, जो पोषक तत्वों की कमी है।</span></font></span></div>
+</div>
+                                              <div class="col-md-12">
+
+<h4 class="bnf-con"><strong>Q3: किस क्षेत्र में बाजरा उगाया जाता है?</strong></h4>
+<div style="display:flex;"><h4><strong>Ans:  </strong></h4><span style="margin-top: 1.5%; margin-left: 2%;" ><font face="Arial, Verdana"><span style="font-size: 13.3333px;">विकासशील देशों में 97% बाजरा उत्पादन के साथ एशिया और अफ्रीका (विशेषकर भारत, माली, नाइजीरिया और नाइजर) के अर्ध-उष्णकटिबंधीय क्षेत्रों में बाजरा महत्वपूर्ण फसलें हैं। शुष्क, उच्च तापमान वाली परिस्थितियों में इसकी उत्पादकता और कम बढ़ते मौसम के कारण फसल को पसंद किया जाता है।</span></font></span></div>
+</div>
+                                              <div class="col-md-12">
+
+<h4 class="bnf-con"><strong>Q5: क्या बाजरा रोज खाया जा सकता है?</strong></h4>
+<div style="display:flex;"><h4><strong>Ans:  </strong></h4><span style="margin-top: 1.5%; margin-left: 2%;" ><div style=""><span style="font-size: 13.3333px; font-family: Arial, Verdana;">विशेषज्ञों का सुझाव है कि बाजरा उनके दैनिक नियमित आहार का हिस्सा होना चाहिए। बाजरा पौष्टिक, प्रोटीन से भरभूर होते हैं और एसिड बनाने वाले खाद्य पदार्थ नहीं होते हैं, इस प्रकार उन्हें पचाना बहुत आसान हो जाता है।</span></div></span></div>
+</div>
+                                         </div>
+<div class="col-md-6">
+                                                                                                                                                      <div class="col-md-12">
+
+<h4 class="bnf-con"><strong>Q2: भारत में किस मौसम में बाजरा उगाया जाता है?</strong></h4>
+<div style="display:flex;"><h4><strong>Ans: </strong></h4><span style="margin-top: 1.5%; margin-left: 2%;"><font face="Arial, Verdana"><span style="font-size: 13.3333px;">भारत में फसल मुख्य रूप से खरीफ में उगाई जाती है। बुवाई मई और सितंबर के बीच होती है, और सितंबर और फरवरी के बीच कटाई होती है। पौधे लंबे, वार्षिक होते हैं, 1.8 से 4.5 की ऊंचाई तक बढ़ते हैं।</span></font></span></div>
+</div>
+                                                                                                                                                  <div class="col-md-12">
+
+<h4 class="bnf-con"><strong>Q4: भारत में बाजरा का सबसे बड़ा उत्पादक कौन सा है?</strong></h4>
+<div style="display:flex;"><h4><strong>Ans: </strong></h4><span style="margin-top: 1.5%; margin-left: 2%;"><font face="Arial, Verdana"><span style="font-size: 13.3333px;">भारत दुनिया में पर्ल बाजरा के सबसे बड़े उत्पादकों में से एक है, जिसकी खेती लगभग 7 हेक्ट. क्षेत्र के साथ की जाती है। राजस्थान देश के भीतर सबसे अधिक उत्पादक राज्य है। फसल एक दोहरे उद्देश्य के लिए उगाई जाती है - खपत के लिए भोजन और पशुओं के लिए चारे के रूप में।</span></font></span></div>
+</div>
+                                                                                                                                                  <div class="col-md-12">
+
+<h4 class="bnf-con"><strong>Q6: बाजरा खाना स्वास्थ्य के लिए किस प्रकार लाभदायक है?</strong></h4>
+<div style="display:flex;"><h4><strong>Ans: </strong></h4><span style="margin-top: 1.5%; margin-left: 2%;"><div style=""><span style="font-size: 13.3333px; font-family: Arial, Verdana;">बाजरा एक साबुत अनाज है जो प्रोटीन, एंटीऑक्सिडेंट और पोषक तत्वों से भरपूर होता है। इसके कई स्वास्थ्य लाभ हो सकते हैं, जैसे कि आपके रक्त शर्करा और कोलेस्ट्रॉल के स्तर को कम करने में मदद करना। इसके अलावा, यह लस मुक्त है, जो इसे सीलिएक रोग वाले लोगों के लिए एक उत्कृष्ट विकल्प बनाता है या एक लस मुक्त आहार का पालन करता है।</span></div></span></div>
+</div>
+                                         </div>
+
+</div>                                       
+</div> 
+
+<div class="clearfix"></div>
+</div>
+           </div>
+
+
+
+</div>
+</div>
+</div>
+</section><br>
+ 
+<section class="container-fluid " style="background-color:rgb(40, 51, 61)">
+    <footer class="footer ">
+          
+      <!-- Footer Top -->
+      <div class="footer-top">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <br><br>
+            
+              <!-- Footer Widget -->
+              <div class="footer-widget footer-about">
+                
+                <div class="footer-about-content" style="font-weight:300">
+                  <p class="mb-4 text-center text-light " style="font-size: 20px; font-weight: 300;" ><b> BEFORE USE</b> </p>
+                  <p class="text-light" style="margin-left: 80px; font-size:medium;" ><b> information and services may contain bugs, errors, problems or other limitations. We have no liability whatsoever for your use of any information or service. Use any service or information given here at your own risk. Read our full Terms of Service. </b></p>
+                  <div class="social-icon">
+                    
+                  </div>
+                </div>
+              </div>
+              <!-- /Footer Widget -->
+              
+            </div>
+            
+            <div class="col-lg-3 col-md-6" style="margin-left: 160px; margin-top: 50px;">
+            
+              <!-- Footer Widget -->
+              <div class="footer-widget footer-menu">
+                <h2 class="footer-title text-light">Company</h2><br>
+                <ul>
+                  <li><a class="text-light" href="">About Us</a></li>
+                  <li><a class="text-light" href="">Contact</a></li>
+            
+                  <li><a class="text-light" href="">Term Of Services</a></li>
+                  <li><a class="text-light" href="">Privacy policy</a></li>
+                  <li><a class="text-light" href="">FAQ'S</a></li>
+                </ul>
+              </div>
+              <!-- /Footer Widget -->
+              
+            </div>
+            <div class="col-lg-3 col-md-6" style="margin-left: 130px; margin-top: 50px;">
+            
+              <!-- Footer Widget -->
+              <div class="footer-widget footer-menu">
+                <h2 class="footer-title text-light">Resource</h2><br>
+                <p style="text-decoration: none;">
+                  <li><a class="text-light" href="">Return and Refund policy</a></li>
+                  
+                </p>
+              </div>
+              <!-- /Footer Widget -->
+              
+            </div>
+            
+            </div>
+            
+            
+      
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="container-fluid">
+        
+          <!-- Copyright -->
+          <div class="copyright">
+            <div class="row">
+              <div class="col-md-2 col-lg-6">
+                <div class="copyright-text">
+                  <p class="mb-0 mt-lg-4 text-light text-center" style="text-size-adjust: 50px; margin-left: 400px;">&copy; 2022 . All rights reserved.</p>
+                </div>
+              </div>
+              <div class="footer-bottom">
+                <div class="container-fluid">
+                
+                  <!-- Copyright -->
+                  <div class="copyright">
+                    <div class="row">
+                      <div class="col-md-2 col-lg-8">
+                        
+                      </div>
+              <div class="col-md-6 col-lg-6">
+              
+                <!-- Copyright Menu -->
+                <div class="copyright-menu"><br><br><br>
+                  
+                </div>
+                <!-- /Copyright Menu -->
+                
+              </div>
+            </div>
+          </div>
+          <!-- /Copyright -->
+          
+        </div>
+      </div>
+      <!-- /Footer Bottom -->
+    <a href="" class="whatsapp_btn" target="_blank">
+      
+    </a>	
+      
+    </footer>
+    <!-- /Footer -->
+           
+    </div>
+    <!-- Back-To-Top -->
+  </section>
+</section><br>
+</body>
+</html>

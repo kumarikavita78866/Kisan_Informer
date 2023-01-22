@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smart farming</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.css"
+rel="stylesheet"
+/>
+
+<!-- MDB -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.js"
+></script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+</head>
+<body class="container-fluid">
+    <div class="latest_note bg-dark text-light ">
+        <marquee width="100%;" scrollAmount="5">Smart Farming website  are live for farmers. You can visit and read the instructions for upcoming farming generations. Contact number 9525952621
+        </marquee></i><strong id="disable_notification"> </strong>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light  mx-auto" style="background-color: rgb(48, 58, 63);">
+      <a class="navbar-brand text-light" href="#">Kisan_Informer</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        
+      </button>
+    
+      <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+        
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="margin-left: 300px;">
+           <!-- <li class="nav-item active">
+            <a  class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">News</a>
+            <div class="dropdown-menu text-light">
+             <a class="dropdown-item" href="#">Business News</a>
+             <div class="dropdown-divider"></div>
+             <a class="dropdown-item" href="#">Crop News</a>
+             <div class="dropdown-divider"></div>
+             <a class="dropdown-item" href="#">Livestock News</a>
+           </div>
+           </li> --> 
+           <li class="text-light mt-2 mr-2">Home</li>
+           
+           <li class="nav-item dropdown">
+             <a  class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Crops</a>
+             <div class="dropdown-menu bg-dark">
+              <a class="dropdown-item text-light" href="./kharif crops.html">Kharif Crops</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="./rabi crops.html">Rabi Crops</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="#">vegetable</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="#">HerBal</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="#">Phal-Phool-Tree</a>
+            </div>
+           </li>
+           <li class="nav-item dropdown">
+            <a  class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Service</a>
+            <div class="dropdown-menu bg-dark">
+            <a class="dropdown-item text-light" href="#">Mandi Bhav</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-light" href="#">Agriculture Spot</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-light" href="#">Government Scheme</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-light" href="#">Agriculture Event</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-light" href="#">Agriculture Training</a>
+          </div>
+          </li>
+            <li class="nav-item dropdown ">
+              <p class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="falseServices">About Us </p>
+              <div class="dropdown-menu bg-dark">
+                <a class="dropdown-item text-light" href="#">Mission and Vision</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Help</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Events participation</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Internship</a>
+              </div>  
+           <li class="nav-item dropdown ">
+              <a  class="nav-link dropdown-toggle text-light " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Gallery</a>
+              <div class="dropdown-menu bg-dark">
+                <a class="dropdown-item text-light" href="#">Magazine</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light " href="#">Photo Gallery</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Video Gallery</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Achievements</a>
+                
+           </li>
+              
+             <li class="nav-item dropdown">
+              <a  class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Help</a>
+              <div class="dropdown-menu bg-dark">
+              <a class="dropdown-item text-light" href="#">Agriculture Experts</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="#">Agriculture Advisers</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="#">Agriculture Engineers</a>
+              <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Agriculture Friends</a>
+
+            </div>
+            </li>
+        </ul>
+      </div>
+      <div class="d-flex">
+
+        <button class="btn btn-warning" type="submit">Join/login</button>
+       </div>
+    </nav>
+<section>
+  <div class="main-contents">
+    <!-- Breadcrumb-->
+      <section class="banner text-light" style="background-image: url(https://www.kisaanhelpline.com/uploads/header-banner/INdian-crop-1.jpg);">
+        <div class="container">
+            <div class="morepage-banner" style="padding: 150px 0 50px 0;">
+                <h2 class="title">Soybean (सोयाबीन)</h2>
+                                                <div class="table-responsive">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr class="text-light">
+                      <th><img src="https://www.kisaanhelpline.com/kisaanpicture/crop_list_icon/Watering.png" width="25px" height="25px"/>&nbsp;Watering</th>
+                      <th><img src="https://www.kisaanhelpline.com/kisaanpicture/crop_list_icon/Cultivation.png" width="25px" height="25px"/>&nbsp;Cultivation</th>
+                      <th><img src="https://www.kisaanhelpline.com/kisaanpicture/crop_list_icon/Harvesting.png" width="25px" height="25px"/>&nbsp;Harvesting</th>
+                      <th><img src="https://www.kisaanhelpline.com/kisaanpicture/crop_list_icon/Labour.png" width="25px" height="25px"/>&nbsp;Labour</th>
+                      <th><img src="https://www.kisaanhelpline.com/kisaanpicture/crop_list_icon/Sunlight.png" width="25px" height="25px"/>&nbsp;Sunlight</th>
+                      <th><img src="https://www.kisaanhelpline.com/kisaanpicture/crop_list_icon/pH_Value.png" width="25px" height="25px"/>&nbsp;pH Value</th>
+                      <th><img src="https://www.kisaanhelpline.com/kisaanpicture/crop_list_icon/Temperature.png" width="25px" height="25px"/>&nbsp;Temperature</th>
+                      <th><img src="https://www.kisaanhelpline.com/kisaanpicture/crop_list_icon/Fertilization.png" width="25px" height="25px"/>&nbsp;Fertilization</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="text-light">
+                      <td>Low</td>
+                      <td>Machine & Manual</td>
+                      <td>Manual</td>
+                      <td>Low</td>
+                      <td>Medium</td>
+                      <td>5.5PH to 7.0 PH</td>
+                      <td>30 -35 °C</td>
+                      <td>20 KG/ Acre NPK, Uria 20 KG/ Acre</td>
+                    </tr>
+                  </tbody>
+                </table>
+                </div>
+                 
+            </div>
+        </div>
+    </section>
+    <br>
+    <style type="text/css">
+      .btn{
+        width: 100%;
+            font-size: 17px;
+      }
+    </style>
+    <div class="page-shop-detail padding-bottom-100">
+        <div class="container">
+          <div class="page-sub-title">
+          <h2>  </h2>
+          </div>
+
+        
+          <center>
+            <div class="row">
+              <div class="col-md-4">
+                <a href="javascript:void(0);" class="btn btn-primary open_login_model" data-redirectTo="https://www.kisaanhelpline.com/crops/plant_nutrition">Plant Nutrition</a>
+              </div>
+              <div class="col-md-4">
+                <a href="javascript:void(0);" class="btn btn-primary open_login_model" data-redirectTo="https://www.kisaanhelpline.com/crops/plant_friendly_insect">Plant Friendly Insect</a>
+              </div>
+              <div class="col-md-4">
+                <a href="javascript:void(0);" class="btn btn-primary open_login_model" data-redirectTo="https://www.kisaanhelpline.com/crops/insect_list">Insects List</a>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-4">
+                <a href="javascript:void(0);" class="btn btn-primary open_login_model" data-redirectTo="https://www.kisaanhelpline.com/crops/crop_disease/1">Crop Related Disease </a>
+              </div>
+              <div class="col-md-8">
+                <a href="javascript:void(0);" id="open_model" class="btn btn-primary">क्या आप Soybean (सोयाबीन) का बीज खरीदना  चाहते है? </a>
+              </div>
+            </div>
+          </center>
+
+          
+          <br>
+            <div class="row">
+                <div class="col-md-6 col-xs-12">
+                    <div class="shop-img-wrapper">
+                        <div class="slider-for">
+                            <div class="item">
+                                <div class="image-wrapper">                                                    
+                                                                                          <img src="https://www.kisaanhelpline.com/cat_subcat_image/soybean-crops.jpg" alt="kisan" class="left">
+                                                                                    </div>
+                                   <!-- <div class="sharethis-inline-share-buttons"></div><br/> -->
+                                  <div class="text-center"> <div id="shareRoundIcons"></div> </div>
+                            </div>
+                         
+                        </div>
+                     
+                    </div>
+                </div>
+                
+         
+                    <div class="info-detail">
+                        <div class="title"><h1>Soybean (सोयाबीन)</h1></div>
+                         <div class="title">
+                            <!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        
+                            <ins class="adsbygoogle"
+                                 style="display:inline-block;width:468px;height:15px"
+                                 data-ad-client="ca-pub-2017409244002055"
+                                 data-ad-slot="4368166924"></ins>
+                            <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>-->
+                        </h1></div>
+                                                         
+                        <div class="discription" style="padding:10px;">
+                            <p>
+                                                                                   <h4 class="info-heading"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Basic Info</h4>
+                                    <p><b style="font-size: 10pt;">सोयाबीन</b><span style="font-size: 10pt;">-[वैज्ञानिक नाम="ग्लाईसीन मैक्स"] सोयाबीन फसल है। सोयाबीन भारतवर्ष में महत्वपूर्ण फसल है</span><span style="font-size: 13.3333px;">।</span><span style="font-size: 10pt;"> यह दलहन के बजाय तिलहन की फसल मानी जाती है। सोयाबीन का उत्पादन 1985 से लगातार बढ़ता जा रहा है और सोयाबीन के तेल की खपत मूँगफली एवं सरसों के तेल के पश्चात सबसे अधिक होने लगा है</span><span style="font-size: 13.3333px;">।</span><span style="font-size: 10pt;"> सोयाबीन एक महत्वपूर्ण खाद्य स्रोत है। इसके मुख्य घटक प्रोटीन, कार्बोहाइडेंट और वसा होते है। सोयाबीन में 38-40 प्रतिशत प्रोटीन, 22 प्रतिशत तेल, 21 प्रतिशत कार्बोहाइडेंट, 12 प्रतिशत नमी तथा 5 प्रतिशत भस्म होती है। विश्व का 60% सोयाबीन अमेरिका में पैदा होता है। भारत मे सबसे अधिक सोयाबीन का उत्पादन मध्यप्रदेश करता है। मध्यप्रदेश में इंदौर में सोयाबीन रिसर्च सेंटर है।</span></p>
+                                                                                   <h4 class="info-heading"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Seed Specification</h4>
+                                    <p><div style=""><div><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>उपयुक्त किस्मों का चयन :</b>- राष्ट्रीय सोयाबीन अनुसंधान केंद्र एवं विभिन्न कृषि विश्वविद्यालयों द्वारा अलग क्षेत्रों के लिए वहाँ की कृषि जलवायु एवं मिट्टी के लिए अलग किस्मों का विकास किया गया है एवं किस्में समर्थित की गई हैं। उसी के अनुसार सोयाबीन किस्में बोई जानी चाहिए। इन किस्मों का थोड़ा बीज लाकर अपने यहाँ ही इसे बढ़ाकर उपयोग में लाया जा सकता है।</span></font></div><div><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><br></span></font></div><div><div style="font-size: 13.3333px;"><font face="Arial, Verdana"><b>बुवाई का समय :</b>-</font></div><div style="font-size: 13.3333px;"><font face="Arial, Verdana">जून के अन्तिम सप्‍ताह में जुलाई के प्रथम सप्‍ताह तक का समय सबसे उपयुक्‍त है, बोने के समय अच्‍छे अंकुरण हेतु भूमि में </font><span style="font-size: 13.3333px;">10 सेमी गहराई तक उपयुक्‍त नमी होना चाहिए। जुलाई के प्रथम सप्‍ताह के पश्‍चात बोनी की बीज दर 5-10 प्रतिशत बढ़ा </span><span style="font-size: 13.3333px;">देनी चाहिए।</span></div></div><div><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b><br></b></span></font></div><div><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>बीज की मात्रा</b> <b>:</b>-</span></font></div><div><font face="Arial, Verdana"><span style="font-size: 13.3333px;">छोटे दाने वाली किस्‍में – 70 किलो ग्राम प्रति हेक्टेयर</span></font></div><div><font face="Arial, Verdana"><span style="font-size: 13.3333px;">मध्‍यम दाने वाली किस्‍में – 80 किलो ग्राम प्रति हेक्टेयर</span></font></div><div><font face="Arial, Verdana"><span style="font-size: 13.3333px;">बडे़ दाने वाली किस्‍में – 100 किलो ग्राम प्रति हेक्टेयर।</span></font></div><div><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b><br></b></span></font></div><div><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>बीज उपचार :</b>-</span></font></div><div><font face="Arial, Verdana"><span style="font-size: 13.3333px;">बुवाई से पहले सोयाबीन के बीजो को उपचारित करे। कार्बेन्डीजिम या थिरम 2 ग्राम / किग्रा बीज का 24hrs बीज के साथ उपचार करें या ट्राइकोडर्मा के टैल्क सूत्रीकरण के साथ  4 ग्राम / किग्रा बीज (या) स्यूडोमोनस फ्लोरेसेंस 10 ग्राम / किग्रा बीज का प्रयोग करें।</span></font></div></div></p>
+                                                                                    <h4 class="info-heading"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Land Preparation & Soil Health</h4>
+                                    <p><div style=""><div><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>मिट्टी परिक्षण :</b>-</span></font></div><div><font face="Arial, Verdana"><span style="font-size: 13.3333px;">संतुलित उर्वरक व मृदा स्वास्थ्य हेतु मिट्टी में मुख्य तत्व- नत्रजन, </span></font><span style="font-family: Arial, Verdana; font-size: 13.3333px;">फॉस्फोरस</span><font face="Arial, Verdana"><span style="font-size: 13.3333px;">, पोटाश, द्वितीयक पोषक तत्व जैसे सल्फर, </span></font><span style="font-family: Arial, Verdana; font-size: 13.3333px;">कैल्शियम, मैग्नीशियम एवं सूक्ष्म पोषक तत्व जैसे जस्ता, तांबा, लोहा, मैंगनीज, मोलिब्डेनम, बोरॉन साथ ही पी.एच., ई.सी. एवं </span><span style="font-family: Arial, Verdana; font-size: 13.3333px;">कार्बनिक द्रव्य का परीक्षण करायें। </span></div><div><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b><br></b></span></font></div><div><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>भूमि :</b>-</span></font></div><div><font face="Arial, Verdana"><span style="font-size: 13.3333px;">सोयाबीन की खेती अधिक हल्‍की रेतीली व हल्‍की भूमि को छोड्कर सभी प्रकार की भूमि में सफलतापूर्वक की जा सकती है, </span></font><span style="font-family: Arial, Verdana; font-size: 13.3333px;">परन्‍तु पानी के निकास वाली चिकनी दोमट भूमि सोयाबीन के लिए अधिक उपयुक्‍त होती है। जहां भी खेत में पानी रूकता हो </span><span style="font-family: Arial, Verdana; font-size: 13.3333px;">वहां सोयाबीन ना लें।</span></div><div><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b><br></b></span></font></div><div><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>जलवायु :</b>-</span></font></div><div><font face="Arial, Verdana"><span style="font-size: 13.3333px;">सोयाबीन फसल के लिए शुष्क गर्म जलवायु की आवश्यकता होती है, इसके बीजों का जमाव 25 डिग्री सेल्सियस पर 4 दिन में </span></font><span style="font-family: Arial, Verdana; font-size: 13.3333px;">हो जाता है, जबकि इससे कम तापमान होने पर बीजों के जमाव में 8 से 10 दिन लगता है । अत: सोयाबीन खेती के लिए 60</span><span style="font-family: Arial, Verdana; font-size: 13.3333px;">-65 सेमी. वर्षा वाले स्थान </span><span style="font-family: Arial, Verdana; font-size: 13.3333px;">उपयुक्‍त</span><span style="font-family: Arial, Verdana; font-size: 13.3333px;"> माने गये हैं।</span></div><div><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b><br></b></span></font></div><div><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>खेत की जुताई :</b>-</span></font></div><div><font face="Arial, Verdana"><span style="font-size: 13.3333px;">वर्षा प्रारम्‍भ होने पर 2 या 3 बार बखर तथा पाटा चलाकर खेत को तैयार कर लेना चाहिए। इससे हानि पहुंचाने वाले कीटों </span></font><span style="font-family: Arial, Verdana; font-size: 13.3333px;">की सभी अवस्‍थाएं नष्‍ट होगीं। जहां तक संभव हो आखरी बखरनी एवं पाटा समय से करें जिससे अंकुरित खरपतवार नष्‍ट हो </span><span style="font-family: Arial, Verdana; font-size: 13.3333px;">सके।</span></div></div></p>
+                                                                                    <h4 class="info-heading"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Crop Spray & fertilizer Specification</h4>
+                                    <p><div style=""><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>उर्वरक :</b>-</span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">सोयाबीन की बुवाई से पूर्व खेत तैयार करते समय अच्‍छी सड़ी हुई गोबर की खाद (कम्‍पोस्‍ट) 5 टन प्रति हेक्टेयर अंतिम </span></font><span style="font-family: Arial, Verdana; font-size: 13.3333px;">बखरनी के समय खेत में अच्‍छी तरह मिला देवें तथा बोते समय 20 किलो नाइट्रोजन, 60 किलो फॉस्फोरस, 20 किलो </span><font face="Arial, Verdana"><span style="font-size: 13.3333px;">पोटाश एवं 20 किलो सल्फर प्रति हेक्टेयर देवें। यह मात्रा मिट्टी परीक्षण के आधार पर घटाई बढ़ाई जा सकती है। गहरी काली मिट्टी में जिंक सल्‍फेट 50 किलो ग्राम प्रति हेक्टेयर एवं उथली मिट्टी में 25 किलो ग्राम प्रति हेक्टेयर की दर से 5 </span></font><span style="font-family: Arial, Verdana; font-size: 13.3333px;">से 6 फसलें लेने के बाद उपयोग करना चाहिए।</span></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b><br></b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>हानिकारक कीट और रोकथाम :</b>-</span></font></div><div style=""><font face="Arial, Verdana" style="font-size: 10pt;"><span style="font-size: 13.3333px;"><b>सफेद मक्खी - </b>सफेद मक्खी की रोकथाम के लिए, थाइमैथोक्सम 40 ग्राम या ट्राइज़ोफोस 300 मि.ली की स्प्रे प्रति एकड़ में </span></font><span style="font-size: 13.3333px;">करें। यदि आवश्यकता पड़े तो पहली स्प्रे के 10 दिनों के बाद दूसरी स्प्रे करें।</span></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b><br></b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>तंबाकू सुंडी - </b>यदि इस कीट का हमला दिखाई दे तो एसीफेट 57 एस पी 800 ग्राम या क्लोरपाइरीफॉस 20 ई सी को 1.5 लीटर </span></font><span style="font-size: 13.3333px; font-family: Arial, Verdana;">पानी में मिलाकर प्रति एकड़ में स्प्रे करें। यदि जरूरत पड़े तो पहली स्प्रे के 10 दिनों के बाद दूसरी स्प्रे करें।</span></div><div style=""><b style="font-size: 13.3333px; font-family: Arial, Verdana;"><br></b></div><div style=""><b style="font-size: 13.3333px; font-family: Arial, Verdana;">बालों वाली सुंडी - </b><span style="font-size: 13.3333px; font-family: Arial, Verdana;">बालों वाली सुंडी का हमला कम होने पर इसे हाथों से उठाकर या केरोसीन में डालकर खत्म कर दें । इसका </span><span style="font-size: 13.3333px; font-family: Arial, Verdana;">हमला ज्यादा हो तो, क्विनलफॉस 300 मि.ली. या डाइक्लोरवास 200 मि.ली की प्रति एकड़ में स्प्रे करें।</span></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b><br></b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>पीला चितकबरा रोग - </b>यह सफेद मक्खी के कारण फैलता है। इससे अनियमित पीले, हरे धब्बे पत्तों पर नज़र आते हैं। प्रभावित </span></font><span style="font-size: 13.3333px; font-family: Arial, Verdana;">पौधों पर फलियां विकसित नहीं होती। </span><span style="font-size: 13.3333px; font-family: Arial, Verdana;">इसकी रोकथाम के लिए पीला चितकबरा रोग की प्रतिरोधी किस्मों का प्रयोग करें। सफेद मक्खी को रोकथाम के लिए, </span><span style="font-size: 13.3333px; font-family: Arial, Verdana;">थाइमैथोक्सम 40 ग्राम या ट्राइज़ोफोस 400 मि.ली की स्प्रे प्रति एकड़ में करें। यदि आवश्यकता पड़े तो पहली स्प्रे के 10 दिनों </span><span style="font-size: 13.3333px; font-family: Arial, Verdana;">के बाद दूसरी स्प्रे करें।</span></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b><br></b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>फफूंद नियंत्रण :</b>-</span></font></div><div style=""><font face="Arial, Verdana" style="font-size: 10pt;"><span style="font-size: 13.3333px;">सोयाबीन के पत्‍तों पर कई तरह के धब्‍बे वाले फफूंद जनित रोगों के नियंत्रण के लिए कार्बेन्‍डाजिम 50 डबलू पी या थायोफेनेट </span></font><span style="font-size: 13.3333px;">मिथाइल 70 डब्‍लू पी 0.05 से 0.1 प्रतिशत से 1 ग्राम दवा प्रति लीटर पानी का छिड़काव करना चाहिए। पहला छिड़काव </span><span style="font-size: 13.3333px;">30-35 दिन की अवस्‍था पर तथा दूसरा छिड़काव 40–45 दिन की अवस्‍था पर करना चाहिए।</span></div><div style=""><b style="font-size: 13.3333px; font-family: Arial, Verdana;"><br></b></div><div style=""><b style="font-size: 13.3333px; font-family: Arial, Verdana;">बैक्‍टीरियल पश्‍चयूल नामक रोग को नियंत्रित -</b><span style="font-size: 13.3333px; font-family: Arial, Verdana;"> स्‍ट्रेप्‍टोसाइक्‍लीन या कासूगामाइसिन की 200 पी.पी.एम. 200 मि.ग्रा; दवा </span><span style="font-size: 13.3333px; font-family: Arial, Verdana;">प्रति लीटर पानी के घोल और कापर आक्‍सीक्‍लोराइड 0.2 (2 ग्राम प्रति लीटर) पानी के घोल के मिश्रण का छिड़काव करना </span><span style="font-size: 13.3333px; font-family: Arial, Verdana;">चाहिए।</span></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b><br></b></span></font></div><div style=""><font face="Arial, Verdana"><b style="font-size: 13.3333px;">विषाणु जनित पीला मोजेक वायरस रोग व वड व्‍लाइट रोग प्राय: - </b><span style="font-size: 13.3333px;">एफिड, सफेद मक्‍खी, थ्रिप्‍स आदि द्वारा फैलते हैं अत: केवल </span></font><span style="font-size: 13.3333px; font-family: Arial, Verdana;">रोग रहित स्‍वस्‍थ बीज का उपयोग करना चाहिए। एवं रोग फैलाने वाले कीड़ों के लिए थायोमेथेक्‍जोन 70 डब्‍लू एव. से 3 ग्राम </span><span style="font-size: 13.3333px; font-family: Arial, Verdana;">प्रति किलो ग्राम की दर से उपचारित कर एवं 30 दिनों के अंतराल पर दोहराते रहें। रोगी पौधों को खेत से निकाल देवें। </span><span style="font-size: 13.3333px; font-family: Arial, Verdana;">इथोफेनप्राक्‍स 10 ई.सी. 1 लीटर प्रति </span><span style="font-family: Arial, Verdana; font-size: 13.3333px;">हेक्टेयर</span><span style="font-size: 13.3333px; font-family: Arial, Verdana;"> थायोमिथेजेम 25 डब्‍लू जी, 1000 ग्राम प्रति </span><span style="font-family: Arial, Verdana; font-size: 13.3333px;">हेक्टेयर</span><span style="font-size: 13.3333px; font-family: Arial, Verdana;">।</span></div></div></p>
+                                                                                     <h4 class="info-heading"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Weeding & Irrigation</h4>
+                                    <p><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>खरपतवार नियंत्रण :</b>-</span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">फसल के प्रारम्भिक 30 से 40 दिनों तक खरपतवार नियंत्रण बहुत आवश्‍यक होता है। बतर आने पर डोरा या कुल्‍फा चलाकर </span></font><span style="font-family: Arial, Verdana; font-size: 13.3333px;">खरपतवार नियंत्रण करें व दूसरी निंदाई अंकुरण होने के 30 और 45 दिन बाद करें। 15 से 20 दिन की खड़ी फसल में </span><span style="font-family: Arial, Verdana; font-size: 13.3333px;">घांस कुल के खरपतवारो को नष्‍ट करने के लिए क्‍यूजेलेफोप इथाइल एक लीटर प्रति हेक्टेयर अथवा घांस कुल और कुछ चौड़ी </span><span style="font-family: Arial, Verdana; font-size: 13.3333px;">पत्‍ती वाले खरपतवारों के लिए इमेजेथाफायर 750 मिली. लीटर प्रति हेक्टेयर की दर से छिड़काव की अनुशंसा है।</span></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><br></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>सिंचाई :-</b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">खरीफ मौसम की फसल होने के कारण सामान्‍यत: सोयाबीन को सिंचाई की आवश्‍यकता नही होती है। फलियों में दाना भरते </span></font><span style="font-family: Arial, Verdana; font-size: 13.3333px;">समय अर्थात सितंबर माह में यदि खेत में नमी पर्याप्‍त न हो तो आवश्‍यकतानुसार एक या दो हल्‍की सिंचाई करना सोयाबीन के </span><span style="font-family: Arial, Verdana; font-size: 13.3333px;">विपुल उत्‍पादन लेने हेतु लाभदायक है। वर्षा ना होने पर उपयुक्त </span><span style="font-family: Arial, Verdana; font-size: 13.3333px;">सिंचाई</span><span style="font-family: Arial, Verdana; font-size: 13.3333px;"><b> </b>नमी के अनुसार सही समय पर की जा सकती है।</span></div></p>
+                                                                                     <h4 class="info-heading"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Harvesting & Storage</h4>
+                                    <p><div style=""><b style="font-size: 13.3333px;">फसल की कटाई :-</b></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">जब सोयाबीन की फलियां सूख जाएं और पत्तों का रंग बदल कर पीला हो जाए और पत्ते गिर जाएं, तब फसल कटाई के लिए </span></font><span style="font-family: Arial, Verdana; font-size: 13.3333px;">तैयार होती है। कटाई हाथों से या दराती से करें। कटाई के बाद फसल को 2-3 दिन तक धुप में अच्छी तरह से सूखा लेना </span><span style="font-family: Arial, Verdana; font-size: 13.3333px;">चाहिए। सुखाने के बाद पौधों में से बीजों को निकालने के लिए थ्रेसर, ट्रेक्‍टर, बेलों तथा अन्य कृषि साधनों का प्रयोग करना </span><span style="font-family: Arial, Verdana; font-size: 13.3333px;">चाहिए।</span></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><br></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>बीज भंडारण :- </b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">सोयाबीन के बीजो अच्छी तरह धुप में सुखाने के बाद, बीजों को अच्छी तरह साफ करें। छोटे आकार के बीजों, प्रभावित बीजों </span></font><span style="font-family: Arial, Verdana; font-size: 13.3333px;">और डंठलों को निकाल दें। बीज के भंडारण हेतु सुखी जगह का चयन करे और नमी से दूर रखे।</span></div></p>
+                               
+
+                                 <p><div style="font-weight: normal; font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal;"><br></div><div style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal;"><div style="font-weight: normal;"><br></div></div></p>
+
+                                
+                            </p>
+                        </div>
+                    </div>
+
+                                                          <h3 class="info-heading-2">Crop Related Disease</h3>
+                      <div class="panel-group accordion" id="accordion" role="tablist" aria-multiselectable="true">
+                                                              <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="heading0">
+                            <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse0" aria-expanded="false" aria-controls="collapse0">
+                              <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;yellow mosiac                										        </a>
+                          </h4>
+                          </div>
+                          <div id="collapse0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading0">
+                            <div class="panel-body" style="font-size: 13px;">
+                              <h5>Description:</h5>
+                              मौसम के खुलते ही सोयाबीन, मूंग व उड़द में पीला मोजेेक रोग की सम्भावना है।कृषि वैज्ञानिकों की सलाह है कि पीले पड़ रहे पौधों को शुरूआत में ही उखाड़ कर फैंक दें, ताकि बाकी फसल को यलो मोजेक बीमारी से बचाया जा सके।                										          <h5>Organic Solution:</h5>
+                              पीला मोजाइक वायरस फैलाने वाली सफेद मक्खी के नियंत्रण के लिए बीज को थायोमिथोक्साम 30 एफ.एस. से 3 ग्राम अथवा इमिडाक्लोप्रिड एफ.एस. 1.25 मिलीलीटर प्रति किलो बीज की दर से उपचारित करें।                										          <h5>Chemical Solution:</h5>
+                              फसल पर सफेद मक्खी के नियंत्रण के लिए बीज को थायोमिथोक्साम 25 डब्ल्यू.जी. का 100 ग्राम को 500 लीटर पानी में घोल कर/ हे. की दर से छिड़काव करें।                                                                                                <div class="row">
+                                                                                      <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Mosaic-Virus/soyabean-yellow-mosiac1.jpg" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                        <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Mosaic-Virus/soyabean-yellow-mosiac.jpg" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                      </div>
+                                                                              </div>
+                          </div>
+                        </div>
+                                                                <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="heading1">
+                            <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                              <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;Bacterial blight (बैक्टीरियल ब्लाइट)                										        </a>
+                          </h4>
+                          </div>
+                          <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+                            <div class="panel-body" style="font-size: 13px;">
+                              <h5>Description:</h5>
+                              बैक्टीरियल ब्लाइट Pseudomonas savastanoi pv के कारण होता है। ग्लाइसिनिया, और आमतौर पर सोयाबीन पर होने वाले पहले पर्ण रोगों में से एक है। बैक्टीरियल ब्लाइट शायद ही कभी गंभीर उपज नुकसान का कारण बनता है।                										          <h5>Organic Solution:</h5>
+                              इस बीमारी को नियंत्रित करने के लिए कॉपर फफूंदनाशकों की सिफारिश की जाती है                										          <h5>Chemical Solution:</h5>
+                              सोयाबीन पर बैक्टीरियल ब्लाइट के नियंत्रण के लिए कॉपर फफूंदनाशकों का उपयोग किया जा सकता है लेकिन इसे प्रभावी होने के लिए रोग चक्र में जल्दी लगाने की आवश्यकता होती है। हालांकि, कोर एकीकृत कीट प्रबंधन प्रथाओं का पालन करने की सिफारिश की जाती है क्योंकि कवकनाशी अक्सर इस रोगज़नक़ के खिलाफ प्रभावी नहीं होते हैं।                                                                                                <div class="row">
+                                                                                      <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Fungus/Soybean-Bacterial-blight1.jpg" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                        <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Fungus/Soybean-Bacterial-blight.jpg" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                      </div>
+                                                                              </div>
+                          </div>
+                        </div>
+                                                                <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="heading2">
+                            <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                              <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;Bacterial Pustule (बैक्टीरियल पुस्टुल)                										        </a>
+                          </h4>
+                          </div>
+                          <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                            <div class="panel-body" style="font-size: 13px;">
+                              <h5>Description:</h5>
+                              बैक्टीरियल pustule Xanthomonas axonopodis pv के कारण होता है। यह रोग मध्य से देर के मौसम में होता है जब तापमान गर्म होता है। रोग विकास गर्म, गीले मौसम के अनुकूल है।                										          <h5>Organic Solution:</h5>
+                              इस बीमारी को नियंत्रित करने के लिए कॉपर फफूंदनाशकों की सिफारिश की जाती है |                										          <h5>Chemical Solution:</h5>
+                              रोग के प्रारंभिक चरण में तांबा आधारित कवकनाशी (उदाहरण के लिए कॉपर ऑक्सीक्लोराइड, 3 जी / एल पानी) लागू करें।                                                                                                <div class="row">
+                                                                                      <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Fungus/Soybean-Bacterial-Pustule1.jpg" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                        <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Fungus/Soybean-Bacterial-Pustule.jpg" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                      </div>
+                                                                              </div>
+                          </div>
+                        </div>
+                                                                <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="heading3">
+                            <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                              <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;Brown stem rot (ब्राउन स्टेम रोट)                										        </a>
+                          </h4>
+                          </div>
+                          <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+                            <div class="panel-body" style="font-size: 13px;">
+                              <h5>Description:</h5>
+                              ब्राउन स्टेम रोट कवक कैफोफोरा ग्रेगाटा (Cadophora gregata) के कारण होता है। ब्राउन स्टेम रोट अधिक गंभीर होता है जब तापमान ठंडा होता है और मिट्टी की नमी मौजूद होती है। गैर-मेजबान फसल (मकई, छोटे अनाज, और चारा फलियां) के लिए फसल का रोटेशन रोगज़नक़ के स्तर को कम करेगा।                										          <h5>Organic Solution:</h5>
+                              सहिष्णु और प्रतिरोधी किस्मों का उपयोग |
+फसल चक्रण का पालन किया जाना चाहिए।
+पिछली फसल अवशेष नष्ट हो जाना चाहिए। 
+फसल अवशेषों को निकालना।                										          <h5>Chemical Solution:</h5>
+                              2 किलो / हेक्टेयर पर मैनकोजेब का छिड़काव करें।                                                                                                <div class="row">
+                                                                                      <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Fungus/Soybean-Brown-stem-rot1.jpg" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                        <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Fungus/Soybean-Brown-stem-rot.jpg" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                      </div>
+                                                                              </div>
+                          </div>
+                        </div>
+                                                                <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="heading4">
+                            <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                              <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;चक्र भृंग (गर्डल बीटल) Chakra beetle (girdle beetle)                										        </a>
+                          </h4>
+                          </div>
+                          <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
+                            <div class="panel-body" style="font-size: 13px;">
+                              <h5>Description:</h5>
+                              <div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">चक्र भृंग (गर्डल बीटल)&nbsp;वैज्ञानिक नाम 'ओवेरिया ब्रेयिस' है। इसे कटर इल्ली के नाम से भी जानते हैं। पौधे की 20 से 25 दिन की अवस्था से लेकर लगभग फसल के परिपक्व होने की अवस्था तक इन कीट का प्रकोप रहता है।&nbsp;</span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><br></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">यह कीट पत्तियो पर अण्डे देता है फिर मैगट के बाहर आने के बाद पत्तियों से रैंगता हुआ तने को भेदता है। सक्रंमित तने में लाल धारिया मैगट और प्यूपा के साथ दिखाई देती है। यह तने से जड़ क्षेत्र तक जाकर पौधा मार देता है</span></font></div>                										          <h5>Organic Solution:</h5>
+                              खेत में ग्रीष्मकालीन गहरी जुताई करें एवं नियमित रूप से खरपतवार प्रबंधन करें। समय से पूर्व बुवाई करने पर कीट का प्रकोप अधिक होता है। अतः बुवाई समय से जुलाई माह में करें। फसल में खाद्य एवं उर्वरक का प्रयोग समय से करें एवं पोटाश की मात्रा अवश्य डालें। प्रभावित पौधे को नीचे से तोड़कर नष्ट कर दें। रोग रोधी किस्में जैसे-जे.एस. 93-05, जे.एस 71-05 का प्रयोग करें। खेत के चारों ओर ढेंचा लगाए जो कि कीटों को अपनी तरफ आकर्षित करके फसल को होने वाले नुकसान से बचाती है।                										          <h5>Chemical Solution:</h5>
+                              रासायनिक नियंत्रण हेतु ट्राइजोफास 800 मिली प्रति हेक्टेयर या लैम्बडासायहैलोथरीन 4-9 सी .एस. का 300 एम. एल. प्रति हेक्टेयर की दर से छिड़काव करें।                                                                                                <div class="row">
+                                                                                      <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Insect/Soybean-Chakra-beetle-girdle-beetle.jpg" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                      </div>
+                                                                              </div>
+                          </div>
+                        </div>
+                                                                <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="heading5">
+                            <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                              <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;तना मक्खी (stem fly)                										        </a>
+                          </h4>
+                          </div>
+                          <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
+                            <div class="panel-body" style="font-size: 13px;">
+                              <h5>Description:</h5>
+                              <font face="Arial, Verdana"><span style="font-size: 13.3333px;">तना मक्खी कीट का वैज्ञानिक नाम 'मेलेनोग्रोमाइजा फेजियोलाइ' है। ये मक्खी अण्डे पत्ती की निचली सतह पर देती है। ये अण्डे पीले, सफेद रंग के होते हैं। मादा का रंग भूरा, काला होता है।&nbsp;</span></font>                										          <h5>Organic Solution:</h5>
+                              उचित समय में बुवाई करें। देरी से फसल में कीट का प्रकोप बढ़ जाता है। समुचित मात्रा में खाद एवं उर्वरक का प्रयोग चाहिए। अनुशंसित बीज दर का प्रयोग करें। प्रकोपित पौधे को उखाड़ कर नष्ट कर दें। एक ही खेती में लगातार सोयाबीन की फसल नहीं लें। जैविक नियंत्रण के लिए प्रेयिंग मेटेड क्राइसोपरला, क्राक्सीनेल वीटिल को फसल में छोड दें। रोगरोधी जातियां जे.एस. 93-05, जे.एस. 71-05 लगाएँ।                										          <h5>Chemical Solution:</h5>
+                              इमीडाक्लोप्रिड 17.08 एस.एल. 5 मि.ली. प्रति कि.ग्रा. से बीजोपचार करें। भूमि उपचार हेतु फोरेट 10 जी, 10 किलो प्रति हेक्टे. या कार्बोफ्यूरान 3 जी का 30 किलो प्रति हेक्ट. की दर से प्रयोग करें। इसके अतिरिक्त डाईमेथोएट 30 ई.सी. 700 मिली. या इमाडाक्लोप्रिड 200 मिली. प्रति हेक्टे. की दर से छिड़काव करें।                                                                                                <div class="row">
+                                                                                      <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Insect/Soybean-stem-fly.jpg" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                      </div>
+                                                                              </div>
+                          </div>
+                        </div>
+                                                                <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="heading6">
+                            <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                              <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;सेमीलूपर (अर्द्धकुण्डलाकार कीट)                										        </a>
+                          </h4>
+                          </div>
+                          <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
+                            <div class="panel-body" style="font-size: 13px;">
+                              <h5>Description:</h5>
+                              <div style=""><span style="font-size: 13.3333px; font-family: Arial, Verdana;">सेमीलूपर कीट का वैज्ञानिक नाम 'डायक्रीसिया ओरीचैल्सिया' है। इसे कूबड़ वाली इल्ली भी कहते हैं। इस कीट की इल्लियां पत्तियो को खाती है।</span></div>                										          <h5>Organic Solution:</h5>
+                              यदि 1 मीटर की पौध कतार में दो या दो से अधिक इल्ली दिखाई दे तो इसका नियंत्रण करना आवश्यक हो जाता है। इसके लिए उचित बीज दर का प्रयोग करें क्योंकि यदि पौधों के बीच की दूरी नियंत्रित होगी तो इस कीट का प्रकोप कम होगा। उचित खरपतवार प्रबंधन करें। खेत में "टी आकार" की लकड़ी की खूंटियां लगाएं जिसमें बैठने वाली चिड़ियां इन इल्लियों को खा सकें। फेरोमोन ट्रैप 10 ट्रैप प्रति हेक्टेयर की दर से खेतों में लगाएँ। प्रकाश प्रपंचों का प्रयोग करें।                										          <h5>Chemical Solution:</h5>
+                              इल्लियों का प्रकोप ज्यादा हो जाए तो रासायनिक दवाओं का प्रयोग करें, जैसे-फसल के 30 से 35 दिन की अवस्था में क्विनालफास 2 मिली. प्रति लीटर पानी की दर से 1.5 लीटर प्रति हेक्टेयर दवा का छिड़काव करें या ट्राइजोफास 800 मिली. प्रति हेक्टेयर का छिड़काव करें।                                                                                                <div class="row">
+                                                                                      <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Insect/Soybean-.jpg" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                      </div>
+                                                                              </div>
+                          </div>
+                        </div>
+                                                                <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="heading7">
+                            <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                              <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;तम्बाकू इल्ली (Tobacco Caterpillar)                										        </a>
+                          </h4>
+                          </div>
+                          <div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading7">
+                            <div class="panel-body" style="font-size: 13px;">
+                              <h5>Description:</h5>
+                              <div style=""><span style="font-size: 13.3333px; font-family: Arial, Verdana;">इस कीट का वैज्ञानिक नाम "स्पोडोप्टेरा लिटुरा'' है। ये कीट अगस्त से सितंबर माह में फसल को नुकसान पहुंचाते हैं। वयस्क शलभ मटमैला, भूरे रंग का होता है। इल्ली भूरे रंग की होती है। इसके प्रत्येक खंड में दोनों तरफ काले तिकोने धब्बे पाए जाते हैं। इल्ली 35-40 मि.मी. लम्बी होती है। मादा पत्तों के निचली सतह में अंडे देती है जिसे अपनी भूरे बालों द्वारा ढंक देती है। अंडे से 4 से 5 दिन में इल्ली निकलती है। इल्ली 20-22 दिन बाद भूमि में जाकर शंखी प्यूपा में बदल जाती है। 8 से 10 दिन बाद वयस्क बाहर निकलता है। यह बहुभक्षी कीट है। इसके लिये तंबाकू, टमाटर, गोभी, गाजर, बैंगन, सूर्यमुखी, अरंडी, उड़द, कपास इत्यादि पोषक पौधे हैं।</span></div>                										          <h5>Organic Solution:</h5>
+                              नियमित फसल चक्र अपनाएं एवं अनुशंसित बीज की मात्रा उपयोग करें। फेरोमोन ट्रेप 10-12 प्रति हे. खेत में लगाये। अंडे एवं इल्लियों को इकट्ठा करके नष्ट करें। खेत में टी. आकार की खूटियां 40 से 50 प्रति हे. लगाएं। जैविक नियंत्रण के लिये एन.पी.व्ही. 250 एल.ई., 250 सूंडी के बराबर के घोल को प्रति हे. खेत में छिड़काव करें।                										          <h5>Chemical Solution:</h5>
+                              1 मीटर में 10 से ज्यादा इल्लियां देखे जाने पर फसल को आर्थिक नुकसान होता है। अतः ऐसी अवस्था में रसायनों का प्रयोग करें जैसे-फसल के 30 से 35 दिन की अवस्था में क्विनालफास दवा 2 मि.ली. प्रति हे. पानी की दर से 1.5 ली. प्रति हे. खेत में छिड़काव करें अथवा ट्राइजोफास दवा 800 मि.ली. प्रति हे. छिड़काव करें।                                                                                                <div class="row">
+                                                                                      <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Insect/Soybean-Tobacco-Caterpillar.jpg" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                      </div>
+                                                                              </div>
+                          </div>
+                        </div>
+                                                                <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="heading8">
+                            <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                              <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;बिहार हैरी कैटरपिलर (कम्बल कीट) Bihar Hairy Caterpillar (Blanket Moth)                										        </a>
+                          </h4>
+                          </div>
+                          <div id="collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading8">
+                            <div class="panel-body" style="font-size: 13px;">
+                              <h5>Description:</h5>
+                              <div style=""><span style="font-size: 13.3333px; font-family: Arial, Verdana;">इस कीट का वैज्ञानिक नाम 'स्पाइलोसोमा 'ओबलीकुमा' है। इल्लियां 40-50 मि.मी. व भूरे लाल रंग की रोएं वाली होती हैं। इसके लिये पोषक पौधे मूंग, उड़द, सूर्यमुखी, तिल, अलसी, अरंडी इत्यादि है।</span></div>                										          <h5>Organic Solution:</h5>
+                              खेत में गहरी जुताई करें। अनुशंसित बीजदर 70 से 100 किलोग्राम हे. का प्रयोग करें। नियमित रूप से फसल चक्र अपनाये। इल्लियों के झुण्डे को इकठ्ठा करके नष्ट करें। जैविक नियंत्रण के लिये एन.पी.व्ही. 250 एल.ई., 1250 सूंडी के बराबर के घोल को प्रति हे. खेत में छिड़काव करें। प्रकाश प्रपंच का उपयोग करें। बेसिलस थुरिनजिनसिस 1 लीटर या एक किलो ग्राम प्रति हे. के हिसाब से छिड़काव करें। नीम के तेल का उपयोग करें।                										          <h5>Chemical Solution:</h5>
+                              क्लोरपाइरीफॉस 20 ईसी @ 1.5 लीटर/हेक्टेयर या ट्राईजोफोस 40 ईसी @ 1.0 लीटर/हेक्टेयर या क्विनालफॉस 25 ईसी @ 1.5 लीटर/हेक्टेयर लगाएं। डस्ट क्लोरपाइरीफॉस 1.5% डीपी या क्विनालफॉस 1.5% डीपी @ 25 किग्रा/हेक्टेयर जब जनसंख्या 10/मी पंक्ति लंबाई (ईटीएल) तक पहुंचने की संभावना है।                                                                                                <div class="row">
+                                                                                      <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Insect/Soybean-Bihar-Hairy-Caterpillar-Blanket-Moth1.jpg" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                        <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Insect/Soybean-Bihar-Hairy-Caterpillar-Blanket-Moth.jpg" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                      </div>
+                                                                              </div>
+                          </div>
+                        </div>
+                                                                <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="heading9">
+                            <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                              <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;सफेद मक्खी  (white fly)                										        </a>
+                          </h4>
+                          </div>
+                          <div id="collapse9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading9">
+                            <div class="panel-body" style="font-size: 13px;">
+                              <h5>Description:</h5>
+                              <div style=""><span style="font-size: 13.3333px; font-family: Arial, Verdana;">इस कीट का वैज्ञानिक नाम "बेमेसिया टबासी” है। इस कीट के शिशु तथा वयस्क दोनों ही फसल को नुकसान पहुंचाते हैं। पत्तियों को हिलाने पर ये उड़ जाते हैं। ये कीट शहद के समान द्रव उत्सर्जित करते हैं जिस पर काले रंग की फफूंद विकसित हो जाती है। पौधों की पत्तियां पीली व कमजोर हो जाती है। व्यस्क सफेद मक्खी 1.5 मिमी. लम्बी होती है। ये मक्खी पीला विषाणु नामक रोग फसल में फैलाती है।</span></div>                										          <h5>Organic Solution:</h5>
+                              फसल चक्र अपनाएं। खरपतवार प्रबंधन, खाद्य व उवर्रक प्रबंधन करें। जल निकास की उचित व्यवस्था करें। संक्रमण की शुरूआती अवस्था में पीले पड़े पत्तों को तोड़ दें और गाय के गोबर उपलो से बनी राख से डस्टिंग करें।                										          <h5>Chemical Solution:</h5>
+                              कीट का आक्रमण होने पर खेत में ट्राइजोफास 40 ई.सी. 800 से 1000 मिली. लीटर या मिथाइल डेमेटान 25 ई.सी. 800 मिली. लीटर प्रति हे. का छिड़काव करें। इमाडाक्लोप्रिड 17.8 एस.एल. 5 मिली. लीटर प्रति किलो ग्राम बीज दर से बीजोपचार करें।
+पूर्वमिश्रित बीटासायफ्लुथ्रीन 49 + इमिडाक्लोप्रिड 19.81% ओ.डी. का 350 एम.एल. प्रति हेक्टेयर की दर से छिड़काव करें।
+पूर्वमिश्रित थायो मिथाक्जाम + लैम्बडासायहैलोथरीन का 125 एम.एल. प्रति हेक्टेयर की दर से छिड़काव करें यह सफेद मक्खी के साथ साथ पत्ती खाने वाले कीटों का भी नियंत्रण करता है।                                                                                                <div class="row">
+                                                                                      <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Insect/Soybean-white-fly.png" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                        <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Insect/Soybean-white-fly.jpg" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                      </div>
+                                                                              </div>
+                          </div>
+                        </div>
+                                                                <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="heading10">
+                            <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                              <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;फली छेदक (Pod borer)                										        </a>
+                          </h4>
+                          </div>
+                          <div id="collapse10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading10">
+                            <div class="panel-body" style="font-size: 13px;">
+                              <h5>Description:</h5>
+                              <div style=""><span style="font-size: 13.3333px; font-family: Arial, Verdana;">इस कीट का वैज्ञानिक नाम 'हेलिकोवर्पा आर्मीजेरा' है। 3 से 6 इल्लियां प्रतिमीटर की कतार में होने पर 20 से 90 प्रतिशत फसल को हानि पहुंच सकती है। नवजात इल्ली हरे रंग की एवं बाद में हल्के भूरे रंग की हो जाती है। इल्ली 04 मिमी. लम्बी होती है। इसके पोषक पौधों कपास, अरहर, तम्बाकू, टमाटर, मटर इत्यादि है।</span></div>                										          <h5>Organic Solution:</h5>
+                              ग्रीष्मकालीन गहरी जुताई करें। इल्लियों एवं अंडों को इकट्ठा करके नष्ट कर दें। टी. आकार की खुटियां जिन पर पक्षी बैठकर इल्लियां खा सकें। 50 प्रति हे. खेत में लगाएं।                										          <h5>Chemical Solution:</h5>
+                              क्लोरोपाइरीफास 20 ई.सी. 1.5 ली या इंडोक्साकार्ब 14.8 एस.एल. 300 मिली लीटर प्रति हे. के हिसाब से छिड़काव से करें।                                                                                                <div class="row">
+                                                                                      <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Insect/Soybean-Pod-borer.jpg" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                      </div>
+                                                                              </div>
+                          </div>
+                        </div>
+                                                                <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="heading11">
+                            <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                              <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;एन्थ्रेक्नोज/ फली झुलसन (Anthracnose)                										        </a>
+                          </h4>
+                          </div>
+                          <div id="collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading11">
+                            <div class="panel-body" style="font-size: 13px;">
+                              <h5>Description:</h5>
+                              <div style=""><span style="font-size: 13.3333px; font-family: Arial, Verdana;">यह एक बीज एवं मृदाजनित रोग है। रोग की शुरूआती अवस्था में पत्तियों तने और फली पर गहरे भूरे रंग के अनियमित धब्बे बन जाते है और बाद में यह धब्बे काली संरचनाओं से भर जाते है।पत्तियों एवं षिराओं का पीला-भूरा होना, मुड़ना और झड़ना इस बीमारी के लक्षण है।</span></div>                										          <h5>Organic Solution:</h5>
+                                                                            <h5>Chemical Solution:</h5>
+                              खेत में जल निकासी की उचित व्यवस्था रखें।बीज को कार्बेन्डाजिम + मेंकोजेब 3 ग्राम प्रति किलो बीच की दर से उपचारित करें।
+रोग के लक्षण दिखाई देने पर 5 ग्राम प्रति लीटर मेंकोजेब अथवा 1 ग्राम प्रति लीटर र्कावेंडाजिम का छिड़काव करें।
+टेबुकोनाझोल का 625 एम. एल. प्रति हेक्टेयर की दर से छिड़काव करें।                                                                                                <div class="row">
+                                                                                      <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Fungus/Soybean-Anthracnose.jpg" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                      </div>
+                                                                              </div>
+                          </div>
+                        </div>
+                                                                <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="heading12">
+                            <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                              <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;चारकोल रोट (Charcoal Rot)                										        </a>
+                          </h4>
+                          </div>
+                          <div id="collapse12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading12">
+                            <div class="panel-body" style="font-size: 13px;">
+                              <h5>Description:</h5>
+                              <div style=""><span style="font-size: 13.3333px; font-family: Arial, Verdana;">यह रोग पानी की कमी, निमेटोड अटैक, मिट्टी के कड़क होने की दशा में होता है। इसमें नीचे की पत्तिया पीली पड़ जाती है और पौधा मुरझा जाता है।</span></div>                										          <h5>Organic Solution:</h5>
+                              रोग सहनषील किस्मे जैसे जे.एस.-2034, जे.एस.-2029, जे.एस.-9752 का उपयोग करें। ट्राइकोडर्मा विरडी से 4 ग्राम प्रति किलो बीज की दर से बीज उपचारित करें।                										          <h5>Chemical Solution:</h5>
+                              खड़ी फसल में कार्बेनडाजिम 1 ग्राम प्रति लीटर की दर से छिड़काव करें।                                                                                                <div class="row">
+                                                                                      <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Fungus/Soybean-Charcoal-Rot.jpg" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                      </div>
+                                                                              </div>
+                          </div>
+                        </div>
+                                                              </div>
+                                                  
+            </div>
+
+             <div class="main-content list-block column-3">
+              <div>
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+               
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:728px;height:90px"
+                         data-ad-client="ca-pub-2017409244002055"
+                         data-ad-slot="6581989952"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script> 
+                    </div>
+
+                    <div class="main-content">
+                      <div> <h3 class="title bnf-con" style="font-size: 30px;text-align: center;">Frequently Asked Questions</h3></div>
+<div class="grid-block-1"> 
+<div class="col-md-12 col-xs-12"> 
+<div class="row" style="box-shadow: 0px 2px 2px 4px lightgrey;padding-top: 2%;padding-bottom: 2%;">
+
+<div class="col-md-6">
+                                                <div class="col-md-12">
+
+<h4 class="bnf-con"><strong>Q1: भारत में किस मौसम में सोयाबीन उगाया जाता है?</strong></h4>
+<div style="display:flex;"><h4><strong>Ans:  </strong></h4><span style="margin-top: 1.5%; margin-left: 2%;" ><font face="Arial, Verdana"><span style="font-size: 13.3333px;">खरीफ मौसम के दौरान सोयाबीन प्रमुख तिलहनी फसल है। बुवाई जून में शुरू होती है और सितंबर में फसल काटा जाता है। यह देखा गया है कि बुवाई और रोपण चरण के दौरान कीमतें गिरना शुरू हो जाती हैं, और जुलाई, अगस्त और सितंबर में फसल विकास चरणों के दौरान और गिरावट जारी रहती है।</span></font></span></div>
+</div>
+                                            <div class="col-md-12">
+
+<h4 class="bnf-con"><strong>Q3: भारत में सोयाबीन का सर्वाधिक उत्पादन किस राज्य में होता है?</strong></h4>
+<div style="display:flex;"><h4><strong>Ans:  </strong></h4><span style="margin-top: 1.5%; margin-left: 2%;" ><font face="Arial, Verdana"><span style="font-size: 13.3333px;">व्यापार मंडल ने कहा कि मध्य प्रदेश, महाराष्ट्र और राजस्थान राज्यों में फसल अच्छी स्थिति में है, जो देश के कुल उत्पादन का 90% से अधिक है। इसने कहा कि एक साल पहले सोयाबीन की पैदावार 22% बढ़कर 1,052 किलोग्राम प्रति हेक्टेयर होने की उम्मीद है।</span></font></span></div>
+</div>
+                                            <div class="col-md-12">
+
+<h4 class="bnf-con"><strong>Q5: क्या हमें सोयाबीन खाना चाहिए?</strong></h4>
+<div style="display:flex;"><h4><strong>Ans:  </strong></h4><span style="margin-top: 1.5%; margin-left: 2%;" ><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">सोयाबीन पोषक तत्वों और लाभकारी पौधों के यौगिकों से भरपूर होते हैं। कम से कम संसाधित सोया खाद्य पदार्थों में समृद्ध आहार विभिन्न स्वास्थ्य लाभ प्रदान कर सकते हैं, जिनमें बेहतर हृदय स्वास्थ्य, कम रजोनिवृत्ति के लक्षण और कुछ कैंसर का कम जोखिम शामिल है।</span></font></div></span></div>
+</div>
+                                       </div>
+<div class="col-md-6">
+                                                                                                                                                    <div class="col-md-12">
+
+<h4 class="bnf-con"><strong>Q2: भारत में किस प्रमुख क्षेत्र में सोयाबीन उगाया जाता है?</strong></h4>
+<div style="display:flex;"><h4><strong>Ans: </strong></h4><span style="margin-top: 1.5%; margin-left: 2%;"><font face="Arial, Verdana"><span style="font-size: 13.3333px;">भारत में सोयाबीन का उत्पादन महाराष्ट्र और मध्य प्रदेश में हावी है, जो कुल उत्पादन का 89 प्रतिशत योगदान देता है। राजस्थान, आंध्र प्रदेश, कर्नाटक, छत्तीसगढ़ और गुजरात शेष 11 प्रतिशत उत्पादन में योगदान करते हैं। महराष्ट्र में सोयाबीन में अग्रणी बनने की क्षमता है।</span></font></span></div>
+</div>
+                                                                                                                                                <div class="col-md-12">
+
+<h4 class="bnf-con"><strong>Q4: भारत का कौन सा राज्य सोयाबीन उत्पादन में प्रथम स्थान पर है?</strong></h4>
+<div style="display:flex;"><h4><strong>Ans: </strong></h4><span style="margin-top: 1.5%; margin-left: 2%;"><font face="Arial, Verdana"><span style="font-size: 13.3333px;">मध्यप्रदेश ने 2005 में सोयाबीन के कुल उत्पादन का 60 प्रतिशत उत्पादन करके देश में सोयाबीन में पहला स्थान हासिल किया। चना, मक्का और कुल दालों और तिलहन के उत्पादन में अधिकतम हिस्सेदारी हासिल करने में भी राज्य सबसे ऊपर है।</span></font></span></div>
+</div>
+                                                                                                                                                <div class="col-md-12">
+
+<h4 class="bnf-con"><strong>Q6: सोयाबीन की कटाई किस महीने करते हैं?</strong></h4>
+<div style="display:flex;"><h4><strong>Ans: </strong></h4><span style="margin-top: 1.5%; margin-left: 2%;"><div style=""><span style="font-size: 13.3333px; font-family: Arial, Verdana;">सितंबर-अक्टूबर: सोयाबीन की फसल की कटाई करें। यदि आवश्यक हो तो सुरक्षित भंडारण के लिए अनाज को लगभग 15% नमी तक सुखाएं।</span></div></span></div>
+</div>
+                                       </div>
+
+</div>                                       
+</div> 
+
+<div class="clearfix"></div>
+</div>
+         </div>
+
+
+
+</div>
+</div>
+</div>
+<br>
+</section>
+          <section class="container-fluid " style="background-color:rgb(40, 51, 61)">
+            <footer class="footer ">
+                  
+              <!-- Footer Top -->
+              <div class="footer-top">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                      <br><br>
+                    
+                      <!-- Footer Widget -->
+                      <div class="footer-widget footer-about">
+                        
+                        <div class="footer-about-content" style="font-weight:300">
+                          <p class="mb-4 text-center text-light " style="font-size: 20px; font-weight: 300;" ><b> BEFORE USE</b> </p>
+                          <p class="text-light" style="margin-left: 80px; font-size:medium;" ><b> information and services may contain bugs, errors, problems or other limitations. We have no liability whatsoever for your use of any information or service. Use any service or information given here at your own risk. Read our full Terms of Service. </b></p>
+                          <div class="social-icon">
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /Footer Widget -->
+                      
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6" style="margin-left: 160px; margin-top: 50px;">
+                    
+                      <!-- Footer Widget -->
+                      <div class="footer-widget footer-menu">
+                        <h2 class="footer-title text-light">Company</h2><br>
+                        <ul>
+                          <li><a class="text-light" href="">About Us</a></li>
+                          <li><a class="text-light" href="">Contact</a></li>
+                    
+                          <li><a class="text-light" href="">Term Of Services</a></li>
+                          <li><a class="text-light" href="">Privacy policy</a></li>
+                          <li><a class="text-light" href="">FAQ'S</a></li>
+                        </ul>
+                      </div>
+                      <!-- /Footer Widget -->
+                      
+                    </div>
+                    <div class="col-lg-3 col-md-6" style="margin-left: 130px; margin-top: 50px;">
+                    
+                      <!-- Footer Widget -->
+                      <div class="footer-widget footer-menu">
+                        <h2 class="footer-title text-light">Resource</h2><br>
+                        <p style="text-decoration: none;">
+                          <li><a class="text-light" href="">Return and Refund policy</a></li>
+                          
+                        </p>
+                      </div>
+                      <!-- /Footer Widget -->
+                      
+                    </div>
+                    
+                    </div>
+                    
+                    
+              
+              <!-- Footer Bottom -->
+              <div class="footer-bottom">
+                <div class="container-fluid">
+                
+                  <!-- Copyright -->
+                  <div class="copyright">
+                    <div class="row">
+                      <div class="col-md-2 col-lg-6">
+                        <div class="copyright-text">
+                          <p class="mb-0 mt-lg-4 text-light text-center" style="text-size-adjust: 50px; margin-left: 400px;">&copy; 2022 . All rights reserved.</p>
+                        </div>
+                      </div>
+                      <div class="footer-bottom">
+                        <div class="container-fluid">
+                        
+                          <!-- Copyright -->
+                          <div class="copyright">
+                            <div class="row">
+                              <div class="col-md-2 col-lg-8">
+                                
+                              </div>
+                      <div class="col-md-6 col-lg-6">
+                      
+                        <!-- Copyright Menu -->
+                        <div class="copyright-menu"><br><br><br>
+                          
+                        </div>
+                        <!-- /Copyright Menu -->
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /Copyright -->
+                  
+                </div>
+              </div>
+              <!-- /Footer Bottom -->
+            <a href="" class="whatsapp_btn" target="_blank">
+              
+            </a>	
+              
+            </footer>
+            <!-- /Footer -->
+                   
+            </div>
+            <!-- Back-To-Top -->
+          </section>
+        </section><br>
+</body>
+</html>

@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="User_Module">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kisan_Informer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.css"
+rel="stylesheet"
+/>
+
+<!-- MDB -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.js"
+></script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+<script src="./angular/angularjs.js"></script>
+    <script src="./angular/module1.js"></script>
+    <script src="./angular/route.js"></script>
+    <script src="./js/User.js"></script>
+
+</head>
+<body class="container-fluid bg-transparent" ng-controller="index_ctr">
+    <div class="latest_note bg-dark text-light ">
+        <marquee width="100%;" scrollAmount="5">Smart Farming website  are live for farmers. You can visit and read the instructions for upcoming farming generations. Contact number 9525952621
+        </marquee></i><strong id="disable_notification"> </strong>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light  mx-auto" style="background-color: rgb(48, 58, 63);">
+        <a class="navbar-brand text-light" href="#">Kisan_Informer</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          
+        </button>
+      
+        <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+          
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="margin-left: 300px;">
+             <!-- <li class="nav-item active">
+              <a  class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">News</a>
+              <div class="dropdown-menu text-light">
+               <a class="dropdown-item" href="#">Business News</a>
+               <div class="dropdown-divider"></div>
+               <a class="dropdown-item" href="#">Crop News</a>
+               <div class="dropdown-divider"></div>
+               <a class="dropdown-item" href="#">Livestock News</a>
+             </div>
+             </li> --> 
+             <li class="text-light mt-2 mr-2">Home</li>
+             
+             <li class="nav-item dropdown">
+               <a  class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Crops</a>
+               <div class="dropdown-menu bg-dark">
+                <a class="dropdown-item text-light" href="./kharif crops.html">Kharif Crops</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="./rabi crops.html">Rabi Crops</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="./vegetables.html">vegetable</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">HerBal</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Phal-Phool-Tree</a>
+              </div>
+             </li>
+             <li class="nav-item dropdown">
+              <a  class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Service</a>
+              <div class="dropdown-menu bg-dark">
+              <a class="dropdown-item text-light" href="#">Mandi Bhav</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="#">Agriculture Spot</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="#">Government Scheme</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="#">Agriculture Event</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="#">Agriculture Training</a>
+            </div>
+            </li>
+              <li class="nav-item dropdown ">
+                <p class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="falseServices">About Us </p>
+                <div class="dropdown-menu bg-dark">
+                  <a class="dropdown-item text-light" href="./mission.html">Mission and Vision</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item text-light" href="#">Help</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item text-light" href="#">Events participation</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item text-light" href="#">Internship</a>
+                </div>  
+             <li class="nav-item dropdown ">
+                <a  class="nav-link dropdown-toggle text-light " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Gallery</a>
+                <div class="dropdown-menu bg-dark">
+                  <a class="dropdown-item text-light" href="#">Magazine</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item text-light " href="./gallery.html">Photo Gallery</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item text-light" href="video.html">Video Gallery</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item text-light" href="#">Achievements</a>
+                  
+             </li>
+                
+               <li class="nav-item dropdown">
+                <a  class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Help</a>
+                <div class="dropdown-menu bg-dark">
+                <a class="dropdown-item text-light" href="#">Agriculture Experts</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Agriculture Advisers</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Agriculture Engineers</a>
+                <div class="dropdown-divider"></div>
+                  <a class="dropdown-item text-light" href="#">Agriculture Friends</a>
+
+              </div>
+              </li>
+          </ul>
+        </div>
+        <div class="d-flex">
+          
+         <a href="./login.html"> <button class="btn btn-warning" type="submit">Join/login</button></a>
+         </div>
+         <div class="d-flex">
+          <input class="btn btn-outline-primary" type="file" placeholder="Change Photo" accept="image/png, image/gif, image/jpeg" onchange="angular.element(this).scope().uploadFile(event)">
+        <button class="btn btn-primary"  ng-click="uploadImage()" value="Upload" type="button">Upload pic</button>
+              </div>
+      </nav>
+      
+      <section class="container-fluid">
+        <div id="carouselExampleIndicators" class="carousel slide"  data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="image/wheat.jpg" class="d-block w-100 " alt="..."style="height:400px;">
+              </div>
+              <div class="carousel-item">
+                <img src="image/maize.jpg" class="d-block w-100 " alt="..."style="height:400px;">
+              </div>
+              <div class="carousel-item">
+                <img src="image/cotton.jpg" class="d-block w-100 " alt="..."style="height:400px;">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </button>
+          </div>
+    </section><br>
+    <section class="about-us custom-about-us" style="background: margi #eee;padding-top: 10px;">
+      <div class="container " style="margin-left: 150px;">
+          <div class="main-content ">
+                                                              <div class="row">
+                  <div class="col-md-3 col-xs-12" style="padding:0 ">
+                      <a href="./soil testing.html" title="Soil Testing">
+                          <div class="block-icon-2" style="overflow: auto;">
+                              <div class="table-cell">
+                                  <div class="col-md-5 col-xs-5">
+                                      <img src="https://www.kisaanhelpline.com/assets/images/icon/KH-Soil-testing-icon.png" alt="Soil-Testing" title="Soil Testing">
+                                  </div>
+                                  <div class="col-md-7 col-xs-7" style="padding:0 ">
+                                      <h3 class="title">Soil Testing</h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-md-3 col-xs-12" style="padding:0">
+                      <a href="" title="Organic Farming">
+                          <div class="block-icon-2" style="overflow: auto;">
+                              <div class="table-cell">
+                                  <div class="col-md-5 col-xs-5">
+                                     <img src="https://www.kisaanhelpline.com/assets/images/icon/KH-Organic-farming-icon.png" alt="Organic-Farming" title="Organic Farming">
+                                  </div>
+                                  <div class="col-md-7 col-xs-7" style="padding:0">
+                                      <h3 class="title">Organic Farming</h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-md-3 col-xs-12" style="padding:0">
+                      <a href="" title="Agriculture Events">
+                          <div class="block-icon-2" style="overflow: auto;">
+                              <div class="table-cell">
+                                  <div class="col-md-5 col-xs-5">
+                                     <img src="https://www.kisaanhelpline.com/assets/images/icon/KH-Event-icon.png" alt="Agriculture-Events" title="Agriculture Events">
+                                  </div>
+                                  <div class="col-md-7 col-xs-7" style="padding:0">
+                                      <h3 class="title">Agriculture Events</h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-md-3 col-xs-12" style="padding:0">
+                      <a href="" title="Digital Magazine">
+                          <div class="block-icon-2" style="overflow: auto;">
+                              <div class="table-cell">
+                                  <div class="col-md-5 col-xs-5">
+                                    <img src="https://www.kisaanhelpline.com/assets/images/icon/KH-Digital-magazine-icon.png" alt="Digital-Magazine" title="Digital Magazine">
+                                  </div>
+                                  <div class="col-md-7 col-xs-7" style="padding:0">
+                                      <h3 class="title">Digital Magazine</h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+   
+  <section class="about-us padding-bottom-100" id="about-us" style="padding-top: 50px;">
+    <div class="container">
+        <div class="main-titles">
+            <h1 class="title text-center text-dark mb-5">What We Are</h1>
+            <h4 class="mt-5 mb-5  text-center">A dedicated/devoted digital platform to improve the farming life of the farmer and empower sustainable agriculture.</h4>
+            <h5 class="text-center"><span>Transforming Agriculture in India</span></h5>
+             <h6 class="text-center"><span>Among India's leading agricultural service provider portals, <strong>Kisaan_Informer</strong> assists rural communities to increase the efficiency and sustainability of their agricultural operations. We help farmers to be more connected, integrated, and knowledgable than ever before. We give you expertized knowledge from land preparation, seeding/sowing to plant nutrition, protection, and continuing till post harvesting. We are the best Agricultural Service Provider in India, helping you to make decisions on the farm and improve performance, predict what is going to happen in the future and act more effectively as predicted.</h4><br>
+            
+             <h3 class="text-center" style="color: #eabf1e;">किसानों के हितकारी देश भर में तकनीक हमारी</h3>
+             <br>                                                  
+        </div>
+        <div class="main-content text-center">
+            <div class="row" style="display: flex;justify-content: center;"><div class="vegitable-list" style="background:url(https://www.kisaanhelpline.com/cat_images/Kharif-crop-1.jpg);background-size: cover;">
+                    <div class="block-icon-3">
+                        <div class="table-cell-3">
+                            <a href="./kharif crops.html"><h4 class="title"> Kharif </h4></a>
+                        </div>
+                    </div>
+                </div><div class="vegitable-list" style="background:url(https://www.kisaanhelpline.com/cat_images/rabi-crop-1.jpg);background-size: cover;">
+                    <div class="block-icon-3">
+                        <div class="table-cell">
+                            <a href="./rabi crops.html"><h4 class="title"> Rabi </h4></a>
+                        </div>
+                    </div>
+                </div><div class="vegitable-list" style="background:url(https://www.kisaanhelpline.com/cat_images/Organic-Vegetable-Farming.jpg);background-size: cover;">
+                    <div class="block-icon-3">
+                        <div class="table-cell">
+                            <a href="./vegetables.html"><h4 class="title"> Vegetable </h4></a>
+                        </div>
+                    </div>
+                </div><div class="vegitable-list" style="background:url(https://www.kisaanhelpline.com/cat_images/Herbal-crops-plants-seeds-1.jpg);background-size: cover;">
+                    <div class="block-icon-3">
+                        <div class="table-cell">
+                            <a href=""><h4 class="title"> Herbal </h4></a>
+                        </div>
+                    </div>
+                </div><div class="vegitable-list" style="background:url(https://www.kisaanhelpline.com/cat_images/Phal-Phool-agriculture-farming.jpg);background-size: cover;">
+                    <div class="block-icon-3">
+                        <div class="table-cell">
+                            <a href=""><h4 class="title"> Phal-Phool-Tree </h4></a>
+                        </div>
+                    </div>
+                </div></div>
+            </div>                        
+    </div>
+</section><br> <br>
+
+<section class="banner banner-5">
+  <div class="container">
+      <div data-parallax="{&quot;y&quot;: 150}" class="wrapper-banner">
+          <div class="main-titles">
+              <h1 class="title text-center text-dark" style="font-size: 60px;">why choose us</h1>
+          </div>
+          <div class="main-content text-center mt-5">
+              <div class="row">
+                  <div class="col-sm-4 col-xs-6">
+                      <div class="block-icon-3">
+                          <div class="table-cell"><i class="icons fa fa-database"></i></div>
+                          <div class="table-cell">
+                              <h3 class="title mt-6">RESEARCH DATA</h3>
+                              <p class="description mt-5">We have a strong research team for the latest update. KH stores back years’ data to help the farmer to find solutions and resolve issues related to crop management.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-4 col-xs-6 mt-5">
+                      <div class="block-icon-3">
+                          <div class="table-cell"><i class="icons fa fa-cog"></i></div>
+                          <div class="table-cell">
+                              <h3 class="title">INNOVATION</h3>
+                              <p class="description">Our upcoming AI will be available 24*7 to serve farmers. Innovation become the need for farming and we are enthusiast innovators.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-4 col-xs-6 position-center mt-5">
+                      <div class="block-icon-3">
+                          <div class="table-cell"><i class="icons fa fa-comments"></i></div>
+                          <div class="table-cell">
+                              <h3 class="title">LIVE SUPPORT & SOLUTIONS</h3>
+                              <p class="description">Salah and Samadhan is a unique tool to resolve farmers’ queries.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section><br><br>
+
+<section class="about-us padding-top-100 padding-bottom-100 mt-5 text-center mb-5">
+  <div class="container mt-5">
+      <div class="main-titles">
+          <h2 class="title" style="font-size: 60px; font-weight: 600;">What we do</h2></div>
+      <div class="main-content whatwedosection mt-5">
+          <div class="row">
+              <div class="col-md-3 col-xs-6">
+                  <div class="block-icon-2">
+                      <div class="table-cell">
+                          <img src="https://www.kisaanhelpline.com/assets/images/category/indian-crop.png" title="Indian Crops" alt="Indian Crops" class="img-full" />
+                      </div>
+                      <div class="table-cell">
+                          <h3 class="title" title="Indian Crops">Indian Crops</h3>
+                         <a href="" class="btn btn-primary" title="Indian Crops">read more</a></div>
+                  </div>
+              </div>
+              <div class="col-md-3 col-xs-6 mb-5">
+                  <div class="block-icon-2">
+                      <div class="table-cell">
+                           <img src="https://www.kisaanhelpline.com/assets/images/category/mandi-bhav.png" title="Mandi Bhav Updates" alt="Mandi Bhav" class="img-full" />
+                         </div>
+                      <div class="table-cell">
+                          <h3 class="title" title="Mandi Bhav Updates">Mandi Bhav</h3>
+                          <a href="" class="btn btn-primary" title="Mandi Bhav Updates">read more</a></div>
+                  </div>
+              </div>
+              <div class="col-md-3 col-xs-6">
+                  <div class="block-icon-2">
+                     <div class="table-cell">
+                           <img src="https://www.kisaanhelpline.com/assets/images/category/agriculture-event.png" title="Agriculture Events" alt="Agriculture Events" class="img-full" />
+                         </div>
+                      <div class="table-cell">
+                          <h3 class="title" title="Agriculture Events">Agriculture Events</h3>
+                          <a href="" class="btn btn-primary" title="Agriculture Events">read more</a></div>
+                  </div>
+              </div>
+              <div class="col-md-3 col-xs-6">
+                  <div class="block-icon-2">
+                     <div class="table-cell">
+                           <img src="https://www.kisaanhelpline.com/assets/images/category/training-program.png" title="Training Programs" alt="Training Programs" class="img-full" />
+                         </div>
+                      <div class="table-cell">
+                          <h3 class="title" title="Training Programs">Training Programs</h3>
+                          <a href="" class="btn btn-primary" title="Training Programs">read more</a></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+       <div class="main-content whatwedosection">
+          <div class="row">
+              <div class="col-md-3 col-xs-6">
+                  <div class="block-icon-2">
+                     <div class="table-cell">
+                           <img src="https://www.kisaanhelpline.com/assets/images/category/agro-magazine.png" title="Digital Magazine" alt="Digital Magazine" class="img-full" />
+                         </div>
+                      <div class="table-cell">
+                          <h3 class="title" title="Agro Magazine">Digital Magazine</h3>
+                       <a href="" class="btn btn-primary" title="Digital Magazine">read more</a></div>
+                  </div>
+              </div>
+              <div class="col-md-3 col-xs-6">
+                  <div class="block-icon-2">
+                    <div class="table-cell">
+                           <img src="https://www.kisaanhelpline.com/assets/images/category/govt-scheme.png" title="Government Schemes" alt="Government Schemes" class="img-full" />
+                         </div>
+                      <div class="table-cell">
+                          <h3 class="title" title="Government Schemes">Government Schemes</h3>
+                        <a href="" class="btn btn-primary" title="Government Schemes">read more</a></div>
+                  </div>
+              </div>
+              <div class="col-md-3 col-xs-6">
+                  <div class="block-icon-2">
+                      <div class="table-cell">
+                           <img src="https://www.kisaanhelpline.com/assets/images/category/organic-farming.png" title="Organic Farming" alt="Organic Farming" class="img-full" />
+                         </div>
+                      <div class="table-cell">
+                          <h3 class="title" title="Organic Farming">Organic Farming</h3>
+                        <a href="" class="btn btn-primary" title="Organic Farming">read more</a></div>
+                  </div>
+              </div>
+              <div class="col-md-3 col-xs-6">
+                  <div class="block-icon-2">
+                    <div class="table-cell">
+                           <img src="https://www.kisaanhelpline.com/assets/images/category/weather.png" title="Weather" alt="Weather" class="img-full" />
+                         </div>
+                      <div class="table-cell">
+                          <h3 class="title" title="Weather">Weather</h3>
+                       <a href="" class="btn btn-primary" title="Weather">read more</a></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+      <section class="mt-4">
+        <div class="container-fluid">
+          <hr>
+          <h2 style="text-align:center">Popular Agriculture</h2>
+          <hr>
+          <!-- <a href="./kharif crops.html"><h3 class="text-center"> Kharif Crops</h3></a> -->
+         
+          <div class="row row-cols-1 row-cols-md-4">
+            <div class="col mb-3">
+              <div class="card ">
+                <img src="image/wheat.jpg" class="card-img-top" alt="G"  height="200" width="150">
+                <div class="card-body h-100">
+                  
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col mb-3">
+              <div class="card ">
+                <img src="image/rices.jpg" class="card-img-top" height="200" width="150" alt="D" >
+                <div class="card-body h-100">
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col mb-3">
+              <div class="card">
+                <img src="image/coriander.jpg" class="card-img-top" height="200" width="150" alt="E">
+                <div class="card-body h-100">
+                 
+                </div>
+              </div>
+            </div>
+            <div class="col mb-3">
+              <div class="card ">
+                <img src="image/maize.jpg" class="card-img-top" alt="F" height="200" width="150">
+                <div class="card-body h-100">
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+       </section>
+        
+       <section class="banner custombanner25" style="background:url('https://www.kisaanhelpline.com/uploads/axisbank/Krishi-axisbank-KH.png'); height: 650px; width: 100%; background-size:100%; background-position: bottom; ">
+        <div class="container">
+            <div >
+            
+                <div class="main-content text-center padding-top-100">
+                    <div class="row">
+                        <div class="col-sm-3 col-xs-5">
+                            <div class="block-icon-3">
+                                <div class="table-cell">
+                                     <div class="wrapper-btn btnheight5" style="align-items: center; text-align: right;">
+                                        <a href="" target="_blank" class=" text-light btn btn-light" style="background-color: #96144c; margin-top: 400px;" title="Axisbank">Know More</a>
+                                    </div>
+                                 
+                                    
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-sm-3 col-xs-6">
+                            <div class="block-icon-3">
+                                <div class="table-cell">
+                                     <div class="wrapper-btn btnheight5" style="text-align:left;">
+                                        
+                                        <a href="" target="_blank" class="btn btn-light text-light" style="background-color: #96144c;  margin-top: 400px;" title="Axisbank KCC">Apply Now</a>
+                                    </div>
+                                 
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><br>
+          <section class="container-fluid " style="background-color:rgb(40, 51, 61)">
+            <footer class="footer ">
+                  
+              <!-- Footer Top -->
+              <div class="footer-top">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                      <br><br>
+                    
+                      <!-- Footer Widget -->
+                      <div class="footer-widget footer-about">
+                        
+                        <div class="footer-about-content" style="font-weight:300">
+                          <p class="mb-4 text-center text-light " style="font-size: 20px; font-weight: 300;" ><b> BEFORE USE</b> </p>
+                          <p class="text-light" style="margin-left: 80px; font-size:medium;" ><b> information and services may contain bugs, errors, problems or other limitations. We have no liability whatsoever for your use of any information or service. Use any service or information given here at your own risk. Read our full Terms of Service. </b></p>
+                          <div class="social-icon">
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /Footer Widget -->
+                      
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6" style="margin-left: 160px; margin-top: 50px;">
+                    
+                      <!-- Footer Widget -->
+                      <div class="footer-widget footer-menu">
+                        <h2 class="footer-title text-light">Company</h2><br>
+                        <ul>
+                          <li><a class="text-light" href="">About Us</a></li>
+                          <li><a class="text-light" href="">Contact</a></li>
+                    
+                          <li><a class="text-light" href="">Term Of Services</a></li>
+                          <li><a class="text-light" href="">Privacy policy</a></li>
+                          <li><a class="text-light" href="">FAQ'S</a></li>
+                        </ul>
+                      </div>
+                      <!-- /Footer Widget -->
+                      
+                    </div>
+                    <div class="col-lg-3 col-md-6" style="margin-left: 130px; margin-top: 50px;">
+                    
+                      <!-- Footer Widget -->
+                      <div class="footer-widget footer-menu">
+                        <h2 class="footer-title text-light">Resource</h2><br>
+                        <p style="text-decoration: none;">
+                          <li><a class="text-light" href="">Return and Refund policy</a></li>
+                          
+                        </p>
+                      </div>
+                      <!-- /Footer Widget -->
+                      
+                    </div>
+                    
+                    </div>
+                    
+                    
+              
+              <!-- Footer Bottom -->
+              <div class="footer-bottom">
+                <div class="container-fluid">
+                
+                  <!-- Copyright -->
+                  <div class="copyright">
+                    <div class="row">
+                      <div class="col-md-2 col-lg-6">
+                        <div class="copyright-text">
+                          <p class="mb-0 mt-lg-4 text-light text-center" style="text-size-adjust: 50px; margin-left: 400px;">&copy; 2022 . All rights reserved.</p>
+                        </div>
+                      </div>
+                      <div class="footer-bottom">
+                        <div class="container-fluid">
+                        
+                          <!-- Copyright -->
+                          <div class="copyright">
+                            <div class="row">
+                              <div class="col-md-2 col-lg-8">
+                                
+                              </div>
+                      <div class="col-md-6 col-lg-6">
+                      
+                        <!-- Copyright Menu -->
+                        <div class="copyright-menu"><br><br><br>
+                          
+                        </div>
+                        <!-- /Copyright Menu -->
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /Copyright -->
+                  
+                </div>
+              </div>
+              <!-- /Footer Bottom -->
+            <a href="" class="whatsapp_btn" target="_blank">
+              
+            </a>	
+              
+            </footer>
+            <!-- /Footer -->
+                   
+            </div>
+            <!-- Back-To-Top -->
+          </section>
+        </section><br>
+        <section class="container-fluid">
+
+        </section>
+              
+</body>
+</html>

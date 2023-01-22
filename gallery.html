@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smart farming</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.css"
+rel="stylesheet"
+/>
+
+<!-- MDB -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.js"
+></script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+</head>
+<body class="container-fluid">
+    <div class="latest_note bg-dark text-light ">
+        <marquee  width="100%;" scrollAmount="5">Smart Farming website  are live for farmers. You can visit and read the instructions for upcoming farming generations. Contact number 9525952621
+        </marquee></i><strong id="disable_notification"> </strong>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light  mx-auto" style="background-color: rgb(48, 58, 63);">
+      <a class="navbar-brand text-light" href="#">Kisan_Informer</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        
+      </button>
+    
+      <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+        
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="margin-left: 300px;">
+           <!-- <li class="nav-item active">
+            <a  class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">News</a>
+            <div class="dropdown-menu text-light">
+             <a class="dropdown-item" href="#">Business News</a>
+             <div class="dropdown-divider"></div>
+             <a class="dropdown-item" href="#">Crop News</a>
+             <div class="dropdown-divider"></div>
+             <a class="dropdown-item" href="#">Livestock News</a>
+           </div>
+           </li> --> 
+           <a href="./index.html"><li class="text-light mt-2 mr-2">Home</li></a>
+           
+           <li class="nav-item dropdown">
+             <a  class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Crops</a>
+             <div class="dropdown-menu bg-dark">
+              <a class="dropdown-item text-light" href="./kharif crops.html">Kharif Crops</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="./rabi crops.html">Rabi Crops</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="./vegetables.html">vegetable</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="#">HerBal</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="#">Phal-Phool-Tree</a>
+            </div>
+           </li>
+           <li class="nav-item dropdown">
+            <a  class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Service</a>
+            <div class="dropdown-menu bg-dark">
+            <a class="dropdown-item text-light" href="#">Mandi Bhav</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-light" href="#">Agriculture Spot</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-light" href="#">Government Scheme</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-light" href="#">Agriculture Event</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-light" href="#">Agriculture Training</a>
+          </div>
+          </li>
+            <li class="nav-item dropdown ">
+              <p class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="falseServices">About Us </p>
+              <div class="dropdown-menu bg-dark">
+                <a class="dropdown-item text-light" href="#">Mission and Vision</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Help</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Events participation</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Internship</a>
+              </div>  
+           <li class="nav-item dropdown ">
+              <a  class="nav-link dropdown-toggle text-light " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Gallery</a>
+              <div class="dropdown-menu bg-dark">
+                <a class="dropdown-item text-light" href="#">Magazine</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light " href="#">Photo Gallery</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Video Gallery</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Achievements</a>
+                
+           </li>
+              
+             <li class="nav-item dropdown">
+              <a  class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Help</a>
+              <div class="dropdown-menu bg-dark">
+              <a class="dropdown-item text-light" href="#">Agriculture Experts</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="#">Agriculture Advisers</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="#">Agriculture Engineers</a>
+              <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Agriculture Friends</a>
+
+            </div>
+            </li>
+        </ul>
+      </div>
+      <div class="d-flex">
+
+        <button class="btn btn-warning" type="submit">Join/login</button>
+       </div>
+    </nav>
+
+    <section class="container-fluid">
+      <div id="carouselExampleIndicators" class="carousel slide"  data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="image/b1.jpg" class="d-block w-100 " alt="..."style="height:400px;">
+            </div>
+            <!-- <div class="carousel-item">
+              <img src="image/d1.jpg" class="d-block w-100 " alt="..."style="height:400px;">
+            </div>
+            <div class="carousel-item">
+              <img src="image/a1.jpg" class="d-block w-100 " alt="..."style="height:400px;">
+            </div>
+          </div> -->
+          <!-- <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </button> -->
+        </div>
+  </section><br><br><br>
+
+   <section class="">
+                       <div class="container" >
+                        <div class="row">
+                           <div class="main-titles text-center">
+                             <h3>Participate in Agricultural Events</h3>
+                             <br/>
+                           </div>
+                             <div class="col-md-6 col-xs-12">
+                              <div class="grid-item">
+                                  <img src="https://www.kisaanhelpline.com/home_libcssjs/images/organic-expo-22.jpg" style="width: 100%;">
+                                   <h2 style="text-align: center;">Organic Expo Delhi - 22</h2>
+                                 </div> 
+                            </div>
+                              <div class="col-md-6 col-xs-12">
+                              <div class="grid-item">
+                                  <img src="https://www.kisaanhelpline.com/home_libcssjs/images/enactus-delhi-22.jpg" style="width: 100%;">
+                                   <h2 style="text-align: center;">Enactus Delhi -22</h2>
+                                 </div> 
+                            </div>
+
+                            <div class="col-md-6 col-xs-12">
+                              <div class="grid-item">
+                                  <img src="https://www.kisaanhelpline.com/home_libcssjs/images/mp-startup-conclave-22.jpg" style="width: 100%;">
+                                   <h2 style="text-align: center;">M.P. Start-up Conclave - 22</h2>
+                                 </div> 
+                            </div>
+                           <div class="col-md-6 col-xs-12">
+                              <div class="grid-item">
+                                  <img src="https://www.kisaanhelpline.com/home_libcssjs/images/eima-event-2016.jpg">
+                                   <h2 style="text-align: center;">EIMA INTERNATIONAL 2016</h2>
+                                 </div> 
+                            </div>
+                              <div class="col-md-6 col-xs-12">
+                              <div class="grid-item">
+                                  <img src="https://www.kisaanhelpline.com/home_libcssjs/images/ICAR-event.jpg" style="width: 100%;">
+                                   <h2 style="text-align: center;">KRISHI MELA  PUSA 2019</h2>
+                                 </div> 
+                            </div>
+                                  <div class="col-md-6 col-xs-12">
+                              <div class="grid-item">
+                                  <img src="https://www.kisaanhelpline.com/home_libcssjs/images/ICAR-2019.jpg"style="width: 100%;">
+                                   <h2 style="text-align: center;">INVEST INDIA-2019</h2>
+                                 </div> 
+                            </div>
+                                  <div class="col-md-6 col-xs-12">
+                              <div class="grid-item">
+                                  <img src="https://www.kisaanhelpline.com/home_libcssjs/images/ICAR-delhi-visit2019.jpg"style="width: 100%;">
+                                   <h2 style="text-align: center;">PUSA CAMPUS VISIT 2019</h2>
+                                 </div> 
+                            </div>
+                             
+                                 <div class="col-md-6 col-xs-12">
+                              <div class="grid-item">
+                                  <img src="https://www.kisaanhelpline.com/home_libcssjs/images/Jharkhand-event-2019.jpg"style="width: 100%;">
+                                   <h2 style="text-align: center;">JHARKHAND HACKATHON STARTUP 2019</h2>
+                                 </div> 
+                            </div>
+                                 <div class="col-md-6 col-xs-12">
+                              <div class="grid-item">
+                                  <img src="https://www.kisaanhelpline.com/home_libcssjs/images/farmtech-asia-2019.jpg"style="width: 100%;">
+                                   <h2 style="text-align: center;">KRISHI MELA FARMTECH ASIA INDORE(MEDIA PARTNER)</h2>
+                                 </div> 
+                            </div>
+                            
+                              <div class="col-md-6 col-xs-12">
+                              <div class="grid-item">
+                                  <img src="https://www.kisaanhelpline.com/home_libcssjs/images/organic-expo-2020.png"style="width: 100%;">
+                                   <h2 style="text-align: center;">INDORE: ORGANIC EXPO 2020</h2>
+                                 </div> 
+                            </div>
+                             <div class="col-md-6 col-xs-12">
+                              <div class="grid-item">
+                              <img src="https://www.kisaanhelpline.com/uploads/eventphoto/firm-tech-asia-22.jpg">
+                                   <h3 style="text-align: center;">KRISHI MELA FARMTECH ASIA INDORE(MEDIA PARTNER -22)</h3>
+                                 </div> 
+                            </div>
+                                <div class="col-md-6 col-xs-12">
+                              <div class="grid-item">
+                              <img src="https://www.kisaanhelpline.com/uploads/eventphoto/soil-testing-lab-22.jpg">
+                                   <h3 style="text-align: center;">Soil Testing Lab Dalauda -22</h3>
+                                 </div> 
+                            </div>
+                       </div>
+                       </div>
+                       <div class="clearfix"></div>
+                                        
+                    </section><br/><br/><br/><br/>
+
+
+
+    <section class="container-fluid " style="background-color:rgb(40, 51, 61)">
+        <footer class="footer ">
+              
+          <!-- Footer Top -->
+          <div class="footer-top">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-3 col-md-6">
+                  <br><br>
+                
+                  <!-- Footer Widget -->
+                  <div class="footer-widget footer-about">
+                    
+                    <div class="footer-about-content" style="font-weight:300">
+                      <p class="mb-4 text-center text-light " style="font-size: 20px; font-weight: 300;" ><b> BEFORE USE</b> </p>
+                      <p class="text-light" style="margin-left: 80px; font-size:medium;" ><b> information and services may contain bugs, errors, problems or other limitations. We have no liability whatsoever for your use of any information or service. Use any service or information given here at your own risk. Read our full Terms of Service. </b></p>
+                      <div class="social-icon">
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /Footer Widget -->
+                  
+                </div>
+                
+                <div class="col-lg-3 col-md-6" style="margin-left: 160px; margin-top: 50px;">
+                
+                  <!-- Footer Widget -->
+                  <div class="footer-widget footer-menu">
+                    <h2 class="footer-title text-light">Company</h2><br>
+                    <ul>
+                      <li><a class="text-light" href="">About Us</a></li>
+                      <li><a class="text-light" href="">Contact</a></li>
+                
+                      <li><a class="text-light" href="">Term Of Services</a></li>
+                      <li><a class="text-light" href="">Privacy policy</a></li>
+                      <li><a class="text-light" href="">FAQ'S</a></li>
+                    </ul>
+                  </div>
+                  <!-- /Footer Widget -->
+                  
+                </div>
+                <div class="col-lg-3 col-md-6" style="margin-left: 130px; margin-top: 50px;">
+                
+                  <!-- Footer Widget -->
+                  <div class="footer-widget footer-menu">
+                    <h2 class="footer-title text-light">Resource</h2><br>
+                    <p style="text-decoration: none;">
+                      <li><a class="text-light" href="">Return and Refund policy</a></li>
+                      
+                    </p>
+                  </div>
+                  <!-- /Footer Widget -->
+                  
+                </div>
+                
+                </div>
+                
+                
+          
+          <!-- Footer Bottom -->
+          <div class="footer-bottom">
+            <div class="container-fluid">
+            
+              <!-- Copyright -->
+              <div class="copyright">
+                <div class="row">
+                  <div class="col-md-2 col-lg-6">
+                    <div class="copyright-text">
+                      <p class="mb-0 mt-lg-4 text-light text-center" style="text-size-adjust: 50px; margin-left: 400px;">&copy; 2022 . All rights reserved.</p>
+                    </div>
+                  </div>
+                  <div class="footer-bottom">
+                    <div class="container-fluid">
+                    
+                      <!-- Copyright -->
+                      <div class="copyright">
+                        <div class="row">
+                          <div class="col-md-2 col-lg-8">
+                            
+                          </div>
+                  <div class="col-md-6 col-lg-6">
+                  
+                    <!-- Copyright Menu -->
+                    <div class="copyright-menu"><br><br><br>
+                      
+                    </div>
+                    <!-- /Copyright Menu -->
+                    
+                  </div>
+                </div>
+              </div>
+              <!-- /Copyright -->
+              
+            </div>
+          </div>
+          <!-- /Footer Bottom -->
+        <a href="" class="whatsapp_btn" target="_blank">
+          
+        </a>	
+          
+        </footer>
+        <!-- /Footer -->
+               
+        </div>
+        <!-- Back-To-Top -->
+      </section>
+    </section><br>
+    </body>
+    </html>

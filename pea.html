@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smart farming</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.css"
+rel="stylesheet"
+/>
+
+<!-- MDB -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.js"
+></script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+</head>
+<body class="container-fluid">
+    <div class="latest_note bg-dark text-light ">
+        <marquee width="100%;" scrollAmount="5">Smart Farming website  are live for farmers. You can visit and read the instructions for upcoming farming generations. Contact number 9525952621
+        </marquee></i><strong id="disable_notification"> </strong>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light  mx-auto" style="background-color: rgb(48, 58, 63);">
+      <a class="navbar-brand text-light" href="#">Kisan_Informer</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        
+      </button>
+    
+      <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+        
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="margin-left: 300px;">
+           <!-- <li class="nav-item active">
+            <a  class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">News</a>
+            <div class="dropdown-menu text-light">
+             <a class="dropdown-item" href="#">Business News</a>
+             <div class="dropdown-divider"></div>
+             <a class="dropdown-item" href="#">Crop News</a>
+             <div class="dropdown-divider"></div>
+             <a class="dropdown-item" href="#">Livestock News</a>
+           </div>
+           </li> --> 
+           <a href="./index.html"><li class="text-light mt-2 mr-2">Home</li>
+           </a>
+           <li class="nav-item dropdown">
+             <a  class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Crops</a>
+             <div class="dropdown-menu bg-dark">
+              <a class="dropdown-item text-light" href="./kharif crops.html">Kharif Crops</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="./rabi crops.html">Rabi Crops</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="./vegetables.html">vegetable</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="#">HerBal</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="#">Phal-Phool-Tree</a>
+            </div>
+           </li>
+           <li class="nav-item dropdown">
+            <a  class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Service</a>
+            <div class="dropdown-menu bg-dark">
+            <a class="dropdown-item text-light" href="#">Mandi Bhav</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-light" href="#">Agriculture Spot</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-light" href="#">Government Scheme</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-light" href="#">Agriculture Event</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-light" href="#">Agriculture Training</a>
+          </div>
+          </li>
+            <li class="nav-item dropdown ">
+              <p class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="falseServices">About Us </p>
+              <div class="dropdown-menu bg-dark">
+                <a class="dropdown-item text-light" href="#">Mission and Vision</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Help</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Events participation</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Internship</a>
+              </div>  
+           <li class="nav-item dropdown ">
+              <a  class="nav-link dropdown-toggle text-light " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Gallery</a>
+              <div class="dropdown-menu bg-dark">
+                <a class="dropdown-item text-light" href="#">Magazine</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light " href="#">Photo Gallery</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Video Gallery</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Achievements</a>
+                
+           </li>
+              
+             <li class="nav-item dropdown">
+              <a  class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Help</a>
+              <div class="dropdown-menu bg-dark">
+              <a class="dropdown-item text-light" href="#">Agriculture Experts</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="#">Agriculture Advisers</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="#">Agriculture Engineers</a>
+              <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Agriculture Friends</a>
+
+            </div>
+            </li>
+        </ul>
+      </div>
+      <div class="d-flex">
+
+        <button class="btn btn-warning" type="submit">Join/login</button>
+       </div>
+    </nav>
+<section class="container-fluid">
+    <div class="main-contents">
+        <!-- Breadcrumb-->
+          <section class="banner" style="background-image: url(https://www.kisaanhelpline.com/uploads/header-banner/INdian-crop-1.jpg);">
+            <div class="container">
+                <div class="morepage-banner" style="padding: 150px 0 50px 0;">
+                    <h2 class="title text-light">Pea (मटर)</h2>
+                                                    <div class="table-responsive">
+                          <table class="table table-bordered">
+                              <thead>
+                                  <tr class="text-light">
+                                      <th><img src="https://www.kisaanhelpline.com/kisaanpicture/crop_list_icon/Watering.png" width="25px" height="25px"/>&nbsp;Watering</th>
+                                      <th><img src="https://www.kisaanhelpline.com/kisaanpicture/crop_list_icon/Cultivation.png" width="25px" height="25px"/>&nbsp;Cultivation</th>
+                                      <th><img src="https://www.kisaanhelpline.com/kisaanpicture/crop_list_icon/Harvesting.png" width="25px" height="25px"/>&nbsp;Harvesting</th>
+                                      <th><img src="https://www.kisaanhelpline.com/kisaanpicture/crop_list_icon/Labour.png" width="25px" height="25px"/>&nbsp;Labour</th>
+                                      <th><img src="https://www.kisaanhelpline.com/kisaanpicture/crop_list_icon/Sunlight.png" width="25px" height="25px"/>&nbsp;Sunlight</th>
+                                      <th><img src="https://www.kisaanhelpline.com/kisaanpicture/crop_list_icon/pH_Value.png" width="25px" height="25px"/>&nbsp;pH Value</th>
+                                      <th><img src="https://www.kisaanhelpline.com/kisaanpicture/crop_list_icon/Temperature.png" width="25px" height="25px"/>&nbsp;Temperature</th>
+                                      <th><img src="https://www.kisaanhelpline.com/kisaanpicture/crop_list_icon/Fertilization.png" width="25px" height="25px"/>&nbsp;Fertilization</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr class="text-light">
+                                      <td>Medium</td>
+                                      <td>Manual</td>
+                                      <td>Machine & Manual</td>
+                                      <td>Low</td>
+                                      <td>Low</td>
+                                      <td>6 - 7.5</td>
+                                      <td>15 - 30 °C</td>
+                                      <td>NPK @ 20:25:# Kg/Acre  45kg/acre urea, SSP155kg/acre</td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                    </div>
+                                                        
+                </div>
+            </div>
+        </section>
+        <br>
+        <style type="text/css">
+          .btn{
+            width: 100%;
+                font-size: 17px;
+          }
+        </style>
+        <div class="page-shop-detail padding-bottom-100">
+            <div class="container">
+              <div class="page-sub-title">
+              <h2>  </h2>
+              </div>
+
+            
+              <center>
+                <div class="row">
+                  <div class="col-md-4">
+                    <a href="javascript:void(0);" class="btn btn-primary open_login_model" data-redirectTo="https://www.kisaanhelpline.com/crops/plant_nutrition">Plant Nutrition</a>
+                  </div>
+                  <div class="col-md-4">
+                    <a href="javascript:void(0);" class="btn btn-primary open_login_model" data-redirectTo="https://www.kisaanhelpline.com/crops/plant_friendly_insect">Plant Friendly Insect</a>
+                  </div>
+                  <div class="col-md-4">
+                    <a href="javascript:void(0);" class="btn btn-primary open_login_model" data-redirectTo="https://www.kisaanhelpline.com/crops/insect_list">Insects List</a>
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-md-4">
+                                                    <a href="javascript:void(0);" class="btn btn-primary open_login_model" data-redirectTo="https://www.kisaanhelpline.com/crops/crop_disease/30">Crop Related Disease </a>
+                                                </div>
+                  <div class="col-md-8">
+                    <a href="javascript:void(0);" id="open_model" class="btn btn-primary">क्या आप Pea (मटर) का बीज खरीदना  चाहते है? </a>
+                  </div>
+                </div>
+              </center>
+
+              
+              <br>
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <div class="shop-img-wrapper">
+                            <div class="slider-for">
+                                <div class="item">
+                                    <div class="image-wrapper">                                                    
+                                                                                              <img src="image/pea.jpg" alt="kisan" class="left h-100">
+                                                                                        </div>
+                                       <!-- <div class="sharethis-inline-share-buttons"></div><br/> -->
+                                      <div class="text-center"> <div id="shareRoundIcons"></div> </div>
+                                </div>
+                             
+                            </div>
+                         
+                        </div>
+                    </div>
+             
+                        <div class="info-detail">
+                            <div class="title"><h1>Pea (मटर)</h1></div>
+                             <div class="title">
+                                <!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                            
+                                <ins class="adsbygoogle"
+                                     style="display:inline-block;width:468px;height:15px"
+                                     data-ad-client="ca-pub-2017409244002055"
+                                     data-ad-slot="4368166924"></ins>
+                                <script>
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>-->
+                            </h1></div>
+                                                             
+                            <div class="discription" style="padding:10px;">
+                                <p>
+                                                                                       <h4 class="info-heading"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Basic Info</h4>
+                                        <p><div style=""><span style="font-size: 13.3333px; font-family: Arial, Verdana;"><b>मटर (Peas Crop) की उन्नत खेती - मटर की खेती से धनवर्षा</b></span></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">भारत की एक महत्वपूर्ण फसल<b> मटर</b> को दलहनों की रानी की संज्ञा प्राप्त है। मटर की खेती, हरी फल्ली, साबूत मटर तथा दाल के लिये की जाती है। मटर की हरी फल्लियाँ सब्जी के लिए तथा सूखे दानों का उपयोग दाल और अन्य भोज्य पदार्थ तैयार करने में किया जाता है। चाट व छोले बनाने में मटर का विशिष्ट स्थान है। हरी मटर के दानों को सुखाकर या डिब्बा बन्द करके संरक्षित कर बाद में उपयोग किया जाता है। पोषक मान की दृष्टि से मटर के 100 ग्राम दाने में औसतन 11 ग्राम पानी, 22.5 ग्राम प्रोटीन, 1.8 ग्रा. वसा, 62.1 ग्रा. कार्बोहाइड्रेट, 64 मिग्रा. कैल्शियम, 4.8 मिग्रा. लोहा, 0.15 मिग्रा. राइबोफ्लेविन, 0.72 मिग्रा. थाइमिन तथा 2.4 मिग्रा. नियासिन पाया जाता है। फलियाँ निकालने के बाद हरे व सूखे पौधों का उपयोग पशुओं के चारे के लिए किया जाता है। दलहनी फसल होने के कारण इसकी खेती से भूमि की उर्वरा शक्ति बढ़ती है। हरी फल्लिओं के लिए मटर की खेती करने से उत्तम खेती और सामान्य परिस्थिओं में प्रति एकड़ 50-60 क्विंटल हरी फल्ली प्राप्त होती है।</span></font></div></p>
+                                                                                       <h4 class="info-heading"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Seed Specification</h4>
+                                        <p><div style=""><div style="font-family: "Times New Roman"; font-size: medium;"><font face="Arial, Verdana" style=""><span style="font-size: 13.3333px;"><b>बीज की मात्रा</b></span></font></div><div style="font-weight: normal; font-family: "Times New Roman"; font-size: medium;"><font face="Arial, Verdana"><span style="font-size: 13.3333px;">अगेती बुवाई के लिए प्रति एकड़ 40-50 किलोग्राम बीज की आवश्यकता पड़ती है।</span></font></div><div style="font-weight: normal; font-family: "Times New Roman"; font-size: medium;"><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><br></span></font></div><div style="font-family: "Times New Roman"; font-size: medium;"><font face="Arial, Verdana" style=""><span style="font-size: 13.3333px;"><b>बुवाई का समय</b> </span></font></div><div style="font-weight: normal; font-family: "Times New Roman"; font-size: medium;"><font face="Arial, Verdana"><span style="font-size: 13.3333px;">मटर की खेती के लिए अक्टूबर-नवंबर माह का समय उपयुक्त होता है।</span></font></div><div style="font-weight: normal; font-family: "Times New Roman"; font-size: medium;"><font face="Arial, Verdana"><span style="font-size: 13.3333px;"> </span></font></div><div style="font-family: "Times New Roman"; font-size: medium;"><font face="Arial, Verdana" style=""><span style="font-size: 13.3333px;"><b>बुवाई का तरीका</b></span></font></div><div style="font-weight: normal; font-family: "Times New Roman"; font-size: medium;"><font face="Arial, Verdana"><span style="font-size: 13.3333px;">मटर की बुवाई सीडड्रिल द्वारा की जाती है।</span></font></div><div style="font-weight: normal; font-family: "Times New Roman"; font-size: medium;"><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><br></span></font></div><div style="font-family: "Times New Roman"; font-size: medium;"><font face="Arial, Verdana" style=""><span style="font-size: 13.3333px;"><b>दुरी और गहराई </b></span></font></div><div style="font-weight: normal; font-family: "Times New Roman"; font-size: medium;"><font face="Arial, Verdana"><span style="font-size: 13.3333px;">30 सेंमी. की दूरी पर और बीज की गहराई 5-7 सेंमी. रखनी चाहिये जो मिट्टी की नमी पर निर्भर करती है। </span></font></div><div style="font-weight: normal; font-family: "Times New Roman"; font-size: medium;"><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><br></span></font></div><div style="font-family: "Times New Roman"; font-size: medium;"><font face="Arial, Verdana" style=""><span style="font-size: 13.3333px;"><b>बीज उपचार</b></span></font></div><div style="font-weight: normal; font-family: "Times New Roman"; font-size: medium;"><font face="Arial, Verdana"><span style="font-size: 13.3333px;">बुवाई करने से पहले बीजों को मेंकोजेब या केप्टान या थीरम 3 ग्राम /किलो बीज से बीज उपचारित करना चाहिए। तथा रासायनिक तरीके से बीज उपचार करने के बाद राइजोबियम कल्चर को गुड़ और पानी के घोल के साथ बीज उपचार करने से उत्पादन में वृद्धि होती है। ध्यान रहे राइजोबियम से उपचारित करने के 4-5 दिन पहले रासायनिक फफूंदनाशक से बीजों को उपचारित कर लेना चाहिए।</span></font></div></div></p>
+                                                                                        <h4 class="info-heading"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Land Preparation & Soil Health</h4>
+                                        <p><div style="font-family: "Times New Roman"; font-size: medium;"><font face="Arial, Verdana" style=""><span style="font-size: 13.3333px;"><b>जलवायु</b></span></font></div><div style="font-weight: normal; font-family: "Times New Roman"; font-size: medium;"><font face="Arial, Verdana"><span style="font-size: 13.3333px;">इस खेती में बीज अंकुरण के लिए औसत 22 डिग्री सेल्सियस की जरूरत होती है, वहीं अच्छे विकास के लिए 10 से 18 डिग्री सेल्सियस तापमान बेहतर होता है।</span></font></div><div style="font-weight: normal; font-family: "Times New Roman"; font-size: medium;"><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><br></span></font></div><div style="font-family: "Times New Roman"; font-size: medium;"><font face="Arial, Verdana" style=""><span style="font-size: 13.3333px;"><b>भूमि </b></span></font></div><div style="font-weight: normal; font-family: "Times New Roman"; font-size: medium;"><font face="Arial, Verdana"><span style="font-size: 13.3333px;">मटर के पौधों के समुचित विकास के लिए उचित जल निकास वाली दोमट व मटियार दोमट मिट्टी अच्छी होती है | मटर की खेती के लिए मिट्टी का पीएच 6.5-7.5 होना चाहिए |</span></font></div><div style="font-weight: normal; font-family: "Times New Roman"; font-size: medium;"><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><br></span></font></div><div style="font-family: "Times New Roman"; font-size: medium;"><font face="Arial, Verdana" style=""><span style="font-size: 13.3333px;"><b>खेत की तैयारी </b></span></font></div><div style="font-weight: normal; font-family: "Times New Roman"; font-size: medium;"><font face="Arial, Verdana"><span style="font-size: 13.3333px;">खरीफ की फसल की कटाई के बाद भूमि की जुताई मिट्टी पलटने वाले हल या कल्टीवेटर से 2-3 बार हैरो चलाकर अथवा जुताई करके पाटा लगाकर भूमि तैयार करनी चाहिए। जल जमाव से रोकने के लिए खेत को अच्छी तरह समतल कर लेना चाहिए। बिजाई से पहले खेत की एक बार सिंचाई करें यह फसल के अच्छे अंकुरन में सहायक होती है।</span></font></div></p>
+                                                                                        <h4 class="info-heading"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Crop Spray & fertilizer Specification</h4>
+                                        <p><div style="font-family: "Times New Roman"; font-size: medium;"><font face="Arial, Verdana" style=""><span style="font-size: 13.3333px;"><b>खाद एवं रासायनिक उर्वरक</b></span></font></div><div style="font-weight: normal; font-family: "Times New Roman"; font-size: medium;"><font face="Arial, Verdana"><span style="font-size: 13.3333px;">मटर की खेती अच्छे उत्पादन के लिए बुवाई से पूर्व खेत तैयार करते समय वर्मी कम्पोस्ट या अच्छी सड़ी हुई गोबर की खाद मिट्टी में अच्छी तरह से मिला देनी चाहिए। रासायनिक उर्वरक की मात्रा नाइट्रोजन 20 किलो, फास्फोरस 25 किलो की मात्रा प्रति एकड़ में प्रयोग करें। और पोटाश की कमी वाले क्षेत्रो में 20 किलो पोटाश/एकड़ प्रयोग करें। ध्यान रासायनिक उर्वरक मिट्टी परिक्षण के आधार पर ही प्रयोग में लाये।</span></font></div></p>
+                                                                                         <h4 class="info-heading"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Weeding & Irrigation</h4>
+                                        <p><div style=""><b>खरपतवार नियंत्रण</b></div><div style="font-weight: normal;"><div style="font-weight: normal; font-family: " times="" new="" roman";="" font-size:="" medium;"=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">मटर की खेती में खरपतवार की रोकथाम के निराई गुड़ाई करे। और बुवाई के 2 दिन बाद तक पैंडीमैथालीन 38.7% सी.एस. 700 मिली./एकड़ का छिड़काव करें।</span></font></div><div style="font-weight: normal; font-family: " times="" new="" roman";="" font-size:="" medium;"=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><br></span></font></div><div style="font-family: " times="" new="" roman";="" font-size:="" medium;"=""><font face="Arial, Verdana" style=""><span style="font-size: 13.3333px;"><b>सिंचाई </b></span></font></div><div style="font-weight: normal; font-family: " times="" new="" roman";="" font-size:="" medium;"=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">मटर की बुवाई करते समय खेत में अच्छी नमी होना चाहिए।  मटर की खेती में 1-2 सिंचाई की आवश्यकता होती हैं। पहली सिंचाई फूल निकलने से पहले और दूसरी फलियां भरने की अवस्था में करें। भारी सिंचाई से पौधों में पीलापन बढ़ जाता है और उपज में कमी आती है।</span></font></div></div></p>
+                                                                                         <h4 class="info-heading"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Harvesting & Storage</h4>
+                                        <p><div style="font-family: "Times New Roman"; font-size: medium;"><font face="Arial, Verdana" style=""><span style="font-size: 13.3333px;"><b>कटाई एवं गहाई</b></span></font></div><div style="font-weight: normal; font-family: "Times New Roman"; font-size: medium;"><font face="Arial, Verdana"><span style="font-size: 13.3333px;">हरी फल्लियों के लिए बोई गई फसल दिसम्बर- जनवरी में फल्लियाँ देती है। फल्लियों को 10-12 दिन के अंतर पर 3-4 बार में तोड़ना चाहिए। तोड़ते समय फल्लियाँ पूर्ण रूप से भरी हुई होना चाहिए, तभी बाजार में अच्छा भाव मिलेगा। दानों वाली फसल मार्च अन्त या अप्रैल के प्रथम सप्ताह में पककर तैयार हो जाती है। फसल अधिक सूख जाने पर फल्लियाँ खेत में ही चटकने लगती है। इसलिये जब फल्लियाँ पीली पड़कर सूखने लगे उस समय कटाई कर लें। फसल को एक सप्ताह खलिहान में सुखाने के बाद बैलों की दाँय चलाकर गहाई करते है। दानों को साफ कर 4-5 दिन तक सुखाते है जिससे कि दानों में नमी का अंश 10-12 प्रतिशत तक रह जाये।</span></font></div><div style="font-family: "Times New Roman"; font-size: medium;"><font face="Arial, Verdana" style=""><span style="font-size: 13.3333px;"><b><br></b></span></font></div><div style="font-family: "Times New Roman"; font-size: medium;"><font face="Arial, Verdana" style=""><span style="font-size: 13.3333px;"><b>उपज एवं भण्डारण</b></span></font></div><div style="font-weight: normal; font-family: "Times New Roman"; font-size: medium;"><font face="Arial, Verdana"><span style="font-size: 13.3333px;">मटर की हरी फल्लियों की पैदावार 150-200 क्विंटल तथा फल्लियाँ तोड़ने के पश्चात् 150 क्विंटल प्रति हेक्टेयर तक हरा चारा प्राप्त होता है। दाने वाली फसल से औसतन 20-25 क्विंटल दाना और 40-50 क्विंटल प्रति हेक्टेयर भूसा प्राप्त होता है। जब दानों मे नमी 8-10 प्रतिशत रह जाये तब सूखे व स्वच्छ स्थान पर दानो को भण्डारित करना चाहिए।</span></font></div></p>
+                                   
+
+                                     <p><div style=""><br></div></p>
+
+                                    
+                                </p>
+                            </div>
+                        </div>
+
+                                                                <h3 class="info-heading-2">Crop Related Disease</h3>
+                            <div class="panel-group accordion" id="accordion" role="tablist" aria-multiselectable="true">
+                                                                        <div class="panel panel-default">
+                                                  <div class="panel-heading" role="tab" id="heading0">
+                                                    <h4 class="panel-title">
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse0" aria-expanded="false" aria-controls="collapse0">
+                                                      <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;Helicoverpa Caterpillar (  हेलिकोवर्पा कैटरपिल)                										        </a>
+                                                  </h4>
+                                                  </div>
+                                                  <div id="collapse0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading0">
+                                                    <div class="panel-body" style="font-size: 13px;">
+                                                      <h5>Description:</h5>
+                                                      क्षति हेलिकोवर्पा आर्मिगेरा के कैटरपिलर के कारण होती है, जो कई फसलों में एक आम कीट है। एच. आर्मिगेरा सबसे अधिक में से एक कृषि में विनाशकारी कीट। पतंगे हल्के भूरे रंग के होते हैं, जिनका पंख 3-4 सेंटीमीटर लंबा होता है। वे आम तौर पर पीले से नारंगी या भूरे रंग के होते हैं गहरे रंग के पैटर्न के साथ धब्बेदार फोरविंग्स।                										          <h5>Organic Solution:</h5>
+                                                      स्पिनोसैड पर आधारित जैव कीटनाशकों का प्रयोग करें,
+लार्वा को नियंत्रित करने के लिए न्यूक्लियोपॉलीहेड्रोवायरस (एनपीवी), मेटारिज़ियम एनिसोप्लिए, ब्यूवेरिया बेसियाना या बैसिलस थुरिंगिएन्सिस। (spinosad,
+nucleopolyhedrovirus (NPV), Metarhizium anisopliae, Beauveria bassiana or Bacillus thuringiensis)                										          <h5>Chemical Solution:</h5>
+                                                      क्लोरेंट्रानिलिप्रोल, क्लोरोपाइरीफोस पर आधारित उत्पाद,
+साइपरमेथ्रिन, अल्फा- और ज़ेटा-साइपरमेथ्रिन, एमेमेक्टिन बेंजोएट, एस्फेनवालेरेट, फ्लुबेंडियामाइड, या इंडोक्साकार्ब (chlorantraniliprole, chloropyrifos,
+cypermethrin, alpha- and zeta-cypermethrin, emamectin benzoate, esfenvalerate, flubendiamide, or indoxacarb ) का उपयोग किया जा सकता है (आमतौर पर @
+2.5 मिली/ली.)                                                                                                <div class="row">
+                                                                                          <div class="col-md-3">
+                                          <img src="https://www.kisaanhelpline.com/uploads/disease/Insect/Pea-Helicoverpa-Caterpillar.jpg" class="img-thumbnail img-responsive">
+                                        </div>
+                                                                                          </div>
+                                                                                                      </div>
+                                                  </div>
+                                                </div>
+                                                                            <div class="panel panel-default">
+                                                  <div class="panel-heading" role="tab" id="heading1">
+                                                    <h4 class="panel-title">
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                                      <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;Thrips                										        </a>
+                                                  </h4>
+                                                  </div>
+                                                  <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+                                                    <div class="panel-body" style="font-size: 13px;">
+                                                      <h5>Description:</h5>
+                                                      थ्रिप्स 1-2 मिमी लंबे, पीले, काले या दोनों रंग के होते हैं। कुछ किस्मों में दो जोड़ी पंख होते हैं, जबकि अन्य के पंख बिल्कुल नहीं होते। वे पौधों के अवशेषों में या मिट्टी में या वैकल्पिक मेजबान पौधों पर हाइबरनेट करते हैं।                										          <h5>Organic Solution:</h5>
+                                                      कीटनाशक स्पिनोसैड (spinosad) आम तौर पर अधिक प्रभावी होता है,
+किसी भी रासायनिक या अन्य जैविक योगों की तुलना में । नीम के तेल या प्राकृतिक पाइरेथ्रिन (pyrethrins)  का प्रयोग करें, विशेष रूप से पत्तियों के नीचे की तरफ।                										          <h5>Chemical Solution:</h5>
+                                                      प्रभावी संपर्क कीटनाशकों में फाइप्रोनिल (fipronil), इमिडाक्लोप्रिड (imidacloprid), या एसिटामिप्रिड (acetamiprid) शामिल हैं, जिन्हें कई उत्पादों में बढ़ाने के लिए पिपरोनिल ब्यूटॉक्साइड (piperonyl butoxide) के साथ जोड़ा जाता है।                                                                                                <div class="row">
+                                                                                          <div class="col-md-3">
+                                          <img src="https://www.kisaanhelpline.com/uploads/disease/Insect/Pea-Thrips1.jpg" class="img-thumbnail img-responsive">
+                                        </div>
+                                                                                            <div class="col-md-3">
+                                          <img src="https://www.kisaanhelpline.com/uploads/disease/Insect/Pea-Thrips.jpg" class="img-thumbnail img-responsive">
+                                        </div>
+                                                                                          </div>
+                                                                                                      </div>
+                                                  </div>
+                                                </div>
+                                                                            <div class="panel panel-default">
+                                                  <div class="panel-heading" role="tab" id="heading2">
+                                                    <h4 class="panel-title">
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                                      <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;Leaf Miner Flies                										        </a>
+                                                  </h4>
+                                                  </div>
+                                                  <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                                                    <div class="panel-body" style="font-size: 13px;">
+                                                      <h5>Description:</h5>
+                                                      लक्षण दुनिया भर में कई हजार प्रजातियों के साथ, एग्रोमीज़िडे के परिवार से संबंधित कई मक्खियों के कारण होते हैं। वसंत में, मादाएं पत्ती के ऊतकों को छेदती हैं और अपने अंडे देती हैं। लार्वा ऊपरी और निचले पत्ते के बीच फ़ीड करते हैं। वे बड़ी सफेद घुमावदार सुरंगों का निर्माण करते हैं।                										          <h5>Organic Solution:</h5>
+                                                      नीम के तेल उत्पादों (अजादिराच्टिन) को लार्वा के खिलाफ सुबह या देर शाम को पत्तियों पर स्प्रे करें। उदाहरण के लिए, नीम के तेल का छिड़काव करें
+(15000 पीपीएम) 6 मिली/लीटर की दर से। अच्छी पत्ती कवरेज सुनिश्चित करें।                										          <h5>Chemical Solution:</h5>
+                                                      व्यापक परछाई ऑर्गनोफॉस्फेट (organophosphates), कार्बामेट्स (carbamates) और पाइरेथ्रोइड्स (pyrethroids) परिवारों के कीटनाशक वयस्कों को अंडे देने से रोकते हैं, लेकिन वे उन्हें नहीं मारते हैं।                                                                                                <div class="row">
+                                                                                          <div class="col-md-3">
+                                          <img src="https://www.kisaanhelpline.com/uploads/disease/Insect/Pea-Leaf-Miner-Flies.jpg" class="img-thumbnail img-responsive">
+                                        </div>
+                                                                                            <div class="col-md-3">
+                                          <img src="https://www.kisaanhelpline.com/uploads/disease/Insect/Pea-Leaf-Miner-Flies.jpeg" class="img-thumbnail img-responsive">
+                                        </div>
+                                                                                          </div>
+                                                                                                      </div>
+                                                  </div>
+                                                </div>
+                                                                        </div>
+                                                        
+                </div>
+
+                 <div class="main-content list-block column-3">
+                  <div>
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                   
+                        <ins class="adsbygoogle"
+                             style="display:inline-block;width:728px;height:90px"
+                             data-ad-client="ca-pub-2017409244002055"
+                             data-ad-slot="6581989952"></ins>
+                        <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script> 
+                        </div>
+                
+                
+                   <div class="main-content">
+                                                             <div> <h3 class="title bnf-con" style="font-size: 30px;text-align: center;">Frequently Asked Questions</h3></div>
+                        <div class="grid-block-1"> 
+                            <div class="col-md-12 col-xs-12"> 
+                              <div class="row" style="box-shadow: 0px 2px 2px 4px lightgrey;padding-top: 2%;padding-bottom: 2%;">
+                                    
+                                     <div class="col-md-6">
+                                                                                       <div class="col-md-12">
+                                  
+                                    <h4 class="bnf-con"><strong>Q1: भारत में मटर कहाँ उगाए जाते हैं?</strong></h4>
+                                    <div style="display:flex;"><h4><strong>Ans:  </strong></h4><span style="margin-top: 1.5%; margin-left: 2%;" ><font face="Arial, Verdana"><span style="font-size: 13.3333px;">आप जानते हैं कि यह पूरी दुनिया में उगाई जाने वाली ठंडी फसल है। हरी फली का उपयोग सब्जी के उद्देश्य के लिए किया जाता है और सूखे मटर को दाल के रूप में उपयोग किया जाता है। भारत में, इसकी खेती हिमाचल प्रदेश, मध्य प्रदेश, राजस्थान, महाराष्ट्र, पंजाब, हरियाणा, कर्नाटक और बिहार में की जाती है।</span></font></span></div>
+                                    </div>
+                                                                                   <div class="col-md-12">
+                                  
+                                    <h4 class="bnf-con"><strong>Q3: भारत में आप किस महीने मटर लगाते हैं?</strong></h4>
+                                    <div style="display:flex;"><h4><strong>Ans:  </strong></h4><span style="margin-top: 1.5%; margin-left: 2%;" ><font face="Arial, Verdana"><span style="font-size: 13.3333px;">आप जानते हैं कि मटर के बीजों की बुवाई का समय खेती के क्षेत्र पर निर्भर करता है। भारत में, रबी सीजन की फसल की बुवाई आमतौर पर अक्टूबर से मध्य नवंबर तक मैदानी इलाकों में शुरू होती है। पहाड़ियों में, यह मार्च के मध्य से मई के अंत तक होगा। उच्च उपज प्राप्त करने के लिए, 1 नवंबर के सप्ताह के दौरान बीज बोना पसंद किया जाता है।</span></font></span></div>
+                                    </div>
+                                                                                   <div class="col-md-12">
+                                  
+                                    <h4 class="bnf-con"><strong>Q5: मटर की फसल के साथ कौन सी फसलें उगा सकते हैं ?</strong></h4>
+                                    <div style="display:flex;"><h4><strong>Ans:  </strong></h4><span style="margin-top: 1.5%; margin-left: 2%;" ><div style=""><span style="font-size: 13.3333px; font-family: Arial, Verdana;">कुछ इंटरक्रॉपिंग बागवानी युक्तियों में मटर के साथ पालक, लेट्यूस या स्कैलियन के साथ चार्ड, गोभी के साथ भिंडी, लेट्यूस के साथ मूंगफली शामिल हैं।</span></div></span></div>
+                                    </div>
+                                                                              </div>
+                                <div class="col-md-6">
+                                                                                                                                                                                           <div class="col-md-12">
+                                  
+                                    <h4 class="bnf-con"><strong>Q2: मटर को कितना उर्वरक चाहिए?</strong></h4>
+                                    <div style="display:flex;"><h4><strong>Ans: </strong></h4><span style="margin-top: 1.5%; margin-left: 2%;"><font face="Arial, Verdana"><span style="font-size: 13.3333px;">आप जानते हैं कि मटर में बुवाई के समय 20 किग्रा नाइट्रोजन और 60 किग्रा फास्फोरस पर्याप्त होता है। पोटेशियम की कमी वाले क्षेत्र 20 किलो पोटाश दे सकते हैं।</span></font></span></div>
+                                    </div>
+                                                                                                                                                                                       <div class="col-md-12">
+                                  
+                                    <h4 class="bnf-con"><strong>Q4: कौन सा देश सबसे अधिक मटर उगाता है?</strong></h4>
+                                    <div style="display:flex;"><h4><strong>Ans: </strong></h4><span style="margin-top: 1.5%; margin-left: 2%;"><font face="Arial, Verdana"><span style="font-size: 13.3333px;">आप जानते हैं कि कनाडा दुनिया का सबसे बड़ा मटर उत्पादक है, जिसके बाद रूस, चीन, भारत और संयुक्त राज्य अमेरिका हैं।</span></font></span></div>
+                                    </div>
+                                                                                                                                                                                       <div class="col-md-12">
+                                  
+                                    <h4 class="bnf-con"><strong>Q6: मटर के पौधे की अच्छे विकास के लिए क्या उपयुक्त होता हैं?</strong></h4>
+                                    <div style="display:flex;"><h4><strong>Ans: </strong></h4><span style="margin-top: 1.5%; margin-left: 2%;"><div style=""><span style="font-size: 13.3333px; font-family: Arial, Verdana;">धूप वाली जगह और अच्छी जल निकासी वाली मिट्टी चुनें। जबकि मटर आंशिक छाया में उग सकते हैं, वे उतने मीठे या उत्पादक नहीं होंगे जितने पूर्ण सूर्य में उगाए जाते हैं। अपने पौधों को सबसे अच्छी शुरुआत देने के लिए, खेत की अच्छी तरह जुताई कर मिट्टी को पलट दें , अच्छी सड़ी हुई गोबर की खाद या वर्मी कम्पोस्ट डालें।</span></div></span></div>
+                                    </div>
+                                                                              </div>
+                                   
+                                </div>                                       
+                            </div> 
+                       
+                        <div class="clearfix"></div>
+                    </div>
+                                                </div>
+
+                  
+                
+            </div>
+        </div>
+    </div>
+</section>
+    
+</section>  <br><br>   
+
+<section class="">
+          <section class="container-fluid " style="background-color:rgb(40, 51, 61)">
+            <footer class="footer ">
+                  
+              <!-- Footer Top -->
+              <div class="footer-top">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                      <br><br>
+                    
+                      <!-- Footer Widget -->
+                      <div class="footer-widget footer-about">
+                        
+                        <div class="footer-about-content" style="font-weight:300">
+                          <p class="mb-4 text-center text-light " style="font-size: 20px; font-weight: 300;" ><b> BEFORE USE</b> </p>
+                          <p class="text-light" style="margin-left: 80px; font-size:medium;" ><b> information and services may contain bugs, errors, problems or other limitations. We have no liability whatsoever for your use of any information or service. Use any service or information given here at your own risk. Read our full Terms of Service. </b></p>
+                          <div class="social-icon">
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /Footer Widget -->
+                      
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6" style="margin-left: 160px; margin-top: 50px;">
+                    
+                      <!-- Footer Widget -->
+                      <div class="footer-widget footer-menu">
+                        <h2 class="footer-title text-light">Company</h2><br>
+                        <ul>
+                          <li><a class="text-light" href="">About Us</a></li>
+                          <li><a class="text-light" href="">Contact</a></li>
+                    
+                          <li><a class="text-light" href="">Term Of Services</a></li>
+                          <li><a class="text-light" href="">Privacy policy</a></li>
+                          <li><a class="text-light" href="">FAQ'S</a></li>
+                        </ul>
+                      </div>
+                      <!-- /Footer Widget -->
+                      
+                    </div>
+                    <div class="col-lg-3 col-md-6" style="margin-left: 130px; margin-top: 50px;">
+                    
+                      <!-- Footer Widget -->
+                      <div class="footer-widget footer-menu">
+                        <h2 class="footer-title text-light">Resource</h2><br>
+                        <p style="text-decoration: none;">
+                          <li><a class="text-light" href="">Return and Refund policy</a></li>
+                          
+                        </p>
+                      </div>
+                      <!-- /Footer Widget -->
+                      
+                    </div>
+                    
+                    </div>
+                    
+                    
+              
+              <!-- Footer Bottom -->
+              <div class="footer-bottom">
+                <div class="container-fluid">
+                
+                  <!-- Copyright -->
+                  <div class="copyright">
+                    <div class="row">
+                      <div class="col-md-2 col-lg-6">
+                        <div class="copyright-text">
+                          <p class="mb-0 mt-lg-4 text-light text-center" style="text-size-adjust: 50px; margin-left: 400px;">&copy; 2022 . All rights reserved.</p>
+                        </div>
+                      </div>
+                      <div class="footer-bottom">
+                        <div class="container-fluid">
+                        
+                          <!-- Copyright -->
+                          <div class="copyright">
+                            <div class="row">
+                              <div class="col-md-2 col-lg-8">
+                                
+                              </div>
+                      <div class="col-md-6 col-lg-6">
+                      
+                        <!-- Copyright Menu -->
+                        <div class="copyright-menu"><br><br><br>
+                          
+                        </div>
+                        <!-- /Copyright Menu -->
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /Copyright -->
+                  
+                </div>
+              </div>
+              <!-- /Footer Bottom -->
+            <a href="" class="whatsapp_btn" target="_blank">
+              
+            </a>	
+              
+            </footer>
+            <!-- /Footer -->
+                   
+            </div>
+            <!-- Back-To-Top -->
+          </section>
+        </section><br>
+</body>
+</html>

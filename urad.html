@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smart farming</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.css"
+rel="stylesheet"
+/>
+
+<!-- MDB -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.js"
+></script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+</head>
+<body class="container-fluid">
+    <div class="latest_note bg-dark text-light ">
+        <marquee width="100%;" scrollAmount="5">Smart Farming website  are live for farmers. You can visit and read the instructions for upcoming farming generations. Contact number 9525952621
+        </marquee></i><strong id="disable_notification"> </strong>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light  mx-auto" style="background-color: rgb(48, 58, 63);">
+      <a class="navbar-brand text-light" href="#">Kisan_Informer</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        
+      </button>
+    
+      <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+        
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="margin-left: 300px;">
+           <!-- <li class="nav-item active">
+            <a  class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">News</a>
+            <div class="dropdown-menu text-light">
+             <a class="dropdown-item" href="#">Business News</a>
+             <div class="dropdown-divider"></div>
+             <a class="dropdown-item" href="#">Crop News</a>
+             <div class="dropdown-divider"></div>
+             <a class="dropdown-item" href="#">Livestock News</a>
+           </div>
+           </li> --> 
+           <li class="text-light mt-2 mr-2">Home</li>
+           
+           <li class="nav-item dropdown">
+             <a  class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Crops</a>
+             <div class="dropdown-menu bg-dark">
+              <a class="dropdown-item text-light" href="./kharif crops.html">Kharif Crops</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="./rabi crops.html">Rabi Crops</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="#">vegetable</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="#">HerBal</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="#">Phal-Phool-Tree</a>
+            </div>
+           </li>
+           <li class="nav-item dropdown">
+            <a  class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Service</a>
+            <div class="dropdown-menu bg-dark">
+            <a class="dropdown-item text-light" href="#">Mandi Bhav</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-light" href="#">Agriculture Spot</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-light" href="#">Government Scheme</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-light" href="#">Agriculture Event</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-light" href="#">Agriculture Training</a>
+          </div>
+          </li>
+            <li class="nav-item dropdown ">
+              <p class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="falseServices">About Us </p>
+              <div class="dropdown-menu bg-dark">
+                <a class="dropdown-item text-light" href="#">Mission and Vision</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Help</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Events participation</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Internship</a>
+              </div>  
+           <li class="nav-item dropdown ">
+              <a  class="nav-link dropdown-toggle text-light " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Gallery</a>
+              <div class="dropdown-menu bg-dark">
+                <a class="dropdown-item text-light" href="#">Magazine</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light " href="#">Photo Gallery</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Video Gallery</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Achievements</a>
+                
+           </li>
+              
+             <li class="nav-item dropdown">
+              <a  class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Help</a>
+              <div class="dropdown-menu bg-dark">
+              <a class="dropdown-item text-light" href="#">Agriculture Experts</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="#">Agriculture Advisers</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="#">Agriculture Engineers</a>
+              <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Agriculture Friends</a>
+
+            </div>
+            </li>
+        </ul>
+      </div>
+      <div class="d-flex">
+
+        <button class="btn btn-warning" type="submit">Join/login</button>
+       </div>
+    </nav>
+<section class="container-fluid">
+  <div class="main-contents">
+    <!-- Breadcrumb-->
+      <section class="banner" style="background-image: url(https://www.kisaanhelpline.com/uploads/header-banner/INdian-crop-1.jpg);">
+        <div class="container">
+            <div class="morepage-banner" style="padding: 150px 0 50px 0;">
+                <h2 class="title text-light">Urad (उड़द)</h2>
+                                                <div class="table-responsive">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr class="text-light">
+                      <th><img src="https://www.kisaanhelpline.com/kisaanpicture/crop_list_icon/Watering.png" width="25px" height="25px"/>&nbsp;Watering</th>
+                      <th><img src="https://www.kisaanhelpline.com/kisaanpicture/crop_list_icon/Cultivation.png" width="25px" height="25px"/>&nbsp;Cultivation</th>
+                      <th><img src="https://www.kisaanhelpline.com/kisaanpicture/crop_list_icon/Harvesting.png" width="25px" height="25px"/>&nbsp;Harvesting</th>
+                      <th><img src="https://www.kisaanhelpline.com/kisaanpicture/crop_list_icon/Labour.png" width="25px" height="25px"/>&nbsp;Labour</th>
+                      <th><img src="https://www.kisaanhelpline.com/kisaanpicture/crop_list_icon/Sunlight.png" width="25px" height="25px"/>&nbsp;Sunlight</th>
+                      <th><img src="https://www.kisaanhelpline.com/kisaanpicture/crop_list_icon/pH_Value.png" width="25px" height="25px"/>&nbsp;pH Value</th>
+                      <th><img src="https://www.kisaanhelpline.com/kisaanpicture/crop_list_icon/Temperature.png" width="25px" height="25px"/>&nbsp;Temperature</th>
+                      <th><img src="https://www.kisaanhelpline.com/kisaanpicture/crop_list_icon/Fertilization.png" width="25px" height="25px"/>&nbsp;Fertilization</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="text-light">
+                      <td>Medium</td>
+                      <td>Manual</td>
+                      <td>Machine & Manual</td>
+                      <td>Medium</td>
+                      <td>Medium</td>
+                      <td>6.5 - 7.8</td>
+                      <td>25 to 35 °C</td>
+                      <td>NPK @ 8:16:16 Kg/Acre</td>
+                    </tr>
+                  </tbody>
+                </table>
+                </div>
+                                                <ol class="breadcrumb">
+                    <li><a href="javascript:void(0);" class="link">Home</a></li>
+                    <li><a href="https://www.kisaanhelpline.com/crops/indian_crops" class="link">indian Crops</a></li>
+                    <li class="active"><a href="javascript:void(0);" class="link">Urad (उड़द)</a></li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <br>
+    <style type="text/css">
+      .btn{
+        width: 100%;
+            font-size: 17px;
+      }
+    </style>
+    <div class="page-shop-detail padding-bottom-100">
+        <div class="container">
+          <div class="page-sub-title">
+          <h2>  </h2>
+          </div>
+
+        
+          <center>
+            <div class="row">
+              <div class="col-md-4">
+                <a href="javascript:void(0);" class="btn btn-primary open_login_model" data-redirectTo="https://www.kisaanhelpline.com/crops/plant_nutrition">Plant Nutrition</a>
+              </div>
+              <div class="col-md-4">
+                <a href="javascript:void(0);" class="btn btn-primary open_login_model" data-redirectTo="https://www.kisaanhelpline.com/crops/plant_friendly_insect">Plant Friendly Insect</a>
+              </div>
+              <div class="col-md-4">
+                <a href="javascript:void(0);" class="btn btn-primary open_login_model" data-redirectTo="https://www.kisaanhelpline.com/crops/insect_list">Insects List</a>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-4">
+                <a href="javascript:void(0);" class="btn btn-primary open_login_model" data-redirectTo="https://www.kisaanhelpline.com/crops/crop_disease/17">Crop Related Disease </a>
+              </div>
+              <div class="col-md-8">
+                <a href="javascript:void(0);" id="open_model" class="btn btn-primary">क्या आप Urad (उड़द) का बीज खरीदना  चाहते है? </a>
+              </div>
+            </div>
+          </center>
+
+          
+          <br>
+            <div class="row">
+                <div class="col-md-6 col-xs-12">
+                    <div class="shop-img-wrapper">
+                        <div class="slider-for">
+                            <div class="item">
+                                <div class="image-wrapper">                                                    
+                                                                                          <img src="https://www.kisaanhelpline.com/cat_subcat_image/Urid-crop-india.jpg" alt="kisan" class="left">
+                                                                                    </div>
+                                   <!-- <div class="sharethis-inline-share-buttons"></div><br/> -->
+                                  <div class="text-center"> <div id="shareRoundIcons"></div> </div>
+                            </div>
+                         
+                        </div>
+                     
+                    </div>
+                    
+                </div>
+                <div class="col"><div class="title"><h1>Urad (उड़द)</h1></div>
+                  <div class="row"><h4 class="info-heading"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Basic Info</h4>
+                    <p><font face="Arial, Verdana"><span style="font-size: 13.3333px;">उरद या उड़द एक मुख्य दलहनी फसल है। उड़द की खेती प्राचीन समय से होती आ रही है। उड़द की फसल कम समयावधि मे पककर तैयार हो जाती है। इसकी फसल खरीफ, रबी एवं ग्रीष्म मौसमो के लिये उपयुक्त फसल है। हमारे देश मे उड़द का उपयोग प्रमुख रूप से दाल के रूप मे किया जाता है। उत्तर प्रदेश, बिहार, राजस्थान, हरियाणा, मध्य प्रदेश के सिंचित क्षेत्र में अल्पावधि (60-65 दिन) वाली दलहनी फसल उरद की खेती करके किसानों की वार्षिक आय में आशातीत वृद्धि संभव है। साथ ही मृदा संरक्षण/उर्वरता को भी बढ़ावा दिया जा सकता है।</span></font></p></div>
+                </div>
+       </h1>
+                      </div>
+                                                         
+                        <div class="discription" style="padding:10px;">
+                            <p>
+                                                                                   
+                                                                                   <h4 class="info-heading"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Seed Specification</h4>
+                                    <p><div style=""><div style=""><font face="Arial, Verdana" size="2"><b>उन्नतशील प्रजातियाँ :-</b></font></div><div style=""><font face="Arial, Verdana" size="2">मुख्य रूप से दो प्रकार की प्रजातियाँ पायी जाती है, पहला खरीफ में उत्पादन हेतु जैसे कि – शेखर-3, आजाद उर्द-3, पन्त उर्द-31, डव्लू.वी.-108, पन्त यू.-30, आई.पी.यू.-94 एवं पी.डी.यू.-1 मुख्य रूप से है, जायद में उत्पादन हेतु पन्त यू.-19,पन्त यू.-35, टाईप-9, नरेन्द्र उर्द-1, आजाद उर्द-1, उत्तरा, आजाद उर्द-2 एवं शेखर-2 प्रजातियाँ है। कुछ ऐसे भी प्रजातियाँ है, जो खरीफ एवं जायद दोनों में उत्पादन देती है, जैसे कि टाईप-9, नरेन्द्र उर्द-1, आजाद उर्द-2, शेखर उर्द-2ये प्रजातियाँ दोनों ही फसलो में उगाई जा सकती है।</font></div><div style=""><font face="Arial, Verdana" size="2"><br></font></div><div style=""><font face="Arial, Verdana" size="2"><b>बीज दर :-</b></font></div><div style=""><font face="Arial, Verdana" size="2">प्रति एकड़ औसतन 8-10 किग्रा।</font></div><div style=""><font face="Arial, Verdana" size="2"><br></font></div><div style=""><font face="Arial, Verdana" size="2"><b>बुवाई समय :-</b></font></div><div style=""><font face="Arial, Verdana" size="2">खरीफ मौसम में उड़द की बुवाई का उचित समय जून का दूसरा पखवाड़ा (15 जून 30 जून) है। देर से बुवाई करने से बचना चाहिए।</font></div><div style=""><font face="Arial, Verdana" size="2"><br></font></div><div style=""><font face="Arial, Verdana" size="2"><b>बीज उपचार :- </b></font></div><div style=""><font face="Arial, Verdana" size="2">उड़द की बुबाई के पूर्व बीज को 3 ग्राम थायरम या 2.5 ग्राम डायथेन एम-45 प्रति किलो बीज के मान से उपचारित करे। जैविक बीजोपचार के लिये ट्राइकोडर्मा फफूँद नाशक 5 से 6 ग्राम प्रति किलो बीज की दर से उपयोग किया जाता है।</font></div></div></p>
+                                                                                    <h4 class="info-heading"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Land Preparation & Soil Health</h4>
+                                    <p><div style=""><b><font face="Arial, Verdana"><span style="font-size: 13.3333px;">भूमि </span></font><font face="Arial, Verdana"><span style="font-size: 13.3333px;">:-</span></font></b></div><div style=""><span style="font-size: 13.3333px; font-family: Arial, Verdana;">उड़द की खेती विभिन्न प्रकार की भूमि में होती है। हल्की रेतीली, दोमट या मध्यम प्रकार की भूमि जिसमें पानी का निकास अच्छा हो उड़द के लिए अधिक उपयुक्त होती है। पी.एच.मान 7-8 के बीच वाली भूमि उड़द के लिए उपजाऊ होती है। अम्लीय व क्षारीय भूमि उपयुक्त नहीं है।</span></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b><br></b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>खेत की तैयारी :-</b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">उड़द  की खेती के लिए बुवाई से पूर्व 2-3 बार खेत की अच्छी तरह से देशी हल या कल्टीवेटर से अच्छी तरह से जुताई करे, ताकि मिट्टी भुरभुरि हो जाये फिर इसके बाद पाटा चलाकर बुवाई  के लिए खेत तैयार करें।</span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><br></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>जलवायु :-</b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">उड़द की खेती के लिए नम और गर्म मौसम आवश्यक है। वृद्धि के समय 25-35 डिग्री सेंटीग्रेट तापमान उपयुक्त होता है। 700-900 मिमी वर्षा वाले क्षेत्रों में उड़द को आसानी से उगाया जाता है। अधिक जल भराव वाले स्थानों पर इसकी खेती उचित नहीं है। फूल अवस्था पर अधिक वर्षा हानिकारक होती है। पकने की अवस्था पर वर्षा होने पर दाना खराब हो जाता है।</span></font></div></p>
+                                                                                    <h4 class="info-heading"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Crop Spray & fertilizer Specification</h4>
+                                    <p><div style=""><div style=""><font face="Arial, Verdana" size="2"><b>रासायनिक उर्वरक एवं खाद :-</b></font></div><div style=""><font face="Arial, Verdana" size="2">उड़द की फसल में खेत तैयार करते समय 15-20 टन अच्छी सड़ी हुई गोबर की खाद प्रति एकड़ में अच्छी तरह से मिट्टी में मिला देना चाहिए। रासायनिक उर्वरकों को बुवाई से पहले मूल रूप से लगाएं। बारिश की स्थिति: 12.5 किग्रा नाइट्रोजन + 25 किग्रा फॉस्फोरस + 12.5 किग्रा पोटेशियम ऑक्साइड +10 किग्रा सल्फर / एकड़। अन्य पोषक तत्व मिट्टी परिक्षण के आधार पर प्रयोग में लाना चाहिए।</font></div><div style=""><font face="Arial, Verdana" size="2"><br></font></div><div style=""><font face="Arial, Verdana" size="2"><b>हानिकारक कीट एवं रोग और उनके रोकथाम :-</b></font></div><div style=""><font face="Arial, Verdana" size="2"><b>फली छेदक कीट :</b> इस कीट की सूडियां फलियों में छेदकर दानों को खाती है। जिससे उपज को भारी नुकसान होता है।</font></div><div style=""><font face="Arial, Verdana" size="2">रोकथाम : मोनोक्रोटोफास का एक लीटर प्रति हैक्टेयर की दर से 500 लीटर पानी में घोल बनाकर छिडक़ाव करें। </font></div><div style=""><font face="Arial, Verdana" size="2"><b>सफेद मक्खी :</b>  यह उड़द फसल का प्रमुख कीट है। जो पीला मोजैक वायरस के वाहक के रूप में कार्य करती है।</font></div><div style=""><font face="Arial, Verdana" size="2">रोकथाम : ट्रायसजोफॉस 40 ई.सी. का एक लीटर का 500 लीटर पानी में छिडक़ाव करें। एसिटामाप्रिड या इमिडाक्लोप्रिड की 100 मिलीलीटर या 51 इमेथोएट की 25 लीटर मात्रा को 500 लीटर पानी में घोल मिलाकर प्रति हैक्टेयर की दर से छिडक़ाव करें।</font></div><div style=""><font face="Arial, Verdana" size="2"><b>अर्ध कुंडलक (सेमी लुपर) -</b> यह मुख्यत: कोमल पत्तियों को खाकर पत्तियों को छलनी कर देता है। </font></div><div style=""><font face="Arial, Verdana" size="2">रोकथाम - क्यूनालफास या प्रोफेनोफॉस 50 ई.सी. 1 लीटर का 500 लीटर पानी में घोल बनाकर छिडक़ाव करें। </font></div><div style=""><font face="Arial, Verdana" size="2"><b>एफिड -</b> यह मुलांकूर का रस चूसता है। जिससे पौधों की वृद्धि रुक जाती है। </font></div><div style=""><font face="Arial, Verdana" size="2">रोकथाम - प्रोफेनो+साईपर 1 लीटर या क्लोरपाइरीफॉस 20 ई.सी. 1लीटर  600 लीटर पानी के घोल में मिलाकर छिडक़ाव करना चाहिए।</font></div><div style=""><font face="Arial, Verdana" size="2"><br></font></div><div style=""><font face="Arial, Verdana" size="2"><b>पीला मोजेक विषाणु रोग -</b> यह उड़द का सामान्य रोग है और वायरस द्वारा फैलता है। इसका प्रभाव 4-5 सप्ताह बाद ही दिखाई देने लगता है। इस रोग में सबसे पहले पत्तियों पर पीले रंग के धब्बे गोलाकार रूप में दिखाई देने लगते हैं। कुछ ही दिनों में पूरी पत्तियां पीली हो जाती है। अंत में ये पत्तियां सफेद सी होकर सूख जाती है।</font></div><div style=""><font face="Arial, Verdana" size="2">रोकथाम - सफेद मक्खी की रोकथाम से रोग पर नियंत्रण संभव है। उड़द का पीला मोजैक रोग प्रतिरोधी किस्म पंत यू-19, पंत यू-30, यू.जी.218, टी.पी.यू.-4, पंत उड़द-30, बरखा, के.यू.-96-3 की बुवाई करनी चाहिए।</font></div><div style=""><font face="Arial, Verdana" size="2"><b>पत्ती मोडऩ रोग -</b> नई पत्तियों पर हरिमाहीनता के रूप में पत्ती की मध्य शिराओं पर दिखाई देते हैं।  इस रोग में पत्तियां मध्य शिराओं के ऊपर की ओर मुड़ जाती है तथा नीचे की पत्तियां अंदर की ओर मुड़ जाती है तथा पत्तियों की वृद्धि रूक जाती है और पौधे मर जाते हैं।</font></div><div style=""><font face="Arial, Verdana" size="2">रोकथाम - यह विषाणु जनित रोग है। जिसका संचरण थ्रीप्स द्वारा होता हैं। थ्रीप्स के लिए ऐसीफेट 75 प्रतिशत एस.पी. या 2 मिली डाईमैथोएट प्रति लीटर के हिसाब से छिडक़ाव करना चाहिए और फसल की बुवाई समय पर करनी चाहिए।</font></div><div style=""><font face="Arial, Verdana" size="2"><b>पत्ती धब्बा रोग -</b> यह रोग फफूंद द्वारा फैलता है। इसके लक्षण पत्तियों पर छोटे-छोटे धब्बे के रूप में दिखाई देते हैं। </font></div><div style=""><font face="Arial, Verdana" size="2">रोकथाम - कार्बेन्डाजिम+मैंकोजेब 1 किग्रा 1000 लीटर पानी के घोल में मिलाकर स्प्रे करना चाहिए।</font></div></div></p>
+                                                                                     <h4 class="info-heading"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Weeding & Irrigation</h4>
+                                    <p><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>खरपतवार नियंत्रण :-</b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">खरपतवार फसलो की अनुमान से कही अधिक क्षति पहुँचाते है। अतः अधिक उत्पादन के लिये समय पर निदाई-गुड़ाई कुल्पा व डोरा आदि चलाते हुये अन्य आधुनिक नींदानाशक का समुचित उपयोग करना चाहिये। फसल की बुवाई के बाद परंतु बीजों के अंकुरण से पूर्व पेन्डिमिथालीन 1.25 किग्रा 1000 लीटर पानी में घोलकर छिडक़ाव करके खरपतवार पर नियंत्रण किया जा सकता है।</span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><br></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>सिंचाई :-</b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">आमतौर पर खरीफ की फसल को सिंचाई की आवश्यकता नहीं होती है| यदि वर्षा का अभाव हो तो एक सिंचाई फलियाँ बनते समय अवश्य कर देनी चाहिए| उड़द की फसल को जायद में 3 से 4 सिंचाई की आवश्यकता होती है| प्रथम सिंचाई पलेवा के रूप में और अन्य सिंचाई 15 से 20 दिन के अन्तराल में फसल की आवश्यकतानुसार करना चाहिए| फूल के समय तथा दाने बनते समय खेत में उचित नमी होना अति आवश्यक है|</span></font></div></p>
+                                                                                     <h4 class="info-heading"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Harvesting & Storage</h4>
+                                    <p><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>कटाई समय :-</b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">जब फली और पौधे सूख जाते हैं, तो दाने सख्त हो जाते हैं, और कटाई के समय अनाज में नमी प्रतिशत 22.5% होनी चाहिए। फली बिखरना (परिपक्व होते ही फसल के बीजों को फैलाना) दाल में आम समस्या है। इसलिए, फली परिपक्व होते ही उठा देना चाहिए। कटाई की गयी फसल को 2-3 दिन बाद उठानी चाहिए।</span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><br></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>भण्डारण :-</b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">कटाई के बाद पौधे को फर्श पर सूखने के लिए फैला दिया जाता है। कटे हुए तनों को धूप में सूखने के लिए रख दें। सही प्रकार की किस्म प्राप्त करने के लिए कटी हुई फसल को एक किस्म से दूसरी किस्म से अलग रखें। उड़द के दानों में नमी दूर करने के लिए धूप में अच्छी तरह से सुखाना जरूरी है। इसके बाद फसल को भंडारित किया जा सकता है। फसल को नमी रहित स्थान पर भंडारित करना चाहिए।</span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><br></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>उत्पादन :-</b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">शुद्ध फसल में 10-15 क्विंटल प्रति हैक्टेयर और मिश्रित फसल में 6-8 क्विंटल प्रति हैक्टेयर उपज हो जाती है।</span></font></div></p>
+                               
+
+                                 <p><div style=""><div style=""><br></div></div></p>
+
+                                
+                            </p>
+                        </div>
+                    </div>
+
+                                                          <h3 class="info-heading-2">Crop Related Disease</h3>
+                      <div class="panel-group accordion" id="accordion" role="tablist" aria-multiselectable="true">
+                                                              <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="heading0">
+                            <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse0" aria-expanded="false" aria-controls="collapse0">
+                              <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;पीला मोजेक विषाणु रोग (Yellow mosaic virus disease)                										        </a>
+                          </h4>
+                          </div>
+                          <div id="collapse0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading0">
+                            <div class="panel-body" style="font-size: 13px;">
+                              <h5>Description:</h5>
+                              <div style=""><span style="font-size: 13.3333px; font-family: Arial, Verdana;">यह रोग “मूंगबीन येलो मोजेक (जेमिनी) विषाणु” द्वारा उत्पन्न होता है जिसका संचारण सफ़ेद मक्खी से होता है। इस रोग की उग्र दशा में शत-प्रतिशत तक उपज मे क्षति हो जाती है। यह विषाणु रोग बहुत सी जंगली व अन्य पौधों की किस्मों पर भी पाया जाता है। रोग की प्रारम्भिक अवस्था में सर्वप्रथम कोमल पत्तियों पर हल्के पीले चितकबरे धब्बे पड़ जाते हैं। दूसरी पत्तियों पर भी जगह-जगह पीले और हरे रंग के धब्बे दिखाई देते हैं। पत्तियों पर पीले धब्बों का आकार निरन्तर बढ़ता जाता है और अंततः पत्तियों पूर्णतया पीली पड़ जाती है। रोग ग्रसित पौधे देर से परिपक्व होते हैं, तथा इन पौपौधों में फूल और फलियाँ स्वस्थ पौधों की अपेक्षा बहुत ही कम लगती हैं। जो पौधे प्रारम्भिक अवस्था में ही रोग ग्रसित हो जाते हैं वह बिना कोई उपज दिये ही नष्ट हो जाते हैं। इस रोग का प्रकोप खरीफ़ की फसल में अधिक देखने को मिलता है।</span></div>                										          <h5>Organic Solution:</h5>
+                              राज्य कृषि विश्वविद्यालयों द्वारा संस्तुत रोग प्रतिरोधी प्रजातियाँ उगानी चाहिए जैसे-
+Narendra Urd1, IPU 94-1 (Uttara), PS1, Pant U.19, Pant U.30, UG 218, WBU108, KU92 1(Spring season), KU300 (Spring Season)
+रोग ग्रसित पौधों को शुरू मे ही उखाड़ कर नष्ट कर देना चाहिए।
+खेत में जगह-जगह पर सफेद मक्खियों को पकड़ने के लिए पीला चिपचिपा ट्रैप लगाएँ।
+वर्टिसिलियम लिकानी (Verticillium lecani @1x108 cfu) का छिड़काव करने से सफेद मक्खी का प्रकोप कम हो जाता है।                										          <h5>Chemical Solution:</h5>
+                              बुआई के समय कीटनाशी डाईसल्फोटॉन 1 कि.ग्रा. सक्रिय पदार्थ प्रति हेक्टेयर की दर से भूमि में प्रयोग करना चाहिए।
+सफ़ेद मक्खी के अत्यधिक प्रकोप की रोकथाम हेतु ट्राइजोफॉस (Triazophphos) 40 EC @ 2 मिली. प्रति ली. या मेलाथियान (Malathion) 50 EC @ 2 मिली. प्रति ली या ओक्सीडिमेटान मिथाईल y (Oxydemeton
+methyl) 25 EC @ 2 मिली. प्रति ली. का 10-15 दिन के अन्तराल पर छिड़काव करना चाहिए।                                                                                                <div class="row">
+                                                                                      <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Mosaic-Virus/Urad-Yellow-mosaic-virus-disease1.png" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                        <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Mosaic-Virus/Urad-Yellow-mosaic-virus-disease.png" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                      </div>
+                                                                              </div>
+                          </div>
+                        </div>
+                                                                <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="heading1">
+                            <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                              <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;झुर्रीदार पत्ती रोग  (LEAF CRINKLE)                										        </a>
+                          </h4>
+                          </div>
+                          <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+                            <div class="panel-body" style="font-size: 13px;">
+                              <h5>Description:</h5>
+                              <div style=""><span style="font-size: 13.3333px; font-family: Arial, Verdana;">यह रोग उड़द बीन लीफ क्रिंकल विषाणु (ULCV) द्वारा होता है। रोग का&nbsp;</span><span style="font-size: 13.3333px; font-family: Arial, Verdana;">संचारण चूसक कीटों (एफिड तथा फूदका) द्वारा होता है। इस रोग का प्रकोप&nbsp;</span><span style="font-size: 13.3333px; font-family: Arial, Verdana;">खरीफ़ की फसल में अधिक मिलता है। रोग ग्रसित पौधों के पत्तियों का&nbsp;</span><span style="font-size: 13.3333px; font-family: Arial, Verdana;">आकार सामान्य पत्तियों की अपेक्षा बड़ा होता है। पत्तियों की सतह पर&nbsp;</span><span style="font-size: 13.3333px; font-family: Arial, Verdana;">सिकुड़न (झुर्री) होना रोग का मुख्य लक्षण है। नई पत्तियों पर सिकुड़न पुरानी&nbsp;</span><span style="font-size: 13.3333px; font-family: Arial, Verdana;">पत्तियों की अपेक्षा ज्यादा स्पष्ट होती है। रोग ग्रसित पौधों में पुष्पीकरण देर&nbsp;</span><span style="font-size: 13.3333px; font-family: Arial, Verdana;">से या न के बराबर होता है और पुष्प झाड़ीनुमा व गुच्छेदार हो जाते हैं। रोग&nbsp;</span><span style="font-size: 13.3333px; font-family: Arial, Verdana;">ग्रसित पौधों में बहुत कम फलियाँ लगती है जिसके परिणामस्वरुप पैदावार में&nbsp;</span><span style="font-size: 13.3333px; font-family: Arial, Verdana;">अत्यधिक कमी आती है।</span></div>                										          <h5>Organic Solution:</h5>
+                              क्षेत्रीय कृषि विश्वविद्यालयों द्वारा संस्तुत रोग प्रतिरोधी प्रजातियाँ उगानी चाहिएः- उड़द: HUP-27, 102,164, 315
+रोग रहित स्वस्थ पौधों से प्राप्त बीज ही बुआई के लिए प्रयोग करना चाहिए।
+रोगवाहक कीट कम करने के लिए बाजरा या मक्का या ज्वार के साथ अंतः फसल लेना चाहिए।
+रोगी पौधों को शुरू में ही उखाड़कर नष्ट कर देना चाहिए।                										          <h5>Chemical Solution:</h5>
+                              बुवाई से पहले बीज को इमिडाक्लोपरिड़ (Imidacloprid) 70 WS @ 5 ग्रा प्रति किग्रा की दर से उपचारित करना चाहिए।
+कीटनाशक डाईमेथोएट (Dimethoate) 30 EC @ 1.7  मिली. प्रति ली. की दर से छिड़काव करना चाहिए।                                                                                                <div class="row">
+                                                                                      <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Virus/Urad-LEAF-CRINKLE.png" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                      </div>
+                                                                              </div>
+                          </div>
+                        </div>
+                                                                <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="heading2">
+                            <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                              <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;सरकोस्पोरा पत्र बुंदकी रोग  (Cercospora sp.)                										        </a>
+                          </h4>
+                          </div>
+                          <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                            <div class="panel-body" style="font-size: 13px;">
+                              <h5>Description:</h5>
+                              <div style=""><span style="font-size: 13.3333px; font-family: Arial, Verdana;">उड़द का यह एक प्रमुख रोग है जिससे प्रतिवर्ष उपज मे भारी क्षति होती है। सरकोस्पोरा पत्र बुंदकी रोग (CLS) सरकोस्पोरा (Cercospora) की विभिन्न प्रजतियों द्वारा होता है। जब वातावरण में नमी अधिक होती है तो यह बीमारी उग्र रूप में प्रकट होती है। पत्तियों पर गहरे भूरे रंग के धब्बे पड़ जाते हैं, जिनकी बाहरी सतह भूरे लाल रंग की होती हैं। यह धब्बे पौधों की शाखाओं एवं फलियों पर भी पड़ जाते हैं। अनुकूल परिस्थितियों (25-30॰C) में यह धब्बे बड़े आकार के हो जाते हैं तथा पुष्पीकरण एवं फलियाँ बनने के समय रोग ग्रसित पत्तियों गिर जाती हैं जिसके कारण फली को विकास के लिए आवश्यक पोषण नहीं मिल पाता है और बीज अच्छी तरह से विकसित नही हो पाता है। रोग उत्पन्न करने वाली कवक, बीज व रोग ग्रसित पौधों के अवशेषों पर भूमि में जीवित रहती है और अगली फसल में रोग जनक का काम करती है।</span></div>                										          <h5>Organic Solution:</h5>
+                                                                            <h5>Chemical Solution:</h5>
+                              बुवाई से पहले बीज का कैप्टान (Captan) या थिरम (Thiram) कवकनाशी / 2.5 ग्रा.प्रति किलो बीज से उपचार करना चाहिए।
+फसल पर रोग के लक्षण दिखते ही कार्बेन्डाज़िम (Carbendazim) 50 WP @ 1 ग्रा. प्रति ली. या मेन्कोजेब  (Mancozeb) 45 WP @ 2 ग्रा. प्रति ली. कवकनाशी के घोल का छिड़काव करना चाहिए। इसके पश्चात आवश्यकतानुसार 1 या 2 छिड़काव 10 से 15 दिन के अंतराल पर करना चाहिए।
+कॉपर आक्सीक्लोराइड (Copper oxychloride) @ 3&4 ग्रा. प्रति ली. पानी में मिलाकर आवश्यकतानुसार छिड़काव करें।                                                                                                <div class="row">
+                                                                                      <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Fungus/Urad-Cercospora-sp.png" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                      </div>
+                                                                              </div>
+                          </div>
+                        </div>
+                                                                <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="heading3">
+                            <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                              <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;रूक्ष रोग (Colletotrichum sp.)                										        </a>
+                          </h4>
+                          </div>
+                          <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+                            <div class="panel-body" style="font-size: 13px;">
+                              <h5>Description:</h5>
+                              <div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">यह रोग मूंग तथा उड़द सहित बहुत सी दलहनी फसलो में Colletotrichum&nbsp;नामक कवक द्वारा होता है जो कि पौधों के सम्पूर्ण वायवीय भागों (पत्तियों तथा फलियों) को प्रभावित करता है। पत्तियों एवं फलियों पर भूरे गोल धंसे हुए धब्बे पड़ जाते हैं। इन धब्बों का केन्द्र गहरे रंग का और बाहरी सतह चमकीले लाल रंग की होती है। पौधों के रोग ग्रसित भाग जल्दी सूख जाते हैं। फसल के दौरान समय-समय पर अत्यधिक वर्षा इस रोग को एक महामारी के रूप में बदल देती हैं। 17-24°C&nbsp; तथा 100% आर्द्रता पर यह रोग अतिशीघ्रता से भीषण रूप में फैलता है। रोग के बीजाणु, बीजों तथा पौधों के अवशेषों पर उपस्थित रहते हैं तथा इस प्रकार एक फसल से दूसरी फसल तक जीवित रहकर फसल को प्रभावित करते रहते हैं।</span></font></div>                										          <h5>Organic Solution:</h5>
+                              58°C गर्म पानी में 15 मिनट तक बीज उपचारित करने पर बीज जनित रोगों के नियंत्रण के लिए प्रभावी रहता है तथा साथ ही बीज अंकुरण में भी वृद्धि हो जाती है।                										          <h5>Chemical Solution:</h5>
+                              बुवाई से पहले बीज का कैप्टान (Captan) 75 WP @ 2.5 ग्रा. प्रति ली. या थिरम (Thiram) 80 WP @ 2 ग्रा. प्रति लीकी दर से उपचार करना चाहिए।
+3. फसल पर जिनेब (Zineb) 80 WP @ 2 ग्रा. प्रति ली. या जिरम  (Ziram) 80 WP @ 2 ग्रा. प्रति ली. पानी में घोल बनाकर रोग के लक्षण दिखते ही छिड़काव करना चाहिए तथा आवश्कतानुसार 15 दिन के अंतराल पर दोहराना चाहिए।                                                                                                <div class="row">
+                                                                                      <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Fungus/Urad-Colletotrichum-sp.png" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                      </div>
+                                                                              </div>
+                          </div>
+                        </div>
+                                                                <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="heading4">
+                            <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                              <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;चूर्णी कवक रोग (Powdery Mildew)                										        </a>
+                          </h4>
+                          </div>
+                          <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
+                            <div class="panel-body" style="font-size: 13px;">
+                              <h5>Description:</h5>
+                              <div style=""><span style="font-size: 13.3333px; font-family: Arial, Verdana;">चूर्णी कवक रोग मूंग तथा उड़द का एक मुख्य रोग है जिसके परिणामस्वरूप पैदावार में बहुत हानि होती है। यह रोग चूर्णी कवक (Erysiphae polygonii)&nbsp;</span><span style="font-size: 13.3333px; font-family: Arial, Verdana;">के द्वारा होता है जिससे पौधे की पत्तियों और दूसरे भागों पर सफेद चूर्णी धब्बे पड़ जाते हैं। यह चूर्णी धब्बे बाद में मटमैले रंग में बदल जाते हैं। भूमि की सतह के ऊपर के सम्पूर्ण पौधों पर इस रोग के लक्षण दिखाई देते है। रोग के भीषण प्रकोप से पत्तियों अपरिपक्व अवस्था में ही सिकुड़कर गिर जाती हैं। इस रोग के अत्यधिक प्रकोप से पौधों में लगने वाले बीज सिकुड़ (Shrivelled) जाते है जो कि आगे किसी उपयोग के लायक नहीं रह जाते है। कवक अपने कोनीडिया नामक बीजाणुआों द्वारा दूसरे पोषक पौधों (host plant) पर और क्लीस्टोथीसिया द्वारा भूमि में जीवित रहती है और अगली फसल को प्रभावित करती है।</span></div>                										          <h5>Organic Solution:</h5>
+                              रोग के दिखने पर नीम आधारित कीटनाशी (NSKE) @ 50 ग्रा./ली. या नीम तेल 3000 ppm @ 20 मि.ली./ली., 10 दिन के अन्तराल पर दो बार छिड़काव करना चाहिए।
+रोग ग्रसित पौधो पर वैसिलस सबटिलिस (Bacillus subtilis) का छिड़काव करना चाहिए।                										          <h5>Chemical Solution:</h5>
+                              फसल पर घुलनशील गंधक (Sulphur) 80 WP @ 4 ग्रा./ली. या कार्बेन्डाजिम (Carbendazim) 50 WP @ 1 ग्रा./ली. या बेनलेट(Benlate) 0.05% या टोपसिन-एम(Topsin-M) 0.15% का छिड़काव करना चाहिए।                                                                                                <div class="row">
+                                                                                      <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Fungus/Urad-Powdery-Mildew.png" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                      </div>
+                                                                              </div>
+                          </div>
+                        </div>
+                                                                <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="heading5">
+                            <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                              <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;अंगमारी रोग या मेक्रोफोमिना ब्लाइट                										        </a>
+                          </h4>
+                          </div>
+                          <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
+                            <div class="panel-body" style="font-size: 13px;">
+                              <h5>Description:</h5>
+                              <div style=""><span style="font-size: 13.3333px; font-family: Arial, Verdana;">यह रोग मेक्रोफोमिना (Macrophomina) जाति के कवक द्वारा फैलता है। रोग का प्रकोप पौधे की प्रारम्भिक व बाद की अवस्था में होता है । अंकुरण से पूर्व इस कवक द्वारा भूमि में बीज पर रस्ट जैसी संरचनायें बन जाती हैं जिससे बीज का अंकुरण नही हो पाता है। अंकुरण के बाद मृदा या बीज के प्रसारण से अंकुरित पौधे भी प्रभावित हो जाते हैं। द्वितीयक जड़ों का गलना तथा बाद में मुख्य जड़ का गलना इस रोग का मुख्य लक्षण है। फफूंदी का भूमि की सतह पर तने पर आक्रमण होता है तथा गहरे भूरे रंग के धब्बे बनने लगते हैं जो कि तने पर फैलने लगते हैं साथ ही जड़, तना, टहनी, तथा पत्तियों पर भी काले धब्बे दिखाई देने लगते हैं। रोग ग्रसित भाग पर कवक के छोटे-छोटे पिकनिडिया दिखाई देते हैं। ये कवक, बीज व रोग ग्रसित मरे हुए पौधों के अवयवों पर भूमि में जीवित रहती हैं। अधिक तापमान तथा पानी की अधिकता वाले स्थानों में इस रोग का प्रकोप अतिशीघ्रता से महामारी के रूप में फैलता है। 30°C तापमान तथा 95% नमी पर इस कवक का विकास अतिशीघ्रता से होता है तथा रोग ग्रसित पौधे मर जाते हैं।</span></div>                										          <h5>Organic Solution:</h5>
+                              खेत में पौधों के अवशेषाों को निकाल कर नष्ट कर देना चाहिए जिससे रोग के बीज़ाणु नष्ट हो जाए।
+बुवाई से पहले भूमि में जिंक सल्फेट (Zinc Sulphate) @ 25 कि.ग्रा./हे. या नीम की खली (Neem cake) @ 150 किग्रा/हे. या P. fluorescens (1 x
+1010 cfu/g) या ट्राईकोडर्मा विरिडी (T.viride) 2.5 किग्रा/हे. + 50 किग्रा गोबर खाद (FYM) का उपयोग करने से इस रोग को रोका जा सकता है।
+रोग ग्रसित भूमि में ट्राईकोडर्मा  (Trichoderma) 5 – 10 ग्रा./किग्रा बीज या कैप्टान (Captan) 75 WP @ 2.5 ग्रा./ली. या थीरम (Thiram) 80% WP @ 2 ग्रा./ली. से उपचारित बीजों को उपयोग करना चाहिए।
+रोग ग्रसित पौधों के मलवे को जला देना चाहिए तथा फसल में उपस्थित रोग ग्रसित पौधों को जड़ से उखाड़ कर नष्ट कर देना चाहिए।                										          <h5>Chemical Solution:</h5>
+                              फसल में रोग के लक्षण दिखते ही कार्बेन्डाजिम (Carbendazim) 50 WP @ 1 ग्रा./ली. का छिड़काव करना चाहिए तथा आवश्यकतानुसार 2 छिड़काव 15 दिन के अंतराल पर करना चाहिए।                                                                                                <div class="row">
+                                                                                      <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Fungus/Urad-1.png" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                        <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Fungus/Urad-.png" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                      </div>
+                                                                              </div>
+                          </div>
+                        </div>
+                                                                <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="heading6">
+                            <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                              <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;सफ़ेद मक्खी (White fly)                										        </a>
+                          </h4>
+                          </div>
+                          <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
+                            <div class="panel-body" style="font-size: 13px;">
+                              <h5>Description:</h5>
+                              <div style=""><span style="font-size: 13.3333px; font-family: Arial, Verdana;">व्यस्क सफ़ेद मक्खी व इनके निम्फ पत्ती की अन्दर की सतह से पत्ती के रस को चुसकर पौधे को कमजोर कर देते है। प्रभावित पौधे मुरझाकर नीचे झुकने लगते हैं। कई बार पूरा पौधा ही मर जाता है। ये कीट पत्तियों पर एक चिपचिपे पदार्थ का श्रावण करते है जिस पर काले रंग के फफूंद जमा हो जाने के कारण प्रकाश संश्लेषण क्रिया की दर में कमी आ जाती है। इस कीट के अत्यधिक प्रकोप होने पर सारी पत्तियों ही काली पड़ने लगती है जिसके कारण पत्तियों सूखने लगती है तथा फसल पूरी तरह नष्ट हो जाती है। सफ़ेद मक्खी विभिन्न विषाणु रोगों का वाहक है जिसमें मूंग येलो मोजेक विषाणु (MYMV) प्रमुख है। इस कीट की बहुत कम संख्या फसल में उपस्थित होने पर भी पूरी फसल नष्ट हो सकती है।</span></div>                										          <h5>Organic Solution:</h5>
+                              खेत मे जगह-जगह पर पीला चिपचिपा ट्रैप लगाना चाहिए।
+इरेटमोसिरस, मसई, इरेप्मोसिरस, एनकारसिया तथा क्राईसोपरला आदि मित्र कीटों  का संरक्षण कर कीट को नियंत्रित किया जा सकता है।
+वर्टि सिलियम लिकानी (Verticillium lecani) अथवा पैसिलोमाईसिस फैरनौसस (Paecilomyces fairnosus) के प्रयोग से वयस्क सफ़ेद मक्खी को नियंत्रित किया जा सकता है।                										          <h5>Chemical Solution:</h5>
+                              एसिफेट (Acephate) 75 SP @ 1  ग्रा./ली. तथा नीम तेल  (Neem oil 3000 ppm) @ 20 मिली/ली. के छिड़काव से श्वेत मक्खी तथा MYMV के प्रकोप को कम किया जा सकता है।
+डाइमेथोएट  (Dimethoate) 30 EC @ 5 मिली.ध्कि.ग्रा. के साथ बीजोपचार तथा ट्राईएजोफॉस (Triazophos) 40 EC @ 0.4 मि.ली./ली. के छिड़काव से कीट का अच्छा नियंत्र्ाण होता है।
+इमिडाक्लोप्रिड़  (Imidacloprid) 70 WS 5 ग्रा./कि.ग्रा. के साथ बीज उपचार तथा 15 दिन के अन्तराल के बाद इमिडाक्लोप्रिड़ (Imidacloprid)
+17.8 SL @ 0.2 मिली/ली के छिड़काव से सफ़ेद मक्खी तथा MYMVका अच्छा नियंत्रण होता हैे।                                                                                                <div class="row">
+                                                                                      <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Insect/Urad-White-fly.png" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                      </div>
+                                                                              </div>
+                          </div>
+                        </div>
+                                                                <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="heading7">
+                            <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                              <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;एफिड (Aphids)                										        </a>
+                          </h4>
+                          </div>
+                          <div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading7">
+                            <div class="panel-body" style="font-size: 13px;">
+                              <h5>Description:</h5>
+                              <div style=""><span style="font-size: 13.3333px; font-family: Arial, Verdana;">एफिड बहुत सी दलहनी तथा लेग्युम कुल के फसलों पर आक्रमण करते हैं। वयस्क कीट काला तथा चमकीले रंग का, 2 मिमी तक लम्बा होता है। इस कीट के निम्फ का शरीर मॉम के आवरण से ढ़का होता है जिससे इसका शरीर भूरे रंग का दिखाई पड़ता है। निम्फ तथा व्यस्क कीट बड़ी संख्या में पौधों की पत्तियों, तना, कली तथा फूल पर लिपटे रहतें है तथा अपने मुखांगों से पौधों के रस को चूसकर पौधे को क्षति पहुँचाते है। मुलायम पत्तियाँ मुड़ कर लिपट जाती है। यह कीट बहुत से विषाणु जनित रोगों का भी वाहक है।</span></div>                										          <h5>Organic Solution:</h5>
+                              रात के समय पीला प्रकाश प्रपंज (Yellow light trap) लगाकर कीट को नियंत्रित किया जा सकता है।
+लेड़ी बर्ड बीटल (Coccinellid) तथा हरी लेसविंग (Chrysoperla) का संरक्षण कर इस कीट को नियंत्रित किया जा सकता है।
+5% नीम चूर्ण या 2% नीम तेल 3000 PPM का छिड़काव करें।                										          <h5>Chemical Solution:</h5>
+                              र्डाइमेथाएट (Dimethoate) 30 EC @1 मिली या इमिडाक्लोप्रिड़ (Imidacloprid) 17.8 SL @ 2  मिली छिड़काव करें।                                                                                                <div class="row">
+                                                                                      <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Insect/Urad-Aphids1.png" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                        <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Insect/Urad-Aphids.png" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                      </div>
+                                                                              </div>
+                          </div>
+                        </div>
+                                                                <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="heading8">
+                            <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                              <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;थ्रीप्स (Thrips) (Megalurothrips distalis)                										        </a>
+                          </h4>
+                          </div>
+                          <div id="collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading8">
+                            <div class="panel-body" style="font-size: 13px;">
+                              <h5>Description:</h5>
+                              <div style=""><span style="font-size: 13.3333px; font-family: Arial, Verdana;">ये गहरे भूरे रंग के बहुत छोटे कीट है तथा इधर- उधर उछलते रहते हैं। अपने विकास के लिए ये कीट मूंग को प्राथमिकता देते हैं। इसके अलावा पैपीलियोनियेसी कुल के विभिन्न पौधों पर जीवन यापन करते है। इसके निम्फ तथा वयस्क कीट फूल के अन्दर घुसकर पुष्प की वर्तिका को खा जाते हैं। थ्रीप्स के प्रकोप से ये पुष्प खिलने से पहले गिरने लगते है। इस प्रकार पुष्पों को खाकर थ्रीप्स एक स्वस्थ फसल को भी पूरी तरह नष्ट कर सकते है। ग्रीष्मकालीन मूंग में पुष्पों के गिरने का मुख्य कारण थ्रीप्स ही होते हैं। बसंत तथा ग्रीष्म कालीन मूंग व उर्द में शुष्क मौसम में इसका प्रकोप तथा प्रजनन अति शीघ्र होता है।</span></div>                										          <h5>Organic Solution:</h5>
+                              फसल में गिरे हुए फूलों का निरीक्षण करना चाहिए तथा आवश्यकतानुसार कीटनाशकों को उपयोग करना चाहिए।
+नीम आधारित कीटनाशक (NSKE) 5% @ 50 ग्रा/ली. तथा नीम तेल 3000 PPM @ 20 मिली/ली. का छिड़काव करना चाहिए।                										          <h5>Chemical Solution:</h5>
+                              थ्रीप्स प्रभावित क्षेत्रों में कीट के प्रकोप से बचने के लिए थायोमेथोक्जम (Thiomethoxam) 70 WS @ 2 मिली/कि.ग्रा. के साथ बीज उपचार तथा थायोमेथोक्जम (Thiomethoxam) 25 WG @ 2 मिली/ली. का छिड़काव करने से थ्रीप्स का अच्छा नियंत्रण होता है।
+ट्राईजोफॉस (Triazophos) 40 EC @ 2 मिली/ली. या इथियोन (Ethion)
+50 EC @ 2 मिली./ली. का छिड़काव आवश्यकतानुसार करना चाहिए।                                                                                                <div class="row">
+                                                                                      <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Insect/Urad-Thrips-Megalurothrips-distalis1.png" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                        <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Insect/Urad-Thrips-Megalurothrips-distalis.png" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                      </div>
+                                                                              </div>
+                          </div>
+                        </div>
+                                                                <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="heading9">
+                            <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                              <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;तना छेदक मक्खी (stem borer fly)                										        </a>
+                          </h4>
+                          </div>
+                          <div id="collapse9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading9">
+                            <div class="panel-body" style="font-size: 13px;">
+                              <h5>Description:</h5>
+                              <div style=""><span style="font-size: 13.3333px; font-family: Arial, Verdana;">वयस्क मक्खी हरे-काले रंग की होती है जिसकी आंखे हलके भूरे रंग की होती है। पंख लगभग पारदर्शी होते है। मादायें सुबह के समय पत्तियों पर मध्यशिरा के पास आधार की तरफ सफेद रंग के अंडे देती है। अंडों से निकलने के बाद सूंडी तने में छिद्र कर तने को अन्दर से खाने लगती हैं जिससे पौधा पीला पड़ने लगता है तथा सूखकर गिर जाता है। इस कीट के द्वारा छति पौधे की प्रारम्भिक अवस्था में अधिक देखी जाती है। यह कीट वयस्क पौधों को भी खाता है, जिससे पैदावार बहुत कम हो जाती है।</span></div>                										          <h5>Organic Solution:</h5>
+                              मित्र कीटों का संरक्षण कर हानिकारक कीटों को नियंत्रण किया जा सकता है।                										          <h5>Chemical Solution:</h5>
+                              कीट प्रभावित सम्भावित क्षेत्र मे बुवाई से पहले बीज को इमिडाक्लोप्रिड (Imidacloprid) 17.8 SL @ 5  मिली/कि.ग्रा. बीज को 100 मिली पानी के साथ उपचारित करना चाहिए।
+इमिडाक्लोप्रिड (Imidacloprid) 17.8 SL @ 0.2 मिली/ली. या थायोमेथोक्जम (Thiomethoxam) 25 WG @ 0.3 ग्रा/ली. का छिड़काव आवश्यकतानुसार करना चाहिए।                                                                                                <div class="row">
+                                                                                      <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Insect/Urad-stem-borer-fly2.png" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                        <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Insect/Urad-stem-borer-fly1.png" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                        <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Insect/Urad-stem-borer-fly.png" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                      </div>
+                                                                              </div>
+                          </div>
+                        </div>
+                                                                <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="heading10">
+                            <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                              <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;गैलेरूसिड भृंग (Madurasia obscurella)                										        </a>
+                          </h4>
+                          </div>
+                          <div id="collapse10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading10">
+                            <div class="panel-body" style="font-size: 13px;">
+                              <h5>Description:</h5>
+                              <div style=""><span style="font-size: 13.3333px; font-family: Arial, Verdana;">यह कीट सुबह के समय नए पौधों की पत्तियों पर छेद बनाते हुए उन्हें खाता है तथा दिन में भूमि की दरारों में छिप जाता है। वर्षा ऋतु में इस कीट के गुबरैला जड़ की गाठों में सुराग कर जड़ों में घुस जाते है तथा इनको पूरी तरह खोखला कर देते हैं। इस कीट के द्वारा जड़ की गाँठों के नष्ट होने पर मूंग तथा उड़द के उत्पादन में क्रमशः 25% तथा 60% तक हानि देखी गई हैं। यह भृंग मोजेक विषाणु रोग (Bean Southern Mosaic virus) का भी वाहक हैं।</span></div>                										          <h5>Organic Solution:</h5>
+                                                                            <h5>Chemical Solution:</h5>
+                              मोनोक्रोटोफ़ॉस  (Monocrotophos) 40 EC @ 10 मिली/किग्रा या डाईसलफोटॉन (Disulfoton) 5 G @ 40 ग्रा./कि.ग्रा बीज के साथ बीजोपचार इस कीट के प्रति बहुत प्रभावशाली हैं।
+फोरेट (Phorate) 10 G @ 10 कि.ग्रा./हे. तथा डाईसलफोटॉन (Disulfoton)
+5 G @ 20 कि.ग्रा./हे. इस कीट के नियंत्रण के लिए प्रभावी है।                                                              										        </div>
+                          </div>
+                        </div>
+                                                                <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="heading11">
+                            <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                              <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;बालदार सूंड़ी (Spilosoma obliqua)                										        </a>
+                          </h4>
+                          </div>
+                          <div id="collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading11">
+                            <div class="panel-body" style="font-size: 13px;">
+                              <h5>Description:</h5>
+                              <div style=""><span style="font-size: 13.3333px; font-family: Arial, Verdana;">वयस्क पतंगा भूरे रंग का होता है। इसका उदर लाल रंग का होता है मादा पंतगे रात के समय समूह में हरे रंग के गोलाकार अंडे पत्ती की निचली सतह पर देते हैं। अंडों से निकलने के बाद छोटी-छोटी सूंड़ियाँ पत्ती को समूह मे खाती हैं। इसके बाद ये आसपास के क्षेत्र में तथा धीरे-धीरे पूरे खेत में फैलने लगती हैं। सूंडी दूधिया पीले रंग की होती है जिसका पूरा शरीर लम्बे-लम्बे बालों से ढ़का रहता है। यह सूंडी पत्तियों, हरे व मुलायम तनो तथा शाखाओं को खाती है। कीट के अत्यधिक प्रकोप की दशा में यदि कोई उचित कदम ना उठाया जाये तो ये कुछ ही दिनों में पूरी फसल की पत्तियों को खा कर नष्ट कर देती हैं।</span></div>                										          <h5>Organic Solution:</h5>
+                              मित्र कीटों जैसे अपेनटेलिस प्रजाति, (Apanteles spp.), मेटीयोरस (Metiorus spp.), ट्राईकोग्रामा (Trichograma spp.) आदि कीटों का संरक्षण कर फसल को हानि से बचाया जा सकता है।
+नीम आधारित (Azadirachtin) कीटनाशक 5% @ 50 ग्राम/ली. के छिड़काव से सूंडी का अच्छा नियंत्रण होता है।                										          <h5>Chemical Solution:</h5>
+                              प्रोफेनोफॉस (Profenophos) 50 EC @ 2 मिली/ली. या क्यूनोलफॉस (Quinalphos) 20 EC @ 2.5  मिली/ली. या डाईक्लोरवॉस (Dichlorvos)
+10 EC @ 1 मिली/ली. या फेनवेलरेट (Fenvalrate) 20 EC @ 1 मिली/ली. का छिड़काव करना चाहिए।                                                                                                <div class="row">
+                                                                                      <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Insect/Urad-Spilosoma-obliqua.png" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                      </div>
+                                                                              </div>
+                          </div>
+                        </div>
+                                                                <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="heading12">
+                            <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                              <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;लाल बालदार सूंड़ी (Amsacta moorie)                										        </a>
+                          </h4>
+                          </div>
+                          <div id="collapse12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading12">
+                            <div class="panel-body" style="font-size: 13px;">
+                              <h5>Description:</h5>
+                              <div style=""><span style="font-size: 13.3333px; font-family: Arial, Verdana;">वयस्क पतंगों के सफेद पंखों पर काले धब्बे होते हैं। पंखों की किनारे तथा उदर लाल होता है तथा उदर पर काली पट्टियाँ होती हैं। व्यस्क मादायें पत्ती की अन्दर वाली सतह पर 700-850 के समूह में गोलाकार हलके पीले रंग के अंडे देती हैं। अंडो से निकलने के बाद नव जनित सूंडियाँ समूह में पौधें को खाती हैं। इसके बाद ये आस-पास के पौधों पर फैल जाती हैं। सूंडी लाल से ओलिव हरे-रंग की होती है। जिसके शरीर पर अंसख्य लम्बे बाल होते हैं। सूंडी की प्रथम अवस्था पौधे के बढ़ते हुए ऊपरी सिरे को तथा बाद वाली अवस्था सम्पूर्ण हरे पौधे को खाकर नष्ट करती हैं। इस कीट के अत्याधिक प्रकोप होने पर कई बार खेत ऐसे दिखते हैं मानो पशुओं ने चर लिए हो। इस तरह यह फसल को पूरी तरह से नष्ट कर देता है।</span></div>                										          <h5>Organic Solution:</h5>
+                              नीम आधारित कीटनाशकों का छिड़काव करने से कीट की संख्या नियंत्रित की जा सकती है।                										          <h5>Chemical Solution:</h5>
+                              क्यूनोलफॅास (Quinolphos) 20 EC @ 2.5 मिली/ली. या डाईक्लोरवॉस (Dichlorvos) 10 EC @ 1 मिली/ली. का छिड़काव करके इस कीट का नियन्त्रण किया जा सकता है।                                                                                                <div class="row">
+                                                                                      <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Insect/Urad-Amsacta-moorie.png" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                      </div>
+                                                                              </div>
+                          </div>
+                        </div>
+                                                                <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="heading13">
+                            <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                              <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;तम्बाकू सूंडी (Spodoptera litura)                										        </a>
+                          </h4>
+                          </div>
+                          <div id="collapse13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading13">
+                            <div class="panel-body" style="font-size: 13px;">
+                              <h5>Description:</h5>
+                              <div style=""><span style="font-size: 13.3333px; font-family: Arial, Verdana;">वयस्क कीट काले-भूरे रंग के होते हैं जो कि पौधों को खाते हैं। ये कीट पत्तियों के ऊपर समूह में हरे रंग के गोलाकार अंडे देकर उन्हें भूरे रंग के बालों से ढक देते हैं जिनसे नयी सूंडी निकल कर समूह में एक ही पत्ती व पौधे को खाती हैं तथा धीरे- धीरे पत्ती के सम्पूर्ण हरे भाग को खा जाती हैं। ये कीट अपने मटमैले सफेद रंग से आसानी से पहचाने जा सकते हैं। जैसे-जैसे सूंडी बड़ी होती है, सारे खेत में फैलने लगती है तथा पौधे की पत्तियों, कोमल तने व शाखाओं को खाती रहती हैं। यह कीट बिहार, मध्यप्रदेश, उत्तर प्रदेश तथा पंजाब का मुख्य नाशीकीट है। इस कीट के अत्यधिक प्रकोप होने पर यदि समय से नियंत्रण नही किया जाये तो सम्पूर्ण फसल की पत्तियों को खाकर फसल को पूरी तरह नष्ट कर देते हैं।</span></div>                										          <h5>Organic Solution:</h5>
+                              SlNPV [500 LE/है. @ 1 मिली/ली., या बेसिलस थ्रूनजैंसिस(Bacillus thuringiensis) के फॉर्मुलेशन का छिड़काव सूंडी की प्रारम्भिक अवस्था में करना चाहिए।                										          <h5>Chemical Solution:</h5>
+                              लूफेनूरोन (Lufenuron) 5 EC @ 0.04 मिली/ली. या मेलाथायॉन (Malathion) 50 EC @ 2 मिली/ली. का छिड़काव करना चाहिए।
+तम्बाकू की सूंडी के अंडो के काईटिन संश्लेषण अवरोधक, नोवलुरॉन (Novaluraon) 10 EC @ 0.75 मिली/ली. से छिड़काव करना चाहिए।                                                                                                <div class="row">
+                                                                                      <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Insect/Urad-Spodoptera-litura1.png" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                        <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Insect/Urad-Spodoptera-litura.png" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                      </div>
+                                                                              </div>
+                          </div>
+                        </div>
+                                                                <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="heading14">
+                            <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                              <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;फली छेदक (Pod borer) (Helicoverpa armigera)                										        </a>
+                          </h4>
+                          </div>
+                          <div id="collapse14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading14">
+                            <div class="panel-body" style="font-size: 13px;">
+                              <h5>Description:</h5>
+                              <div style=""><span style="font-size: 13.3333px; font-family: Arial, Verdana;">यह कीट मूंग तथा उड़द सहित बहुत सी फसलों का एक मुख्य हानिकारक कीट है। इस कीट की सूंड़ी मुलायम पत्तियों, कलियों, पुष्पों तथा फलियों को खाती हैं। फली छेदक की एक सूंड़ी अपने जीवनकाल में 30-40 फलियों को खा जाती है। मादायें अपने जीवन काल में 1200-1400 अंडे प्रायः पौधों के शीर्ष भागों पर देती है, परन्तु ये पुष्पों को अंडे देने के लिए प्राथमिकता देती हैं। सूंड़ी का रंग जैसे पीले-हरे से गुलाबी संतरी, भूरा तथा मटमैला-काला विभिन्न प्रकार का होता है। नव जनित सूंड़ी शीर्ष पत्तियों तथा मुलायम व छोटी फलियों को पूर्णतः खा लेती है जबकि बड़ी व पुरानी फलियों के केवल बीजों को खाती हैं। यह धीरे-धीरे फली में इस प्रकार घुसती है कि इसका आधा भाग फली के अन्दर तथा आधा फली के बाहर रहता है तथा इसी प्रकार बीज को खाती रहती है।</span></div>                										          <h5>Organic Solution:</h5>
+                              4-5 व्यस्क पंतगे प्रति ट्रेप/दिन आने पर निम्न कीटनाशकों का छिड़काव करना चाहिए:
+5% नीम आधारित कीटनाशक या नीम तेल 3000 PPM या  HaNPV (एच.एन.पी.वी.) 1.0 मिली/ली. कीट की प्रारम्भिक अवस्था में                										          <h5>Chemical Solution:</h5>
+                              इमामेंक्टिन बेन्जोएट (Emamectin Benzoate) 5 SG@ 0.2 ग्रा./ली. या राइनेक्सीपायर (Rynaxypyr) 20 SC @ 0.15 मिली./ली. या प्रोफेनोफोस (Profenophos) 50 EC @ 2 मिली./ली.                                                                                                <div class="row">
+                                                                                      <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Insect/Urad-Pod-borer-Helicoverpa-armigera1.png" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                        <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Insect/Urad-Pod-borer-Helicoverpa-armigera.png" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                      </div>
+                                                                              </div>
+                          </div>
+                        </div>
+                                                                <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="heading15">
+                            <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse15" aria-expanded="false" aria-controls="collapse15">
+                              <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;चित्तीदार फली छेदक (Spotted pod borer) (Maruca vitrata)                										        </a>
+                          </h4>
+                          </div>
+                          <div id="collapse15" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading15">
+                            <div class="panel-body" style="font-size: 13px;">
+                              <h5>Description:</h5>
+                              <div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">यह फली छेदक अतिहानिकारक कीट है। इसकी सूंडी पुष्प कलिका, पुष्प तथा पत्तियों को खाकर नष्ट करती है। इस कीट की पहचान यह है कि ये शाखा की ऊपरी पत्तियों, कलियों तथा पुष्पों को एक साथ लपेट कर तथा अन्दर बैठकर फली के दानों&nbsp;व पुष्पों को खाता है। यह पुष्पों के दलों पर एक-एक कर अंडे देता है। सूंडी हल्के पीले या पीले-सफेद रंग की होती है। जिसके प्रत्येक भाग पर दो लाल स्पॉट होते हैं। अंडे से निकलकर सूंडी शीर्ष पत्तियों, फूलों तथा नये मुलायम बीजों को खाकर नष्ट करती हैं। इसके द्वारा नष्ट फली पर छोटे-छोटे गहरे रंग का प्रवेश छिद्र होते हैं।</span></font></div>                										          <h5>Organic Solution:</h5>
+                              बेसिलस थूरिनजेन्सिस (Bacillus thuringiensis) 5 WG @ 1 ग्रा./लीका छिड़काव करना चाहिए।                										          <h5>Chemical Solution:</h5>
+                              इमिडाक्लोप्रिड (Imidacloprid) 17.8 SL @ 3 मिली/किग्रा बीज की दर से बीजोपचार + प्रोफेनोफॉस (Profenophos) 50 EC @ 2 मिली/लीका छिड़काव करना चाहिए।
+डाईक्लोरवास (Dichlorvos) 76 EC @ 0.5 मिली/ली या प्रोफेनोफॉस (Profenophos) 50 EC @ 2 मिली/ली.+ DDVP @ 0.5 मिली/लीका छिड़काव इस कीट के लिए प्रभावशाली होता है।
+लेम्डासायहेलोथ्रीन  (Lambdacyhalothrin) 10 EC @ 0.5 मिली/ली.़ नीम आधारित (NSKE) 5% @ 50 ग्रा/ली. का छिड़काव इस कीट के लिए प्रभावशाली होता है।
+स्पाइनोसेड  (Spinosad) 45 SC @ 0.2 मिली/ली. का छिड़काव इस कीट के लिए प्रभावशाली होता है।
+क्लोरपाइरिफॉस (Chlorpyriphos) 20 EC @ 2.5 मिली/ली. तथा लेम्डासायहेलोथ्रीन (lambdacyhalothrin) 10 EC @ 0.5  मिली/ली. का छिड़काव करना चाहिए।                                                                                                <div class="row">
+                                                                                      <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Insect/Urad-Spotted-pod-borer-Maruca-vitrata.png" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                      </div>
+                                                                              </div>
+                          </div>
+                        </div>
+                                                                <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="heading16">
+                            <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse16" aria-expanded="false" aria-controls="collapse16">
+                              <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;नीली तितली (blue butterfly) (Lampides boeticus)                										        </a>
+                          </h4>
+                          </div>
+                          <div id="collapse16" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading16">
+                            <div class="panel-body" style="font-size: 13px;">
+                              <h5>Description:</h5>
+                              <div style=""><span style="font-size: 13.3333px; font-family: Arial, Verdana;">छोटे आकार की नीले-भूरे रंग की यह तितली लगभग सभी दलहनी फसलों का हानिकारक कीट है। इस छोटे आकार की तितली के पंखों की ऊपरी सतह नीली तथा नीचे की सतह सफेद धारियों के साथ हल्के भूरे रंग की होती है। पीछे के पंखों पर पीछे की तरफ आँख के आकार के दो धब्बे होते हैं जिनसे लम्बे बाल के जैसी संरचनाएं निकली होती हैं। ये हल्के नीले रंग के अंडे़ मुलायम व नयी कलिकाओं पर देते हैं। इस कीट की सूंडी हरे रंग की, अंडाकार तथा कुछ चपटी होती है जिनसे कोषक भूमि तथा पौधों की दरारों में बनते हैं। इस कीट की सूंडी पत्तियों को खाती है लेकिन पुष्पों तथा कलियों को खाने के लिए प्राथमिकता देती है।</span></div>                										          <h5>Organic Solution:</h5>
+                                                                            <h5>Chemical Solution:</h5>
+                              यदि कीटों की संख्या आर्थिक हानि के स्तर तक पहुंचने लगे तो निम्न कीटनाशकों का इस्तेमाल करना चाहिए। 
+एसिफेट (Acephate) 75 SP @ 1 ग्राम/ली. या क्यूनोलफॉस (Quinolphos) 25 EC @ 2 मिली./ली. या क्लोरपाइरिफॉस  (Chlorpyriphos) 20 EC @ 2.5 मिली./ली. का छिड़काव फूल तथा फली बनते समय करना चाहिए।                                                                                                <div class="row">
+                                                                                      <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Insect/Urad-blue-butterfly-Lampides-boeticus.png" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                      </div>
+                                                                              </div>
+                          </div>
+                        </div>
+                                                                <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="heading17">
+                            <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse17" aria-expanded="false" aria-controls="collapse17">
+                              <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;फली चूसक कीड़ा (pod sucker)                										        </a>
+                          </h4>
+                          </div>
+                          <div id="collapse17" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading17">
+                            <div class="panel-body" style="font-size: 13px;">
+                              <h5>Description:</h5>
+                              <div style=""><span style="font-size: 13.3333px; font-family: Arial, Verdana;">फली चूसक बग की विभिन्न प्रजातियाँ मूंग तथा उड़द की फसल को नष्ट करती है। ये लाल, भूरे व काले रंग की होती है। जो प्रायः पत्तियों पर समूह मे भूरे या सफेद रंग के अंडे देती है। ये अपने चूसक मुखांगों से फली मे छिद्र कर बीज के रस को चुसती हैं। इनके द्वारा नष्ट फली की भित्ती पर छोटे तथा गहरे रंग के छिद्र सहित निशान मिलते हैं। चूसे हुए बीज काले या गहरे रंग के हो जाते है। इस प्रकार छतिग्रस्त दाने न तो मनुष्य के खाने योग्य और न ही बीज के लिए ही उपयोगी रहते है।</span></div>                										          <h5>Organic Solution:</h5>
+                                                                            <h5>Chemical Solution:</h5>
+                              यदि कीटों की संख्या आर्थिक हानि स्तर तक पहुंचने लगे तो निम्न कीटनाशकों का इस्तेमाल करना चाहिए।
+एसिफेट (Acephate) 75 SP @ 1 ग्राम/ली. या क्यूनोलफॉस (Quinolphos) 25 EC @ 2 मिली./ली. या क्लोरपाइरिफॉस (Chlorpyriphos) 20 EC @ 2.5  मिली./ली. या मोनोक्रोटोफॉस (Monocrotofos) 36 SL @ 1 मिली./ली. का छिड़काव फूल तथा फली बनते समय करना चाहिए।                                                                                                <div class="row">
+                                                                                      <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Insect/Urad-pod-sucker3.png" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                        <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Insect/Urad-pod-sucker2.png" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                        <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Insect/Urad-pod-sucker1.png" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                        <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Insect/Urad-pod-sucker.png" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                      </div>
+                                                                              </div>
+                          </div>
+                        </div>
+                                                                <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="heading18">
+                            <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse18" aria-expanded="false" aria-controls="collapse18">
+                              <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;लाल या धब्बेदार मकड़ी (Red or spotted spider) (Halotydeus destructor)                										        </a>
+                          </h4>
+                          </div>
+                          <div id="collapse18" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading18">
+                            <div class="panel-body" style="font-size: 13px;">
+                              <h5>Description:</h5>
+                              <div style=""><span style="font-size: 13.3333px; font-family: Arial, Verdana;">यह लाल पैर वाली या दो धब्बों वाली मकड़ी जिसे लाल मकड़ी भी कहते हैं शरद ऋतु में विभिन्न दलहनी फसलों के साथ मूंग तथा उड़द की फसलों पर संक्रमण कर फसल को अत्यधिक क्षति पहुंचाती है। यह मकड़ी केवल शरद ऋतु के महीनों में सक्रिय रहती है। जबकि ग्रीष्म काल में इनके अंडे अनुकुल समय तथा तापमान मिलने तक मादा मकड़ियों के मृत शरीर में सुसुप्त अवस्था में पडे रहते है। यद्यपि यह मकडी वयस्क पौधों पर भी आक्रमण करती है लेकिन नये पौधों को अधिक हानि पहुंचाती है। पौधों के अंकुरण के दो सप्ताह बाद तक संक्रमण की अधिक आशंका रहती है। यह मकड़ी छोटे आकार (0.5 मिमी) की प्रायः लाल रंग की तथा ग्रीष्म काल में हलके पीले रंग के साथ इनके शरीर पर दो धब्बे बन जाते है। कई बार इसे लाल पैरों वाली मकड़ी भी कहते है।</span></div>                										          <h5>Organic Solution:</h5>
+                                                                            <h5>Chemical Solution:</h5>
+                              जिन क्षेत्रों में इस कीट का प्रायः आक्रमण अधिक होता है, वहाँ अंकुरण से पूर्व डाईमेथोएट (Dimethoate) 30 EC या डेल्टामेथरिन (Deltamethrin) का छिड़काव करना चाहिए।
+डाईमेथोएट (Dimethoate) 30 EC@5 मिली/ किग्रा. या डेल्टामेथ्रिन (Deltamethrin) के साथ बुवाई से पहले बीजोपचार करना चाहिए।
+फसल में कीट का प्रकोप दिखने पर डाईकोफॉल  (Dicofol) 18.5 EC @ 5 मिली/ली. या डाईमेथोएट (Dimethoate) 30 EC @ 1.7 मिली/ली. या बाईफेनथ्रिन (Bifenthrin) 10 EC @ 1.6 मिली/ली. या लेम्बडासायहेलोथ्रिन (Lambdacyhelothrin ) 5% EC @ 0.5&1 मिली/ली. या डेल्टामेथ्रिन (Deltamethrin) 2.8 EC @ 1 मिली/ली. का छिड़काव करना चाहिए।                                                                                                <div class="row">
+                                                                                      <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Mite/Urad-Red-or-spotted-spider-Halotydeus-destructor.jpg" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                        <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Mite/Urad-Red-or-spotted-spider-Halotydeus-destructor.png" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                      </div>
+                                                                              </div>
+                          </div>
+                        </div>
+                                                                <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="heading19">
+                            <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse19" aria-expanded="false" aria-controls="collapse19">
+                              <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;एपियॉन भृंग (apione beetle) (Apion amplum)                										        </a>
+                          </h4>
+                          </div>
+                          <div id="collapse19" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading19">
+                            <div class="panel-body" style="font-size: 13px;">
+                              <h5>Description:</h5>
+                              <div style=""><span style="font-size: 13.3333px; font-family: Arial, Verdana;">एपियॉन भृंग का वयस्क कीट आकार में छोटा तथा चमकीले काले रंग का होता है जिसका उदर बल्ब के आकार का होता है तथा लम्बे मुखांगो (सूंड) के साथ सिर लम्बाकार होता है। यह भृंग उत्तरी कर्नाटका में मूंग, उत्तरी भारत में अरहर तथा मूंग का अति हानिकारक कीट है।</span></div>                										          <h5>Organic Solution:</h5>
+                                                                            <h5>Chemical Solution:</h5>
+                              इस कीट के प्रकोप के अधिक होने पर निम्न कीटनाशकों का उपयोग करना चाहिए: नीम आधारित चूर्ण (NSKE) 5% @ 50 ग्रा./ली. या नीम तेल (Azadiractin) 0-03% 5 मिली/ली. या प्रोफेनोफॉस (Profenofos) 50 EC @ 2 मिली/ली. या डाईमेथोएट(Dimethoate) 30 EC @ 1.7 मिली/ली. या स्पइनोसेड  (Spinosad) 45 SC @ 0.2 मिली/ली. या डाईक्लोरवॉस (Dichlorvos) 76 EC @ 2 मिली/ली.                                                                                                <div class="row">
+                                                                                      <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Insect/Urad-apione-beetle-Apion-amplum1.png" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                        <div class="col-md-3">
+                                      <img src="https://www.kisaanhelpline.com/uploads/disease/Insect/Urad-apione-beetle-Apion-amplum.png" class="img-thumbnail img-responsive">
+                                    </div>
+                                                                                      </div>
+                                                                              </div>
+                          </div>
+                        </div>
+                                                              </div>
+                                                  
+            </div>
+
+             <div class="main-content list-block column-3">
+              <div>
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+               
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:728px;height:90px"
+                         data-ad-client="ca-pub-2017409244002055"
+                         data-ad-slot="6581989952"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script> 
+                    </div>
+                    <div class="main-content">
+                                                         <div> <h3 class="title bnf-con" style="font-size: 30px;text-align: center;">Frequently Asked Questions</h3></div>
+                    <div class="grid-block-1"> 
+                        <div class="col-md-12 col-xs-12"> 
+                          <div class="row" style="box-shadow: 0px 2px 2px 4px lightgrey;padding-top: 2%;padding-bottom: 2%;">
+                                
+                                 <div class="col-md-6">
+                                                                                   <div class="col-md-12">
+                              
+                                <h4 class="bnf-con"><strong>Q1: किस मौसम में उड़द की दाल उगाई जाती है?</strong></h4>
+                                <div style="display:flex;"><h4><strong>Ans:  </strong></h4><span style="margin-top: 1.5%; margin-left: 2%;" ><font face="Arial, Verdana"><span style="font-size: 13.3333px;">1. यह आमतौर पर खरीफ / बरसात और गर्मियों के मौसम में उगाया जाता है।</span></font><div><font face="Arial, Verdana"><span style="font-size: 13.3333px;">2. यह 25 से 35oC के बीच आदर्श तापमान रेंज के साथ गर्म और नम स्थितियों में सबसे अच्छा बढ़ता है।</span></font></div></span></div>
+                                </div>
+                                                                               <div class="col-md-12">
+                              
+                                <h4 class="bnf-con"><strong>Q3: क्या काले चने रबी की फसल है?</strong></h4>
+                                <div style="display:flex;"><h4><strong>Ans:  </strong></h4><span style="margin-top: 1.5%; margin-left: 2%;" ><font face="Arial, Verdana"><span style="font-size: 13.3333px;">खरीफ के दौरान पूरे देश में इसकी खेती की जाती है। यह भारत के दक्षिणी और दक्षिण-पूर्वी हिस्सों में रबी के दौरान चावल की फलियों के लिए सबसे उपयुक्त है। ग्रीनग्राम की तुलना में ब्लैकग्राम को अपेक्षाकृत भारी मिट्टी की आवश्यकता होती है।</span></font></span></div>
+                                </div>
+                                                                               <div class="col-md-12">
+                              
+                                <h4 class="bnf-con"><strong>Q5: क्या उड़द की दाल सेहत के लिए अच्छी होती है?</strong></h4>
+                                <div style="display:flex;"><h4><strong>Ans:  </strong></h4><span style="margin-top: 1.5%; margin-left: 2%;" ><div style=""><span style="font-size: 13.3333px; font-family: Arial, Verdana;">अधिकांश फलियों की तुलना में काले चने या उड़द की दाल में उच्च प्रोटीन मूल्य होता है। यह आहार फाइबर, आइसोफ्लेवोन्स, विटामिन बी कॉम्प्लेक्स, लोहा, तांबा, कैल्शियम, मैग्नीशियम, जस्ता, पोटेशियम, फास्फोरस का भी एक उत्कृष्ट स्रोत है जो स्वास्थ्य लाभ के असंख्य प्रदान करता है।</span></div></span></div>
+                                </div>
+                                                                               <div class="col-md-12">
+                              
+                                <h4 class="bnf-con"><strong>Q7: भारत में उड़द की दाल के उत्पादक राज्य कौन कौन से हैं?</strong></h4>
+                                <div style="display:flex;"><h4><strong>Ans:  </strong></h4><span style="margin-top: 1.5%; margin-left: 2%;" ><div style=""><span style="font-size: 13.3333px; font-family: Arial, Verdana;">भारत में प्रमुख उड़द की दाल के उत्पादक राज्य आंध्र प्रदेश, महाराष्ट्र, मध्य प्रदेश, तमिलनाडु और उत्तर प्रदेश हैं।</span></div></span></div>
+                                </div>
+                                                                          </div>
+                            <div class="col-md-6">
+                                                                                                                                                                                       <div class="col-md-12">
+                              
+                                <h4 class="bnf-con"><strong>Q2: काला चना भारत में कहां उगा है?</strong></h4>
+                                <div style="display:flex;"><h4><strong>Ans: </strong></h4><span style="margin-top: 1.5%; margin-left: 2%;"><font face="Arial, Verdana"><span style="font-size: 13.3333px;">आंध्रप्रदेश देश के उत्पादन में लगभग 19 प्रतिशत का सबसे बड़ा उत्पादक राज्य है, इसके बाद महाराष्ट्र और मध्यप्रदेश क्रमशः 20 प्रतिशत और 13 प्रतिशत हैं। भारत में काले चने का प्रमुख व्यापार केंद्र मुंबई, जलगाँव, दिल्ली, गुंटूर, चेन्नई, अकोला, गुलबर्गा और लातूर हैं।</span></font></span></div>
+                                </div>
+                                                                                                                                                                                   <div class="col-md-12">
+                              
+                                <h4 class="bnf-con"><strong>Q4: उड़द किस प्रकार की फसल है?</strong></h4>
+                                <div style="display:flex;"><h4><strong>Ans: </strong></h4><span style="margin-top: 1.5%; margin-left: 2%;"><div style=""><span style="font-size: 13.3333px; font-family: Arial, Verdana;">काला चना, जिसे उड़द बीन, मैश और ब्लैक मैश के रूप में भी जाना जाता है, एक छोटी अवधि की दलहनी फसल है जो भारत के कई हिस्सों में उगाई जाती है। भारत काले चने का सबसे बड़ा उत्पादक होने के साथ-साथ उपभोक्ता भी है। भारत के कुल दाल उत्पादन में काले चने की हिस्सेदारी करीब 10 फीसदी है।</span></div></span></div>
+                                </div>
+                                                                                                                                                                                   <div class="col-md-12">
+                              
+                                <h4 class="bnf-con"><strong>Q6: उड़द की दाल किस मिट्टी में उगाई जाती है?</strong></h4>
+                                <div style="display:flex;"><h4><strong>Ans: </strong></h4><span style="margin-top: 1.5%; margin-left: 2%;"><div style=""><span style="font-size: 13.3333px;">इसे क्षारीय और लवणीय मिट्टी को छोड़कर, रेतीली दोमट से लेकर भारी मिट्टी तक सभी प्रकार की मिट्टी में उगाया जा सकता है।</span></div></span></div>
+                                </div>
+                                                                                                                            </div>
+                               
+                            </div>                                       
+                        </div> 
+                   
+                    <div class="clearfix"></div>
+                </div>
+                                            </div>
+
+              
+            
+        </div>
+    </div>
+</div>
+</section>
+    
+</section>  <br><br>   
+
+<section class="">
+          <section class="container-fluid " style="background-color:rgb(40, 51, 61)">
+            <footer class="footer ">
+                  
+              <!-- Footer Top -->
+              <div class="footer-top">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                      <br><br>
+                    
+                      <!-- Footer Widget -->
+                      <div class="footer-widget footer-about">
+                        
+                        <div class="footer-about-content" style="font-weight:300">
+                          <p class="mb-4 text-center text-light " style="font-size: 20px; font-weight: 300;" ><b> BEFORE USE</b> </p>
+                          <p class="text-light" style="margin-left: 80px; font-size:medium;" ><b> information and services may contain bugs, errors, problems or other limitations. We have no liability whatsoever for your use of any information or service. Use any service or information given here at your own risk. Read our full Terms of Service. </b></p>
+                          <div class="social-icon">
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /Footer Widget -->
+                      
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6" style="margin-left: 160px; margin-top: 50px;">
+                    
+                      <!-- Footer Widget -->
+                      <div class="footer-widget footer-menu">
+                        <h2 class="footer-title text-light">Company</h2><br>
+                        <ul>
+                          <li><a class="text-light" href="">About Us</a></li>
+                          <li><a class="text-light" href="">Contact</a></li>
+                    
+                          <li><a class="text-light" href="">Term Of Services</a></li>
+                          <li><a class="text-light" href="">Privacy policy</a></li>
+                          <li><a class="text-light" href="">FAQ'S</a></li>
+                        </ul>
+                      </div>
+                      <!-- /Footer Widget -->
+                      
+                    </div>
+                    <div class="col-lg-3 col-md-6" style="margin-left: 130px; margin-top: 50px;">
+                    
+                      <!-- Footer Widget -->
+                      <div class="footer-widget footer-menu">
+                        <h2 class="footer-title text-light">Resource</h2><br>
+                        <p style="text-decoration: none;">
+                          <li><a class="text-light" href="">Return and Refund policy</a></li>
+                          
+                        </p>
+                      </div>
+                      <!-- /Footer Widget -->
+                      
+                    </div>
+                    
+                    </div>
+                    
+                    
+              
+              <!-- Footer Bottom -->
+              <div class="footer-bottom">
+                <div class="container-fluid">
+                
+                  <!-- Copyright -->
+                  <div class="copyright">
+                    <div class="row">
+                      <div class="col-md-2 col-lg-6">
+                        <div class="copyright-text">
+                          <p class="mb-0 mt-lg-4 text-light text-center" style="text-size-adjust: 50px; margin-left: 400px;">&copy; 2022 . All rights reserved.</p>
+                        </div>
+                      </div>
+                      <div class="footer-bottom">
+                        <div class="container-fluid">
+                        
+                          <!-- Copyright -->
+                          <div class="copyright">
+                            <div class="row">
+                              <div class="col-md-2 col-lg-8">
+                                
+                              </div>
+                      <div class="col-md-6 col-lg-6">
+                      
+                        <!-- Copyright Menu -->
+                        <div class="copyright-menu"><br><br><br>
+                          
+                        </div>
+                        <!-- /Copyright Menu -->
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /Copyright -->
+                  
+                </div>
+              </div>
+              <!-- /Footer Bottom -->
+            <a href="" class="whatsapp_btn" target="_blank">
+              
+            </a>	
+              
+            </footer>
+            <!-- /Footer -->
+                   
+            </div>
+            <!-- Back-To-Top -->
+          </section>
+        </section><br>
+</body>
+</html>

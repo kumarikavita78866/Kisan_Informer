@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="User_Module">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+<script src="./angular/angularjs.js"></script>
+    <script src="./angular/module1.js"></script>
+    <script src="./angular/route.js"></script>
+    <script src="./js/User.js"></script>
+
+<!-- Font Awesome -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.css"
+  rel="stylesheet"
+/>
+
+<!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.js"
+></script>
+
+<body class="container-fluid" ng-controller="login_ctr">
+    <!----------------------Nav Bar------------------>
+    <nav class="navbar navbar-expand-lg navbar-light  mx-auto" style="background-color: rgb(48, 58, 63);">
+      <a class="navbar-brand text-light" href="#">Kisan_Informer</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        
+      </button>
+    
+      <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+        
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="margin-left: 300px;">
+           <!-- <li class="nav-item active">
+            <a  class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">News</a>
+            <div class="dropdown-menu text-light">
+             <a class="dropdown-item" href="#">Business News</a>
+             <div class="dropdown-divider"></div>
+             <a class="dropdown-item" href="#">Crop News</a>
+             <div class="dropdown-divider"></div>
+             <a class="dropdown-item" href="#">Livestock News</a>
+           </div>
+           </li> --> 
+           <a href="./index.html"><li class="text-light mt-2 mr-2">Home</li></a>
+           
+           <li class="nav-item dropdown">
+             <a  class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Crops</a>
+             <div class="dropdown-menu bg-dark">
+              <a class="dropdown-item text-light" href="./kharif crops.html">Kharif Crops</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="./rabi crops.html">Rabi Crops</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="./vegetables.html">vegetable</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="#">HerBal</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="#">Phal-Phool-Tree</a>
+            </div>
+           </li>
+           <li class="nav-item dropdown">
+            <a  class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Service</a>
+            <div class="dropdown-menu bg-dark">
+            <a class="dropdown-item text-light" href="#">Mandi Bhav</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-light" href="#">Agriculture Spot</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-light" href="#">Government Scheme</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-light" href="#">Agriculture Event</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-light" href="#">Agriculture Training</a>
+          </div>
+          </li>
+            <li class="nav-item dropdown ">
+              <p class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="falseServices">About Us </p>
+              <div class="dropdown-menu bg-dark">
+                <a class="dropdown-item text-light" href="#">Mission and Vision</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Help</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Events participation</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Internship</a>
+              </div>  
+           <li class="nav-item dropdown ">
+              <a  class="nav-link dropdown-toggle text-light " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Gallery</a>
+              <div class="dropdown-menu bg-dark">
+                <a class="dropdown-item text-light" href="#">Magazine</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light " href="#">Photo Gallery</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Video Gallery</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Achievements</a>
+                
+           </li>
+              
+             <li class="nav-item dropdown">
+              <a  class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Help</a>
+              <div class="dropdown-menu bg-dark">
+              <a class="dropdown-item text-light" href="#">Agriculture Experts</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="#">Agriculture Advisers</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="#">Agriculture Engineers</a>
+              <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Agriculture Friends</a>
+
+            </div>
+            </li>
+        </ul>
+      </div>
+      <div class="d-flex">
+
+        <!-- <button class="btn btn-warning" type="submit">Join/login</button>
+       </div> -->
+    </nav>
+    
+   <section class="container text-center bg-light pt-0 mb-3"><br>
+    <form action="">
+      <section class="vh-100" style="background-color: #1a4e34;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-xl-10">
+        <div class="card" style="border-radius: 1rem;">
+          <div class="row g-0">
+            <div class="col-md-6 col-lg-5 d-none d-md-block">
+              <img src="image/d6.jpg"
+                alt="login form" class="img-fluid" style="height: 100%; width: 120%; border-radius: 1rem 0 0 1rem;" />
+            </div>
+            <div class="col-md-6 col-lg-7 d-flex align-items-center">
+              <div class="card-body p-4 p-lg-5 text-black">
+
+                <form>
+
+                  
+                  <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign into your account</h5>
+
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="form2Example17">Email address</label>
+                    <input type="email" style="background-color: rgb(146, 151, 155);" ng-model="loginemail" id="form2Example17" class="form-control form-control-lg" />
+                    
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="form2Example27">Password</label>
+                    <input type="password" style="background-color: rgb(146, 151, 155); " ng-model="loginpassword" id="form2Example27" class="form-control form-control-lg" />
+                   
+                  </div>
+
+                  <div class="pt-1 mb-4">
+                    <button class="btn btn-dark btn-lg btn-block" type="button" ng-click="LoginUser()">Login</button>
+                  </div>
+
+                  <a class="small text-muted" href="#!">Forgot password?</a>
+                  <p class="mb-5 pb-lg-2" style="color: #393f81;">Don't have an account? <a href="./Registraion.html"
+                      style="color: #393f81;">Register here</a></p>
+                  <a href="" class="small text-muted">Terms of use.</a>
+                  <a href="" class="small text-muted">Privacy policy</a>
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    </form>
+   </section>
+   <section class="container-fluid " style="background-color:rgb(40, 51, 61)">
+    <footer class="footer ">
+          
+      <!-- Footer Top -->
+      <div class="footer-top">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <br><br>
+            
+              <!-- Footer Widget -->
+              <div class="footer-widget footer-about">
+                
+                <div class="footer-about-content" style="font-weight:300">
+                  <p class="mb-4 text-center text-light " style="font-size: 20px; font-weight: 300;" ><b> BEFORE USE</b> </p>
+                  <p class="text-light" style="margin-left: 80px; font-size:medium;" ><b> information and services may contain bugs, errors, problems or other limitations. We have no liability whatsoever for your use of any information or service. Use any service or information given here at your own risk. Read our full Terms of Service. </b></p>
+                  <div class="social-icon">
+                    
+                  </div>
+                </div>
+              </div>
+              <!-- /Footer Widget -->
+              
+            </div>
+            
+            <div class="col-lg-3 col-md-6" style="margin-left: 160px; margin-top: 50px;">
+            
+              <!-- Footer Widget -->
+              <div class="footer-widget footer-menu">
+                <h2 class="footer-title text-light">Company</h2><br>
+                <ul>
+                  <li><a class="text-light" href="">About Us</a></li>
+                  <li><a class="text-light" href="">Contact</a></li>
+            
+                  <li><a class="text-light" href="">Term Of Services</a></li>
+                  <li><a class="text-light" href="">Privacy policy</a></li>
+                  <li><a class="text-light" href="">FAQ'S</a></li>
+                </ul>
+              </div>
+              <!-- /Footer Widget -->
+              
+            </div>
+            <div class="col-lg-3 col-md-6" style="margin-left: 130px; margin-top: 50px;">
+            
+              <!-- Footer Widget -->
+              <div class="footer-widget footer-menu">
+                <h2 class="footer-title text-light">Resource</h2><br>
+                <p style="text-decoration: none;">
+                  <li><a class="text-light" href="">Return and Refund policy</a></li>
+                  
+                </p>
+              </div>
+              <!-- /Footer Widget -->
+              
+            </div>
+            
+            </div>
+            
+            
+      
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="container-fluid">
+        
+          <!-- Copyright -->
+          <div class="copyright">
+            <div class="row">
+              <div class="col-md-2 col-lg-6">
+                <div class="copyright-text">
+                  <p class="mb-0 mt-lg-4 text-light text-center" style="text-size-adjust: 50px; margin-left: 400px;">&copy; 2022 . All rights reserved.</p>
+                </div>
+              </div>
+              <div class="footer-bottom">
+                <div class="container-fluid">
+                
+                  <!-- Copyright -->
+                  <div class="copyright">
+                    <div class="row">
+                      <div class="col-md-2 col-lg-8">
+                        
+                      </div>
+              <div class="col-md-6 col-lg-6">
+              
+                <!-- Copyright Menu -->
+                <div class="copyright-menu"><br><br><br>
+                  
+                </div>
+                <!-- /Copyright Menu -->
+                
+              </div>
+            </div>
+          </div>
+          <!-- /Copyright -->
+          
+        </div>
+      </div>
+      <!-- /Footer Bottom -->
+    <a href="" class="whatsapp_btn" target="_blank">
+      
+    </a>	
+      
+    </footer>
+    <!-- /Footer -->
+           
+    </div>
+    <!-- Back-To-Top -->
+  </section>
+</section><br>
+</body>
+</html>

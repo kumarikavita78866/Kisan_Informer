@@ -1,0 +1,97 @@
+<form action="#" id="soil_testing_booking_form">
+    <div class="card-body">
+      
+      <div class="col-md-12" style="font-style: oblique; color: #249d24; font-size: 28px; ">
+        Soil Testing Booking Charge  : <del><i class="fa fa-inr"></i> 800</del> &nbsp; <b style="    font-size: 18px;"><i class="fa fa-inr"></i> 700</b>
+      <br>
+      <br>
+      </div>
+      <div class="col-md-12">
+      <div class="form-group">
+        <label>Select City</label><br>
+        <input type="radio" name="city" checked value="Mandsaur"> &nbsp; Mandsaur &nbsp;
+        <input type="radio" name="city" value="Neemuch"> &nbsp; Neemuch &nbsp;
+        <input type="radio" name="city" value="Ratlam"> &nbsp; Ratlam &nbsp;
+        <input type="radio" name="city" value="Ujjain"> &nbsp; Ujjain &nbsp;
+         <input type="radio" name="city" value="Other"> &nbsp; Other City
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+          <label>Farmar Name</label>
+        <input type="text" class="form-control" placeholder="Farmar Name" name="farmar_name" required="" autocomplete="off">
+      </div>
+    </div>
+     <div class="col-md-6">
+      <div class="form-group">
+        <label>Father's Name</label>
+        <input type="text" class="form-control" placeholder="Father's name" name="father_name" required="" autocomplete="off">
+      </div>
+    </div>
+     <div class="col-md-6">
+      <div class="form-group">
+        <label>Village</label>
+        <input type="text" class="form-control" placeholder="Village" name="village" required="" autocomplete="off">
+      </div>
+    </div>
+     <div class="col-md-6">
+      <div class="form-group">
+        <label>District / Tahseel</label>
+        <input type="text" class="form-control" placeholder="Tahseel" name="tahseel" required="" autocomplete="off">
+      </div>
+    </div>
+     <div class="col-md-6">
+      <div class="form-group">
+        <label>Pin code</label>
+        <input type="text" class="form-control" placeholder="Pincode" name="pin_code" required="" autocomplete="off">
+      </div>
+    </div>
+     <div class="col-md-6">
+      <div class="form-group">
+        <label>Mobile no</label>
+        <input type="number" class="form-control" placeholder="Mobile no." name="mobile_no" required="" autocomplete="off">
+      </div>
+    </div>
+     <div class="col-md-6">
+      <div class="form-group">
+        <label>Email (Optional)</label>
+        <input type="email" class="form-control" placeholder="Email" name="email" autocomplete="off">
+      </div>
+    </div>
+     <div class="col-md-6">
+      <div class="form-group">
+        <label>Khasra No (Optional)</label>
+        <input type="text" class="form-control" placeholder="Khasra No." name="khasra_no" autocomplete="off">
+      </div>
+    </div>
+     <div class="col-md-6">
+      <div class="form-group">
+        <label>Area (in Acre) (Optional)</label>
+        <input type="area" class="form-control" placeholder="Area (in Acre)" name="area" autocomplete="off">
+      </div>
+    </div>
+
+     <div class="col-md-12">
+
+      <div class="form-group" id="coupon_code_section">
+        <a href="javascript:;" id="have_coupon_code">Have any coupon code?</a>
+      </div>
+    </div>
+
+    </div>
+<p class="col-md-12 alert" style="display:none;" id="message_div"></p>
+<br>
+
+
+<div class="modal-footer" style="border-top: none;">
+<div class="col-md-6 col-xs-6">
+<br>
+<button type="button" id="close_modal" class="btn btn-secondary" data-dismiss="modal" style="color: #202020; width:100%;">Close</button>
+</div>
+<div class="col-md-6 col-xs-6">
+<br>
+<button type="submit" name="submit_form" id="send_message" class="btn btn-success" style="width:100%;color:#ffffff;">Pay Now</button>
+</div>
+</div>
+</form>
+

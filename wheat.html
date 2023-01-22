@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smart farming</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.css"
+rel="stylesheet"
+/>
+
+<!-- MDB -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.js"
+></script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+</head>
+<body class="container-fluid">
+    <div class="latest_note bg-dark text-light ">
+        <marquee width="100%;" scrollAmount="5">Smart Farming website  are live for farmers. You can visit and read the instructions for upcoming farming generations. Contact number 9525952621
+        </marquee></i><strong id="disable_notification"> </strong>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light  mx-auto" style="background-color: rgb(48, 58, 63);">
+      <a class="navbar-brand text-light" href="#">Kisan_Informer</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        
+      </button>
+    
+      <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+        
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="margin-left: 300px;">
+           <!-- <li class="nav-item active">
+            <a  class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">News</a>
+            <div class="dropdown-menu text-light">
+             <a class="dropdown-item" href="#">Business News</a>
+             <div class="dropdown-divider"></div>
+             <a class="dropdown-item" href="#">Crop News</a>
+             <div class="dropdown-divider"></div>
+             <a class="dropdown-item" href="#">Livestock News</a>
+           </div>
+           </li> --> 
+           <li class="text-light mt-2 mr-2">Home</li>
+           
+           <li class="nav-item dropdown">
+             <a  class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Crops</a>
+             <div class="dropdown-menu bg-dark">
+              <a class="dropdown-item text-light" href="./kharif crops.html">Kharif Crops</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="./rabi crops.html">Rabi Crops</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="#">vegetable</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="#">HerBal</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="#">Phal-Phool-Tree</a>
+            </div>
+           </li>
+           <li class="nav-item dropdown">
+            <a  class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Service</a>
+            <div class="dropdown-menu bg-dark">
+            <a class="dropdown-item text-light" href="#">Mandi Bhav</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-light" href="#">Agriculture Spot</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-light" href="#">Government Scheme</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-light" href="#">Agriculture Event</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-light" href="#">Agriculture Training</a>
+          </div>
+          </li>
+            <li class="nav-item dropdown ">
+              <p class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="falseServices">About Us </p>
+              <div class="dropdown-menu bg-dark">
+                <a class="dropdown-item text-light" href="#">Mission and Vision</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Help</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Events participation</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Internship</a>
+              </div>  
+           <li class="nav-item dropdown ">
+              <a  class="nav-link dropdown-toggle text-light " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Gallery</a>
+              <div class="dropdown-menu bg-dark">
+                <a class="dropdown-item text-light" href="#">Magazine</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light " href="#">Photo Gallery</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Video Gallery</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Achievements</a>
+                
+           </li>
+              
+             <li class="nav-item dropdown">
+              <a  class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Help</a>
+              <div class="dropdown-menu bg-dark">
+              <a class="dropdown-item text-light" href="#">Agriculture Experts</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="#">Agriculture Advisers</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-light" href="#">Agriculture Engineers</a>
+              <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-light" href="#">Agriculture Friends</a>
+
+            </div>
+            </li>
+        </ul>
+      </div>
+      <div class="d-flex">
+
+        <button class="btn btn-warning" type="submit">Join/login</button>
+       </div>
+    </nav>
+      <section>
+        <div class="main-contents">
+            <!-- Breadcrumb-->
+              <section class="banner" style="background-image: url(https://www.kisaanhelpline.com/uploads/header-banner/INdian-crop-1.jpg);">
+                <div class="container">
+                    <div class="morepage-banner" style="padding: 150px 0 50px 0;">
+                        <h2 class="title text-light">Wheat (गेहूं)</h2>
+                                                        <div class="table-responsive">
+                              <table class="table table-bordered">
+                                  <thead>
+                                      <tr  class="text-light">
+                                          <th><img src="https://www.kisaanhelpline.com/kisaanpicture/crop_list_icon/Watering.png" width="25px" height="25px"/>&nbsp;Watering</th>
+                                          <th><img src="https://www.kisaanhelpline.com/kisaanpicture/crop_list_icon/Cultivation.png" width="25px" height="25px"/>&nbsp;Cultivation</th>
+                                          <th><img src="https://www.kisaanhelpline.com/kisaanpicture/crop_list_icon/Harvesting.png" width="25px" height="25px"/>&nbsp;Harvesting</th>
+                                          <th><img src="https://www.kisaanhelpline.com/kisaanpicture/crop_list_icon/Labour.png" width="25px" height="25px"/>&nbsp;Labour</th>
+                                          <th><img src="https://www.kisaanhelpline.com/kisaanpicture/crop_list_icon/Sunlight.png" width="25px" height="25px"/>&nbsp;Sunlight</th>
+                                          <th><img src="https://www.kisaanhelpline.com/kisaanpicture/crop_list_icon/pH_Value.png" width="25px" height="25px"/>&nbsp;pH Value</th>
+                                          <th><img src="https://www.kisaanhelpline.com/kisaanpicture/crop_list_icon/Temperature.png" width="25px" height="25px"/>&nbsp;Temperature</th>
+                                          <th><img src="https://www.kisaanhelpline.com/kisaanpicture/crop_list_icon/Fertilization.png" width="25px" height="25px"/>&nbsp;Fertilization</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr class="text-light">
+                                          <td>Medium</td>
+                                          <td>Machine & Manual</td>
+                                          <td>Machine & Manual</td>
+                                          <td>Medium</td>
+                                          <td>Low</td>
+                                          <td>5.5PH to 7.0 PH</td>
+                                          <td>20 to 30 °C</td>
+                                          <td>20 KG/ Acre NPK, Uria 50 KG/ Acre</td>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                        </div>
+                                                              <ol class="breadcrumb">
+                            <li><a href="javascript:void(0);" class="link">Home</a></li>
+                            <li><a href="https://www.kisaanhelpline.com/crops/indian_crops" class="link">indian Crops</a></li>
+                            <li class="active"><a href="javascript:void(0);" class="link">Wheat (गेहूं)</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <style type="text/css">
+              .btn{
+                width: 100%;
+                    font-size: 17px;
+              }
+            </style>
+            <div class="page-shop-detail padding-bottom-100">
+                <div class="container">
+                  <div class="page-sub-title">
+                  <h2>  </h2>
+                  </div>
+
+                
+                  <center>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <a href="javascript:void(0);" class="btn btn-primary open_login_model" data-redirectTo="https://www.kisaanhelpline.com/crops/plant_nutrition">Plant Nutrition</a>
+                      </div>
+                      <div class="col-md-4">
+                        <a href="javascript:void(0);" class="btn btn-primary open_login_model" data-redirectTo="https://www.kisaanhelpline.com/crops/plant_friendly_insect">Plant Friendly Insect</a>
+                      </div>
+                      <div class="col-md-4">
+                        <a href="javascript:void(0);" class="btn btn-primary open_login_model" data-redirectTo="https://www.kisaanhelpline.com/crops/insect_list">Insects List</a>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <a href="javascript:void(0);" class="btn btn-primary open_login_model" data-redirectTo="https://www.kisaanhelpline.com/crops/crop_disease/2">Crop Related Disease </a>
+                      </div>
+                      <div class="col-md-8">
+                        <a href="javascript:void(0);" id="open_model" class="btn btn-primary">क्या आप Wheat (गेहूं) का बीज खरीदना  चाहते है? </a>
+                      </div>
+                    </div>
+                  </center>
+
+                  
+                  <br>
+                    <div class="row">
+                        <div class="col-md-6 col-xs-12">
+                            <div class="shop-img-wrapper">
+                                <div class="slider-for">
+                                    <div class="item">
+                                        <div class="image-wrapper">                                                    
+                                                                                                  <img src="https://www.kisaanhelpline.com/cat_subcat_image/wheat-green-500x300.jpg" alt="kisan" class="left">
+                                                                                            </div>
+                                           <!-- <div class="sharethis-inline-share-buttons"></div><br/> -->
+                                          <div class="text-center"> <div id="shareRoundIcons"></div> </div>
+                                    </div>
+                                 
+                                </div>
+                             
+                            </div>
+                        </div>
+                 
+                            <div class="info-detail">
+                                <div class="title"><h1>Wheat (गेहूं)</h1></div>
+                                 <div class="title">
+                                    <!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                                
+                                    <ins class="adsbygoogle"
+                                         style="display:inline-block;width:468px;height:15px"
+                                         data-ad-client="ca-pub-2017409244002055"
+                                         data-ad-slot="4368166924"></ins>
+                                    <script>
+                                    (adsbygoogle = window.adsbygoogle || []).push({});
+                                    </script>-->
+                                </h1></div>
+                                                                 
+                                <div class="discription" style="padding:10px;">
+                                    <p>
+                                                                                           <h4 class="info-heading"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Basic Info</h4>
+                                            <p><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">गेहूँ मध्य पूर्व के लेवांत क्षेत्र से आई एक घास है, जिसकी खेती दुनिया भर में की जाती है। विश्व भर में, भोजन के लिए उगाई जाने वाली धान्य फसलों मे मक्का के बाद गेहूं दूसरी सबसे ज्यादा उगाई जाने वाले फसल है, गेहूँ की उपज लगातार बढ रही है। यह वृध्दि गेहूँ की उन्नत किस्मों तथा वैज्ञानिक विधियों से हो रही है। भारत गेहूं का दूसरा बड़ा उत्पादक देश है केरल, मणिपुर व नागालैंड राज्यों को छोड़ कर अन्य सभी राज्यों में इस की खेती की जाती है उत्तर प्रदेश, मध्य प्रदेश व पंजाब सर्वाधिक रकबे में गेहूं की पैदावार करने वाले राज्य हैं।</span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><br></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">यह प्रोटीन, विटामिन और कार्बोहाइड्रेटस का प्रमुख स्त्रोत है और संतुलित भोजन प्रदान करता है। रूस, अमरीका और चीन के बाद भारत दुनिया का चौथा सबसे बड़ा गेहूं का उत्पादक है। विश्व में पैदा होने वाली गेंहूं की पैदावार में भारत का योगदान 8.7 फीसदी है।</span></font></div></p>
+                                                                                           <h4 class="info-heading"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Seed Specification</h4>
+                                            <p><div style=""><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>बुआई का समय, तरीका एवं बीज की मात्रा</b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b><br></b></span></font></div><div style=""><b style="font-size: 13.3333px;">1. असिंचित(Unirrigated):</b><span style="font-size: 13.3333px;"> असिंचित गेहूँ ही बुआई का समय 15 अक्टूबर से 31 अक्टूबर है इस अवधि में बुआई तभी संभव है जब सितम्बर माह में पर्याप्त वर्षा हो जाती हैं। इससे भूमि में आवश्यक नमी बनी रहती हैं। यदि बोये जाने वाले बीज के हजार दानों (1000 दानों) का वजन 38 ग्राम है तो 100 किलो प्रति हेक्टेयर बीज प्रयोग करें। हजार दानों का वजन 38 ग्राम से अधिक होने पर प्रति ग्राम 2 किलो प्रति हेक्टेयर बीज की मात्रा बढ़ा दें।</span></div><div style=""><span style="font-size: 13.3333px;"><br></span></div><div style=""><b style="font-size: 13.3333px;">2. सिंचित:</b><span style="font-size: 13.3333px;"> सामयिक बोनी जिसमें नवम्बर का प्रथम पखवाड़ा उत्तम होता है, 15-25 नवम्बर तक सिंचित एवं समय वाली जातियों की बोनी आवश्यक कर लेना चाहिये। बीज को बोते समय 2-3 से.मी. की गहराई में बोना चाहिये जिससे अंकुरण के लिये पर्याप्त नमी मिलती रहे। कतार से कतार की दूरी 20 से.मी. रखना चाहिये। इस हेतु बीज की मात्रा औसतन 100 कि.ग्राम/ हे. रखना चाहिये या बीज के आकार के हिसाब से उसकी मात्रा का निर्धारण करें तथा कतार से कतार की दूरी 18 से.मी. रखें।</span></div><div style=""><span style="font-size: 13.3333px;"><br></span></div><div style=""><b style="font-size: 13.3333px;">3. सिंचित एवं देर से बोनी हेतु:</b><span style="font-size: 13.3333px;"> पिछैती बोनी जिसमें दिसम्बर का पखवाड़ा उत्तम हैं। 15 से 20 दिसम्बर तक पिछैती बोनी अवश्य पूरी कर लेना चाहिये। पिछैती बुवाई में औसतन 125 किलो बीज प्रति हे. के हिसाब से बोना उपयुक्त रहेगा (देर से बोनी के लिये हर किस्म के बीज की मात्रा 25 प्रतिशत बढ़ा दें) तथा कतार की दूरी 18 से.मी. रखें।</span></div><div style=""><br></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>बीज उपचार</b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b><br></b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">बुवाई से पूर्व बीज को टेबुकोनाज़ोल 2% डी.एस. या थिरम 2 ग्राम/किलो बीज की दर से उपचारित करना चाहिए।</span></font></div></div></p>
+                                                                                            <h4 class="info-heading"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Land Preparation & Soil Health</h4>
+                                            <p><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>भूमि</b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b><br></b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">गेहूं की अच्छे उत्पादन के लिए मटियार दोमट मिट्टी सबसे अच्छी रहती है, किन्तु यदि पौधों को सन्तुलित मात्रा में पोषण देने वाली पर्याप्त खाद दी जाए व सिंचाई आदि की व्यवस्था अच्छी हो तो हलकी भूमि से भी पैदावार ली जा सकती है। क्षारीय एवं खारी भूमि गेहूं की खेती के लिए अच्छी नहीं होती है। जिस भूमि में पानी भर जाता हो, वहां भी गेहूं की खेती नहीं करनी चाहिए।</span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><br></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>खेत की तैयारी</b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b><br></b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">पिछली फसल की कटाई के बाद खेत की अच्छे तरीके से ट्रैक्टर की मदद से जोताई की जानी चाहिए। खेत को आमतौर पर ट्रैक्टर के साथ तवियां जोड़कर जोता जाता है और उसके बाद दो या तीन बार हल से जोताई की जाती है। खेत की मिट्टी को बारीक और भुरभुरी करने के लिए गहरी जुताई करनी चाहिए। खेत की जोताई शाम के समय की जानी चाहिए और रोपाई की गई ज़मीन को पूरी रात खुला छोड़ देना चाहिए ताकि वह ओस की बूंदों से नमी सोख सके।</span></font></div></p>
+                                                                                            <h4 class="info-heading"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Crop Spray & fertilizer Specification</h4>
+                                            <p><div style="font-size: 10pt;"><div style="font-size: 10pt;"><b>खाद एवं रासायनिक खाद</b></div><div style="font-size: 10pt;"><b><br></b></div><div style="font-weight: normal; font-size: 10pt;">गेहूँ की खेती में बुवाई से पूर्व खेत तैयार करते समय वर्मी कम्पोस्ट या हरी खाद का प्रयोग करने से उप्तादन में वृद्धि होती है। रासायनिक उर्वरक में यूरिया 110 कि.ग्रा., डी.ए.पी. 55 कि.ग्रा., पोटाश 20 कि. ग्रा. प्रति एकड़ की दर से प्रयोग कर सकते है। ध्यान रहे रासायनिक उर्वरक मिट्टी परिक्षण के आधार पर ही प्रयोग में लाये।</div></div></p>
+                                                                                             <h4 class="info-heading"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Weeding & Irrigation</h4>
+                                            <p><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>खरपतवार नियंत्रण</b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b><br></b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">गेहूँ की फसल में सकरी और चौड़ी पत्ती के खरपतवार नियंत्रण के लिए रासायनिक खरपतवारनाशक Clodinafop Propargyl 15% + Metsulfuron Methyl 1% WP 160 ग्राम /एकड़ में छिड़काव करना चाहिए। या चौड़े पत्तों वाले खरपतवार की रोकथाम के लिए 2,4-D 250 मि.ली. को 150 लीटर पानी में घोलकर प्रयोग करें।</span></font></div><div style=""><br></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>सिंचाई</b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b><br></b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">गेहूँ की बौनी किस्मों को 30-35 हेक्टेयर से.मी. और देशी किस्मों  को 15-20 हेक्टेयर से.मी. पानी की कुल आवश्यकता होती है। उपलब्ध जल के अनुसार गेहूँ में सिंचाई क्यारियाँ बनाकर करनी चाहिये। प्रथम सिंचाई में औसतन 5 सेमी. तथा बाद की सिंचाईयों में 7.5 सेमी. पानी देना चाहिए। सिंचाईयों की संख्या और पानी की मात्रा मृदा के प्रकार, वायुमण्डल का तापक्रम तथा बोई गई किस्म पर निर्भर करती है। फसल अवधि की कुछ विशेष क्रान्तिक अवस्थाओं पर बौनी किस्मों में सिंचाई करना आवश्यक होता है।</span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><br></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>गेहूँ की खेती में सिंचाई</b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b><br></b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">पहली सिंचाई बुवाई के 3 से 4 सप्ताह बाद दी जानी चाहिए।</span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">बुवाई के 40 से 45 दिन बाद दूसरी सिंचाई करनी चाहिए।</span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">बुवाई के 60 से 65 दिन बाद 3 सिंचाई।</span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">बुवाई के 80 से 85 दिन बाद 4 सिंचाई करें।</span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">बुवाई के 100 से 105 दिन बाद 5 वीं सिंचाई करें।</span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">बुआई के 105 से 120 दिन बाद 6 वीं सिंचाई करें।</span></font></div></p>
+                                                                                             <h4 class="info-heading"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Harvesting & Storage</h4>
+                                            <p><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>कटाई</b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b><br></b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">जब गेहूँ के पौधे पीले पड़ जाये तथा बालियां सूख जाये तो फसल की कटाई कर लेनी चाहिये| जब दानों में 15 से 20 प्रतिशत नमी हो तो कटाई का उचित समय होता है| कटाई के पश्चात् फसल को 3 से 4 दिन सूखाना चाहिये। इसके बाद गेहूँ की आधुनिक यंत्रो जैसे ट्रैक्टर चलित थ्रेशर या बैलों द्वारा गहाई कर सकते है।</span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><br></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b>उपज एवं भंडारण</b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;"><b><br></b></span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">उन्नत तकनीक से खेती करने पर सिंचित अवस्था में गेहूँ की बौनी किस्मो से लगभग 50-60 क्विंटल दाना के अलावा 80-90 क्विंटल भूसा/हेक्टेयर प्राप्त होता है। जबकि देशी लम्बी किस्मों से इसकी लगभग आधी उपज प्राप्त होती है। देशी किस्मो से असिंचित अवस्था में 15-20 क्विंटल प्रति/हेक्टेयर उपज प्राप्त होती है। सुरक्षित भंडारण हेतु दानों में 10-12% से अधिक नमी नहीं होना चाहिए। भंडारण के पूर्ण कठियों तथा कमरो को साफ कर लें और दीवालों व फर्श पर मैलाथियान 50% के घोल को 3 लीटर प्रति 100 वर्गमीटर की दर से छिड़कें। अनाज को बुखारी, कोठिलों या कमरे में रखने के बाद एल्युमिनियम फास्फाइड 3 ग्राम की दो गोली प्रति टन की दर से रखकर बंद कर देना चाहिए।</span></font></div></p>
+                                       
+
+                                         <p><div style=""><br></div></p>
+
+                                        
+                                    </p>
+                                </div>
+                            </div>
+
+                                                                    <h3 class="info-heading-2">Crop Related Disease</h3>
+                                <div class="panel-group accordion" id="accordion" role="tablist" aria-multiselectable="true">
+                                                                            <div class="panel panel-default">
+                                                      <div class="panel-heading" role="tab" id="heading0">
+                                                        <h4 class="panel-title">
+                                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse0" aria-expanded="false" aria-controls="collapse0">
+                                                          <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;गेहूं का करनाल बंट                										        </a>
+                                                      </h4>
+                                                      </div>
+                                                      <div id="collapse0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading0">
+                                                        <div class="panel-body" style="font-size: 13px;">
+                                                          <h5>Description:</h5>
+                                                          <div style=""><font face="Verdana, Geneva, sans-serif"><span style="font-size: 14px;">यह रोग सर्वप्रथम 1931 में करनाल (हरियाणा) से रिपोर्ट किया गया था तथा वर्तमान में विश्व के अन्य देशों में भी पाया जाता है | भारत में यह रोग अधिक तापमान तथा उष्ण जलवायु वाले राज्यों जैसे कर्नाटक, महाराष्ट्र, तमिलनाडु, गुजरात तथा मध्यप्रदेश में नहीं पाया जाता तथा इसका प्रकोप अपेक्षाकृत ठंडे प्रदेशों जैसे जम्मू – कश्मीर, हिमाचल प्रदेश तथा उत्तराखंड के मैदानी इलाके पंजाब, हरियाणा , उत्तर प्रदेश तथा उत्तरी राजस्थान में अधिक होता है।</span></font></div>                										          <h5>Organic Solution:</h5>
+                                                          इस रोग कि रोकथाम के लिए बीज को थाइरम 2.5 ग्राम प्रति कि.ग्रा. बीज की दर से उपचारित कर बोयें | उन्नत प्रतिरोधी किस्मों का उपयोग करें                										          <h5>Chemical Solution:</h5>
+                                                          रोकथाम हेतु खड़ी फसल में प्रोपिकोनोजोल 25 ई.सी. 0.1 प्रतिशत घोल का छिड़काव डफ अवस्था में करें |                                                                                                <div class="row">
+                                                                                              <div class="col-md-3">
+                                              <img src="https://www.kisaanhelpline.com/uploads/disease/Deficiency/Wheat-1.jpg" class="img-thumbnail img-responsive">
+                                            </div>
+                                                                                                <div class="col-md-3">
+                                              <img src="https://www.kisaanhelpline.com/uploads/disease/Deficiency/Wheat-.jpg" class="img-thumbnail img-responsive">
+                                            </div>
+                                                                                              </div>
+                                                                                                          </div>
+                                                      </div>
+                                                    </div>
+                                                                                <div class="panel panel-default">
+                                                      <div class="panel-heading" role="tab" id="heading1">
+                                                        <h4 class="panel-title">
+                                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                                          <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;माहॅू                										        </a>
+                                                      </h4>
+                                                      </div>
+                                                      <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+                                                        <div class="panel-body" style="font-size: 13px;">
+                                                          <h5>Description:</h5>
+                                                          <font face="Arial, Verdana"><span style="font-size: 13.3333px;">यह पंखहीन अथवा पंखयुक्त हरे रंग के चुभाने एवं चूसने वाले मुखांग वाले छोटे कीट होते है।</span></font>                										          <h5>Organic Solution:</h5>
+                                                          गर्मी में गहरी जुताई करनी चाहिए। समय से बुवाई करें। खेत की निगरानी करते रहना चाहिए। 5 किलो गंधपाश (फेरोमैन ट्रैप) प्रति एकड़ की दर से प्रयोग करना चाहिए।                										          <h5>Chemical Solution:</h5>
+                                                          एजाडिरैक्टिन (नीम आयल) 0.15 प्रतिशत ई.सी. 2.5 ली0 प्रति हे. की दर से 500-600 ली. पानी में घोलकर छिडकाव करना चाहिए। डाइमेथोएट 30 प्रतिशत ई.सी. ली. प्रति हे. की दर से 500-600 ली. पानी में घोलकर छिडकाव करना चाहिए।मिथाइल-ओ-डेमेटान 25 प्रतिशत ई.सी. 1 ली. प्रति हे. की दर से 500-600 ली. पानी में घोलकर छिडकाव करना चाहिए। मोनोक्रोटोफास 36 एस.एल. 750 मिली प्रति हे. की दर से से 500-600 ली. पानी में घोलकर छिडकाव करना चाहिए।                                                                                                <div class="row">
+                                                                                              <div class="col-md-3">
+                                              <img src="https://www.kisaanhelpline.com/uploads/disease/Mite/Wheat-1.jpg" class="img-thumbnail img-responsive">
+                                            </div>
+                                                                                              </div>
+                                                                                                          </div>
+                                                      </div>
+                                                    </div>
+                                                                                <div class="panel panel-default">
+                                                      <div class="panel-heading" role="tab" id="heading2">
+                                                        <h4 class="panel-title">
+                                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                                          <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;दीमक                										        </a>
+                                                      </h4>
+                                                      </div>
+                                                      <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                                                        <div class="panel-body" style="font-size: 13px;">
+                                                          <h5>Description:</h5>
+                                                          <font face="Arial, Verdana"><span style="font-size: 13.3333px;">दीमक सफेद मटमैले रंग का बहुभक्षी कीट है जो कालोनी बनाकर रहते हैं। </span></font>                										          <h5>Organic Solution:</h5>
+                                                          खेत में कच्चे गोबर का प्रयोग नहीं करना चाहिए। फसलों के अवशेषों को नष्ट कर देना चाहिए। नीम की खली 10 कुन्तल प्रति हे0 की दर से बुवाई से पूर्व खेत में मिलाने से दीमक के प्रकोप में कमी आती है। भूमि शोधन हेतु विवेरिया बैसियाना 2.5 किग्रा0 प्रति हे0 की दर से 50-60 किग्रा0 अध सडे गोबर में मिलाकर 8-10 दिन रखने के उपरान्त प्रभावित खेत में प्रयोग करना चाहिए।ख                										          <h5>Chemical Solution:</h5>
+                                                          फसल में प्रकोप होने पर सिंचाई के पानी के साथ क्लोरपाइरीफास 20 प्रतिशत ई0सी0 2.5 ली0 प्रति हे0 की दर से प्रयोग करें।                                                                                                <div class="row">
+                                                                                              <div class="col-md-3">
+                                              <img src="https://www.kisaanhelpline.com/uploads/disease/Mite/Wheat-.jpg" class="img-thumbnail img-responsive">
+                                            </div>
+                                                                                              </div>
+                                                                                                          </div>
+                                                      </div>
+                                                    </div>
+                                                                                <div class="panel panel-default">
+                                                      <div class="panel-heading" role="tab" id="heading3">
+                                                        <h4 class="panel-title">
+                                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                                          <i class="fa fa-bug text-success" aria-hidden="true"></i> &nbsp;पीला रतुआ                										        </a>
+                                                      </h4>
+                                                      </div>
+                                                      <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+                                                        <div class="panel-body" style="font-size: 13px;">
+                                                          <h5>Description:</h5>
+                                                          <font face="Arial, Verdana"><span style="font-size: 13.3333px;">गेहूं का पीला रतुआ रोग जनक आंशिक रूप से सर्वांगी है और बाद में परिपक्वता के समय जब टीलियो सोराई बनते हैं, तब ये रेखीय धारियां भद्दे काले रंग की हो जाती हैं| ये टीलियो सोराई भी लम्बें रेखीय धारियों में व्यवस्थित होती है और एपिडर्मिस द्वारा ढकी होती हैं तथा काले रंग में दिखती हैं|</span></font>                										          <h5>Organic Solution:</h5>
+                                                          बुआई के लिए अच्छे और स्वस्थ बीज का ही प्रयोग करें| रतुआ निरोधक किस्में 4 से 5 वर्ष के बाद रोग प्रतिरोधक रह जाती हैं| ऐसी स्थिति रतुआ कवकों में परिवर्तन होने पर आती है, अत: नवीनतम सहनशील किस्मों को प्रयोग में लायें| नाइट्रोजन प्रधान उर्वरकों की अत्याधिक मात्रा रतुआ रोगों को बढ़ाने में सहायक होती है, इसलिए उर्वरकों के संतुलित अनुपात में पोटाश की उचित मात्रा प्रयोग करें|                										          <h5>Chemical Solution:</h5>
+                                                          . छिड़काव के लिए प्रॉपीकोनेशेल 25 ई सी या टेबूकोनेजोल 25 ई सी (फोलिकर 250 ई सी) या ट्राईडिमिफोन 25 डब्ल्यू पी (बेलिटॉन 25 डब्ल्यू पी) का 0.1 प्रतिशत घोल बनाकर छिड़काव करें|
+
+2. एक एकड़ खेत के लिए 200 मिलीलीटर दवा 200 लीटर पानी में मिलाकर छिड़काव करें|
+
+3. पानी की उचित मात्रा का प्रयोग करें, फसल की छोटी अवस्था में पानी की मात्रा 100 से 120 लिटर प्रति एकड़ रखी जा सकती है|
+
+4. गेहूं का पीला रतुआ रोग के प्रकोप और फैलाव को देखते हुए दूसरा छिड़काव 15 से 20 दिन के अंतराल पर करें|                                                                                                <div class="row">
+                                                                                              <div class="col-md-3">
+                                              <img src="https://www.kisaanhelpline.com/uploads/disease/Fungus/Wheat-.jpg" class="img-thumbnail img-responsive">
+                                            </div>
+                                                                                              </div>
+                                                                                                          </div>
+                                                      </div>
+                                                    </div>
+                                                                            </div>
+                                                            
+                    </div>
+
+                     <div class="main-content list-block column-3">
+                      <div>
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                       
+                            <ins class="adsbygoogle"
+                                 style="display:inline-block;width:728px;height:90px"
+                                 data-ad-client="ca-pub-2017409244002055"
+                                 data-ad-slot="6581989952"></ins>
+                            <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script> 
+                            </div>
+
+                            <div class="main-content">
+                                <div> <h3 class="title bnf-con" style="font-size: 30px;text-align: center;">Frequently Asked Questions</h3></div>
+<div class="grid-block-1"> 
+<div class="col-md-12 col-xs-12"> 
+ <div class="row" style="box-shadow: 0px 2px 2px 4px lightgrey;padding-top: 2%;padding-bottom: 2%;">
+       
+        <div class="col-md-6">
+                                                          <div class="col-md-12">
+     
+       <h4 class="bnf-con"><strong>Q1: किस महीने में गेहूँ उगाया जाता है?</strong></h4>
+       <div style="display:flex;"><h4><strong>Ans:  </strong></h4><span style="margin-top: 1.5%; margin-left: 2%;" ><font face="Arial, Verdana"><span style="font-size: 13.3333px;">भारत में, सर्दियों या रबी मौसम के दौरान गेहूं उगाया जाता है। फसल को नवंबर-दिसंबर के दौरान बोया जाता है और अप्रैल के आसपास काटा जाता है।</span></font></span></div>
+       </div>
+                                                      <div class="col-md-12">
+     
+       <h4 class="bnf-con"><strong>Q3: गेहूं उगाने का सबसे अच्छा समय क्या है?</strong></h4>
+       <div style="display:flex;"><h4><strong>Ans:  </strong></h4><span style="margin-top: 1.5%; margin-left: 2%;" ><font face="Arial, Verdana"><span style="font-size: 13.3333px;">आदर्श रूप से, शीतकालीन गेहूं लगाया जाता है, जबकि मिट्टी और हवा का तापमान अभी भी यह सुनिश्चित करने के लिए गर्म है कि रोपाई जल्दी से और एक जोड़ी टिलर और एक मजबूत जड़ प्रणाली विकसित करने के लिए बहुत समय में उभर सकती है।</span></font></span></div>
+       </div>
+                                                      <div class="col-md-12">
+     
+       <h4 class="bnf-con"><strong>Q5: क्या गेहूं सबसे महत्वपूर्ण फसल है?</strong></h4>
+       <div style="display:flex;"><h4><strong>Ans:  </strong></h4><span style="margin-top: 1.5%; margin-left: 2%;" ><div style=""><span style="font-size: 13.3333px; font-family: Arial, Verdana;">गेहूं किसी भी अन्य व्यावसायिक फसल की तुलना में अधिक भूमि क्षेत्र में उगाया जाता है और यह मनुष्यों के लिए सबसे महत्वपूर्ण खाद्यान्न स्रोत बना हुआ है। इसका उत्पादन चावल, मक्का और आलू सहित सभी फसलों का नेतृत्व करता है।</span></div></span></div>
+       </div>
+                                                 </div>
+   <div class="col-md-6">
+                                                                                                                                                              <div class="col-md-12">
+     
+       <h4 class="bnf-con"><strong>Q2: गेहूं की फसल के लिए किस प्रकार की मिट्टी सबसे अच्छी होती है?</strong></h4>
+       <div style="display:flex;"><h4><strong>Ans: </strong></h4><span style="margin-top: 1.5%; margin-left: 2%;"><font face="Arial, Verdana"><span style="font-size: 13.3333px;">मिट्टी दोमट मिट्टी की दोमट या दोमट बनावट, अच्छी संरचना और मध्यम जल धारण क्षमता वाली मिट्टी गेहूं की खेती के लिए आदर्श है। बहुत छिद्रपूर्ण और अत्यधिक सूखा तेल से बचने के लिए देखभाल की जानी चाहिए। मिट्टी को अपनी प्रतिक्रिया में तटस्थ होना चाहिए।</span></font></span></div>
+       </div>
+                                                                                                                                                          <div class="col-md-12">
+     
+       <h4 class="bnf-con"><strong>Q4: गेहूं को उगने में कितना समय लगता है?</strong></h4>
+       <div style="display:flex;"><h4><strong>Ans: </strong></h4><span style="margin-top: 1.5%; margin-left: 2%;"><font face="Arial, Verdana"><span style="font-size: 13.3333px;">यह पतझड़ में लगाया जाता है, आमतौर पर अक्टूबर और दिसंबर के बीच, और सर्दियों में वसंत या शुरुआती गर्मियों में काटा जाता है। आमतौर पर परिपक्वता तक पहुंचने में लगभग चार से पांच महीने लगते हैं और यह वसंत के बगीचों में बहुत सुनहरा विपरीत बनाता है।</span></font></span></div>
+       </div>
+                                                                                                                                                          <div class="col-md-12">
+     
+       <h4 class="bnf-con"><strong>Q6: भारत में गेहूँ का सर्वाधिक उत्पादन किस राज्य में होता है?</strong></h4>
+       <div style="display:flex;"><h4><strong>Ans: </strong></h4><span style="margin-top: 1.5%; margin-left: 2%;"><div style=""><span style="font-size: 13.3333px; font-family: Arial, Verdana;">उत्तर प्रदेश भारत में सबसे जादा गेहूँ उगाने वाला राज्य है | और देश के कुल गेहूँ उत्पाद के 34% यहाँ उगाई जाती है | यह फसल उत्तर प्रदेश के पूर्वी, पश्चिमी और उत्तरी भाग में मुख्य रूप से उत्तर प्रदेश के 96 लाख हेक्टेयर भूमि में उगाई जाती है।</span></div></span></div>
+       </div>
+                                                 </div>
+      
+   </div>                                       
+</div> 
+
+<div class="clearfix"></div>
+</div>
+                   </div>
+
+
+
+</div>
+</div>
+</div>
+      </section><br>
+      <section class="container-fluid " style="background-color:rgb(40, 51, 61)">
+        <footer class="footer ">
+              
+          <!-- Footer Top -->
+          <div class="footer-top">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-3 col-md-6">
+                  <br><br>
+                
+                  <!-- Footer Widget -->
+                  <div class="footer-widget footer-about">
+                    
+                    <div class="footer-about-content" style="font-weight:300">
+                      <p class="mb-4 text-center text-light " style="font-size: 20px; font-weight: 300;" ><b> BEFORE USE</b> </p>
+                      <p class="text-light" style="margin-left: 80px; font-size:medium;" ><b> information and services may contain bugs, errors, problems or other limitations. We have no liability whatsoever for your use of any information or service. Use any service or information given here at your own risk. Read our full Terms of Service. </b></p>
+                      <div class="social-icon">
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /Footer Widget -->
+                  
+                </div>
+                
+                <div class="col-lg-3 col-md-6" style="margin-left: 160px; margin-top: 50px;">
+                
+                  <!-- Footer Widget -->
+                  <div class="footer-widget footer-menu">
+                    <h2 class="footer-title text-light">Company</h2><br>
+                    <ul>
+                      <li><a class="text-light" href="">About Us</a></li>
+                      <li><a class="text-light" href="">Contact</a></li>
+                
+                      <li><a class="text-light" href="">Term Of Services</a></li>
+                      <li><a class="text-light" href="">Privacy policy</a></li>
+                      <li><a class="text-light" href="">FAQ'S</a></li>
+                    </ul>
+                  </div>
+                  <!-- /Footer Widget -->
+                  
+                </div>
+                <div class="col-lg-3 col-md-6" style="margin-left: 130px; margin-top: 50px;">
+                
+                  <!-- Footer Widget -->
+                  <div class="footer-widget footer-menu">
+                    <h2 class="footer-title text-light">Resource</h2><br>
+                    <p style="text-decoration: none;">
+                      <li><a class="text-light" href="">Return and Refund policy</a></li>
+                      
+                    </p>
+                  </div>
+                  <!-- /Footer Widget -->
+                  
+                </div>
+                
+                </div>
+                
+                
+          
+          <!-- Footer Bottom -->
+          <div class="footer-bottom">
+            <div class="container-fluid">
+            
+              <!-- Copyright -->
+              <div class="copyright">
+                <div class="row">
+                  <div class="col-md-2 col-lg-6">
+                    <div class="copyright-text">
+                      <p class="mb-0 mt-lg-4 text-light text-center" style="text-size-adjust: 50px; margin-left: 400px;">&copy; 2022 . All rights reserved.</p>
+                    </div>
+                  </div>
+                  <div class="footer-bottom">
+                    <div class="container-fluid">
+                    
+                      <!-- Copyright -->
+                      <div class="copyright">
+                        <div class="row">
+                          <div class="col-md-2 col-lg-8">
+                            
+                          </div>
+                  <div class="col-md-6 col-lg-6">
+                  
+                    <!-- Copyright Menu -->
+                    <div class="copyright-menu"><br><br><br>
+                      
+                    </div>
+                    <!-- /Copyright Menu -->
+                    
+                  </div>
+                </div>
+              </div>
+              <!-- /Copyright -->
+              
+            </div>
+          </div>
+          <!-- /Footer Bottom -->
+        <a href="" class="whatsapp_btn" target="_blank">
+          
+        </a>	
+          
+        </footer>
+        <!-- /Footer -->
+               
+        </div>
+        <!-- Back-To-Top -->
+      </section>
+    </section><br>
+    </body>
+    </html>
